@@ -16,4 +16,4 @@ Converts the MDLX file at the specifies path to an ASET file. The method require
 - *Action<ExportState, ExportStatus> onProgress*: Callback function for the export progress. The function is called at several states of the export process containing the current state/status information.
 
 #### Returns
-True if the export has been successful.
+True if the conversion has been successful.
