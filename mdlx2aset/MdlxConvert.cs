@@ -779,7 +779,7 @@ namespace mdlx2aset {
 
         #region Static methods
         /// <summary>
-        /// Converts the MDLX file at the specifies path to an ASET file. The method requires a corresponding MSET file in the same directory as the MDLX file.
+        /// Converts the MDLX file at the specified path to an ASET file. The method requires a corresponding MSET file in the same directory as the MDLX file.
         /// </summary>
         /// <param name="mdlxPath">The path of the MDLX file to convert</param>
         /// <param name="handle">A reference to the handle (hWnd) of the calling window/process (required by SlimDX).</param>
@@ -803,9 +803,8 @@ namespace mdlx2aset {
 
             return converter.ExportASET(progress);
         }
-
         /// <summary>
-        /// Converts the MDLX file at the specifies path to an ASET file using the current process' handle. The method requires a corresponding MSET file in the same directory as the MDLX file.
+        /// Converts the MDLX file at the specified path to an ASET file using the current process' handle. The method requires a corresponding MSET file in the same directory as the MDLX file.
         /// </summary>
         /// <param name="mdlxPath">The path of the MDLX file to convert</param>
         /// <param name="onProgress">Callback function for the export progress. The function is called at several states of the export process containing the current state/status information.</param>

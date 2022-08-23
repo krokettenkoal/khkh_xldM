@@ -11,7 +11,7 @@ Currently, there are no pre-built releases for download as further testing needs
 The main functionality of this library is provided by the [`MdlxConvert`](mdlx2aset/MdlxConvert.cs) class. For easy and straightforward usage, call the static methods exposed by the class. The following list describes the most important methods in a brief manner:
 
 ### bool MdlxConvert.ToAset(string mdlxPath, Action<ExportState, ExportStatus> onProgress, IntPtr handle)
-Converts the MDLX file at the specifies path to an ASET file. The method requires a corresponding MSET file in the same directory as the MDLX file.
+Converts the MDLX file at the specified path to an ASET file. The method requires a corresponding MSET file in the same directory as the MDLX file.
 
 #### Parameters
 - **string mdlxPath**: The path of the MDLX file to convert
