@@ -1,1 +1,1449 @@
-// Moved to https://github.com/kenjiuno/kh2-bt
+//------------------------------------------------
+//--- 010 Editor v10.0.2 Binary Template
+//
+//      File: BAR file
+//   Authors: kenjiuno
+//   Version: 0
+//   Purpose: https://openkh.dev/kh2/file/type/bar.html
+//  Category: OpenKH (Kingdom Hearts II)
+// File Mask: *.bar
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+
+enum<int> pppName {
+  pppDummyFunc=0,
+  pppKeThRes=1,
+  pppKeThRes8=2,
+  pppKeThRes8x4=3,
+  pppKeThRes8x128=4,
+  pppKeThRes16=5,
+  pppKeThRes16x4=6,
+  pppKeThRes16x64=7,
+  pppKeThRes24=8,
+  pppKeThRes24x4=9,
+  pppKeThRes32=10,
+  pppKeThRes32x4=11,
+  pppKeThRes32x32=12,
+  pppKeThRes40=13,
+  pppKeThRes40x4=14,
+  pppKeThRes48=15,
+  pppKeThRes48x4=16,
+  pppKeThRes64=17,
+  pppKeThRes64x4=18,
+  pppKeThRes64x16=19,
+  pppKeThRes128=20,
+  pppKeThRes128x4=21,
+  pppKeThRes128x8=22,
+  pppKeThRes255=23,
+  pppKeThRes255x4=24,
+  pppKeHitBall=25,
+  pppKeGrvTgt=26,
+  pppAccele=27,
+  pppAngAccele=28,
+  pppSclAccele=29,
+  pppColAccele=30,
+  pppEiWfacc=31,
+  pppKeHmgEff=32,
+  pppKeGrvEff=33,
+  pppKeHitChkPxB=34,
+  pppMove=35,
+  pppAngMove=36,
+  pppSclMove=37,
+  pppColMove=38,
+  pppPoint=39,
+  pppAngle=40,
+  pppScale=41,
+  pppColor=42,
+  pppPObjPoint=43,
+  pppVertexAttend=44,
+  pppEiWindFun=45,
+  pppKeMvYpEff=46,
+  pppKeDrct=47,
+  pppVtMime=48,
+  pppKeTkFade=49,
+  pppRandFloat=50,
+  pppRandUpFloat=51,
+  pppRandDownFloat=52,
+  pppRandChar=53,
+  pppRandUpChar=54,
+  pppRandDownChar=55,
+  pppRandShort=56,
+  pppRandUpShort=57,
+  pppRandDownShort=58,
+  pppRandInt=59,
+  pppRandUpInt=60,
+  pppRandDownInt=61,
+  pppRandFV=62,
+  pppRandUpFV=63,
+  pppRandDownFV=64,
+  pppRandIV=65,
+  pppRandUpIV=66,
+  pppRandDownIV=67,
+  pppRandCV=68,
+  pppRandUpCV=69,
+  pppRandDownCV=70,
+  pppRandHCV=71,
+  pppRandUpHCV=72,
+  pppRandDownHCV=73,
+  pppSRandFV=74,
+  pppSRandUpFV=75,
+  pppSRandDownFV=76,
+  pppSRandCV=77,
+  pppSRandUpCV=78,
+  pppSRandDownCV=79,
+  pppSRandHCV=80,
+  pppSRandUpHCV=81,
+  pppSRandDownHCV=82,
+  pppSMatrix=83,
+  pppKeMatSN=84,
+  pppMatrix=85,
+  pppMatrixXYZ=86,
+  pppMatrixXZY=87,
+  pppMatrixYZX=88,
+  pppMatrixYXZ=89,
+  pppMatrixZXY=90,
+  pppMatrixZYX=91,
+  pppMatrixLoc=92,
+  pppMatrixScl=93,
+  pppMatrixFront=94,
+  pppRyjMatrixNoRot=95,
+  pppKeMatPht=96,
+  pppRyjMatrixWorld=97,
+  pppRyjMatrixWorldXYZ=98,
+  pppRyjMatrixWorldXZY=99,
+  pppRyjMatrixWorldYXZ=100,
+  pppRyjMatrixWorldYZX=101,
+  pppRyjMatrixWorldZXY=102,
+  pppRyjMatrixWorldZYX=103,
+  pppParMatrix=104,
+  pppKeParMatR=105,
+  pppChrSclXYZMatrix=106,
+  pppChrSclXZMatrix=107,
+  pppChrSclYMatrix=108,
+  pppChrYSclXYZMatrix=109,
+  pppChrXSclXYZMatrix=110,
+  pppDrawMatrix=111,
+  pppDrawMatrixFront=112,
+  pppDrawMatrixNoRot=113,
+  pppDrawMatrixWood=114,
+  pppKeDMat=115,
+  pppKeDMatFr=116,
+  pppKeDMatPht=117,
+  pppKeDMatPhtFr=118,
+  pppRyjDrawMatrixWorld=119,
+  pppRyjDrawMatrixWorldFront=120,
+  pppRyjDrawMatrixWorldNoRot=121,
+  pppRyjDrawMatrixWorldWood=122,
+  pppKeZCrct=123,
+  pppKeZCrctShp=124,
+  pppKeThTp=125,
+  pppKeThTp2=126,
+  pppKeThSft=127,
+  pppKeTh=128,
+  pppDrawMdlBS=129,
+  pppDrawMdl=130,
+  pppDrawMdlSemi=131,
+  pppDrawMdlTs=132,
+  pppDrawMdl2=133,
+  pppDrawMdlSemi2=134,
+  pppDrawMdlTs2=135,
+  pppDrawMdl3=136,
+  pppDrawMdlSemi3=137,
+  pppDrawMdlTs3=138,
+  pppDrawMdlSea=139,
+  pppDrawShape=140,
+  pppDrawShapeX=141,
+  pppDrawShapeField=142,
+  pppKeMdlBmp=143,
+  pppKeMdlDtt=144,
+  pppKeMdlTfd=145,
+  pppKeMdlTfdUv=146,
+  pppKeMdlTfd2=147,
+  pppKeMdlTfdUv2=148,
+  pppKeMdlTfd3=149,
+  pppKeMdlTfdUv3=150,
+  pppKeShpTail=151,
+  pppKeShpTailX=152,
+  pppKeShpTail2=153,
+  pppKeShpTail2X=154,
+  pppKeShpTail3=155,
+  pppKeShpTail3X=156,
+  pppKeShpTailPht=157,
+  pppKeShpTailLc=158,
+  pppKeShpDtt=159,
+  pppRyjDrawShipoly=160,
+  pppDrawHook=161,
+  pppSDMatrix=162,
+  pppSCMatrix=163,
+  pppWMatrix=164,
+  pppWMatrixXYZ=165,
+  pppWMatrixXZY=166,
+  pppWMatrixYZX=167,
+  pppWMatrixYXZ=168,
+  pppWMatrixZXY=169,
+  pppWMatrixZYX=170,
+  pppPointAp=171,
+  pppPointRAp=172,
+  pppVertexAp=173,
+  pppSegmentAp=174,
+  pppFaceAp=175,
+  pppVertexApLc=176,
+  pppVertexApAt=177,
+  pppKeBornRnd=178,
+  pppKeBornRnd2=179,
+  pppKeBornRnd3=180,
+  pppKeBornRnd4=181,
+  pppKeBornRnd5=182,
+  pppKeBornRnd6=183,
+  pppKeBornPtCmpl=184,
+  pppKeHitBorn=185,
+  pppKeThHitBorn=186,
+  pppKeLnsLpSft=187,
+  pppKeLnsLp=188,
+  pppKeLnsArnd=189,
+  pppKeLnsClm=190,
+  pppKeLnsCrn=191,
+  pppKeLnsFls=192,
+  pppKeAcmSolid=193,
+  pppKeHitChk=194,
+  pppKeThLz=195,
+  pppKeThCp=196,
+  pppKeThCpSft=197,
+  pppKeAccSpdSv=198,
+  pppRyjDrawShipolyBone=199,
+  pppRyjMegaBirth=200,
+  pppRyjMngFlag=201,
+  pppRyjMegaBirthPrize=202,
+  pppRyjMegaPlace=203,
+  pppRyjMegaPlaceShape=204,
+  pppRyjMegaPlaceModel=205,
+  pppRyjMegaPlaceLamp=206,
+  pppRyjMegaBirthModel=207,
+  pppRyjDrawKekoto=208,
+  pppMoveLoop=209,
+  pppAngMoveLoop=210,
+  pppSclMoveLoop=211,
+  pppPointLoop=212,
+  pppAngleLoop=213,
+  pppScaleLoop=214,
+  pppMatrixLoop=215,
+  pppDrawMatrixLoop=216,
+  pppDrawMdlLoop=217,
+  pppDrawMdlLoopZ=218,
+  pppRyjLight=219,
+  pppKeLnsLpT=220,
+  pppKeLnsArndT=221,
+  pppKeLnsClmT=222,
+  pppKeLnsCrnT=223,
+  pppKeLnsFlsT=224,
+  pppRyjDrawMatrixWorldDtt=225,
+  pppRyjDrawMatrixWorldDttFr=226,
+  pppRyjMegaBirthFilter=227,
+  pppRyjMegaBirthModelFilter=228,
+  pppMatrixLoopXYZ=229,
+  pppMatrixLoopXZY=230,
+  pppMatrixLoopYXZ=231,
+  pppMatrixLoopYZX=232,
+  pppMatrixLoopZXY=233,
+  pppMatrixLoopZYX=234,
+  pppVertexApLcLoop=235,
+  pppSnoScaleAll=236,
+  pppSnoMdlDttNorm=237,
+  pppRyjMegaBirthUserCtrl=238,
+  pppRyjMegaBirthUserCtrl2=239,
+  pppEiDrawShipoly=240,
+  pppRyjMegaBirthUserCtrl3=241,
+};
+
+enum <ubyte> VIFCODE {
+    nop = 0,
+    stcycl = 1,
+    offset = 2,
+    base = 3,
+    itop = 4,
+    stmod = 5,
+    mskpath3 = 6,
+    mark = 7,
+    flushe = 16,
+    flush = 17,
+    flusha = 19,
+    mscal = 20,
+    mscnt = 23,
+    mscalf = 21,
+    stmask = 32,
+    strow = 48,
+    stcol = 49,
+    mpg = 74,
+    direct = 80,
+    directhl = 81,
+    unmasked_s_32 = 96,
+    unmasked_s_16 = 97,
+    unmasked_s_8 = 98,
+    unmasked_v2_32a = 100,
+    unmasked_v2_16a = 101,
+    unmasked_v2_8a = 102,
+    unmasked_v2_32b = 104,
+    unmasked_v3_16b = 105,
+    unmasked_v3_8b = 106,
+    unmasked_v4_32c = 108,
+    unmasked_v4_16c = 109,
+    unmasked_v4_8c = 110,
+    unmasked_v4_5 = 111,
+    masked_s_32a = 112,
+    masked_s_16a = 113,
+    masked_s_8a = 114,
+    masked_v2_32b = 116,
+    masked_v2_16b = 117,
+    masked_v2_8b = 118,
+    masked_v2_32c = 120,
+    masked_v3_16c = 121,
+    masked_v3_8c = 122,
+    masked_v4_32 = 124,
+    masked_v4_16 = 125,
+    masked_v4_8 = 126,
+    masked_v4_5 = 127,
+};
+
+struct vifCode {
+    ushort imm;
+    ubyte num;
+    VIFCODE cmd;
+};
+
+enum <uint> DMATAGID {
+    refe = 0,
+    cnt = 1,
+    next = 2,
+    ref = 3,
+    refs = 4,
+    call = 5,
+    ret = 6,
+    end = 7,
+};
+
+struct sourceChainDmaTag {
+    uint qwc : 16;
+    uint pad : 10;
+    uint pce : 2;
+    DMATAGID id : 3;
+    uint irq : 1;
+
+    uint addr;
+
+    vifCode vif[2];
+
+    if (id == 0 || id == 1 || id == 2 || id == 5) {
+        if (qwc >= 1) {
+            ubyte raw[16 * qwc];
+        }
+    }
+};
+
+struct dmaChainMap (int64 top) {
+    uint firstDmaTagOffset;
+    uint textureIndex;
+    ushort unk;
+    ushort transparentFlag;
+    
+    ubyte unk1 : 1;
+    ubyte enableUvsc : 1;
+    ubyte uvscIdx : 4;
+    ubyte unk2 : 2;
+    ubyte vd;
+    ubyte ve;
+    ubyte vf;
+
+    local int64 cursor = FTell();
+    FSeek(top + firstDmaTagOffset);
+    sourceChainDmaTag dmaTag;
+    FSeek(cursor);
+};
+
+struct vifPacketRenderingGroup (int64 top) {
+    uint offsetToGroup;
+
+    local int64 cursor = FTell();
+    FSeek(top + offsetToGroup);
+    ushort first;
+    FSeek(cursor);
+};
+
+struct mapHeader (int64 top) {
+    uint numDmaChainMaps;
+    ushort unk3;
+    ushort numVifPacketRenderingGroup;
+    uint offVifPacketRenderingGroup;
+    uint offDmaChainIndexRemapTable;
+    dmaChainMap dmaChainMaps(top)[numDmaChainMaps] <optimize=false>;
+
+    local int64 cursor = FTell();
+    FSeek(top + offVifPacketRenderingGroup);
+    vifPacketRenderingGroup vif_packet_rendering_group(top)[numVifPacketRenderingGroup] <optimize=false>;
+    FSeek(top + offDmaChainIndexRemapTable);
+    uint next_offset;
+    ushort dmaChainIndexRemapTable[numDmaChainMaps];
+    FSeek(cursor);
+};
+
+void ReadMapModel() {
+    local int64 top = FTell() -16;
+    mapHeader mapHdr(top);
+}
+
+struct objectMatrix {
+    int index;
+    int parent;
+    int unk1;
+    int unk2;
+    float scale[4];
+    float rotate[4];
+    float translation[4];
+};
+
+struct objectMatrixRef {
+    uint count;
+    int indices[count];
+};
+
+struct objectModelPart (int64 top) {
+    uint unk1;
+    uint texture_index;
+    uint unk2;
+    uint unk3;
+    uint offFirstDmaTag;
+    uint offMatrixRef;
+    uint totalQwc;
+    uint unk5;
+
+    local int64 cursor = FTell();
+    FSeek(top + offMatrixRef);
+    objectMatrixRef matrixRef;
+
+    FSeek(top + offFirstDmaTag);
+    sourceChainDmaTag dmaTag[totalQwc] <optimize=false>;
+
+    FSeek(cursor);
+};
+
+struct objectModelHeader (int64 top) {
+    ushort numMatrices;
+    ushort unk1;
+    uint matricesOffset;
+    uint unk2;
+    ushort numModelParts;
+    ushort unk3;
+    objectModelPart modelParts(top)[numModelParts] <optimize=false>;
+
+    if (matricesOffset != 0) {
+        FSeek(top + matricesOffset);
+        objectMatrix objMatrixList[numMatrices];
+    }
+};
+
+void ReadObjectModel() {
+    local int64 top = FTell() -16;
+    objectModelHeader objHdr(top);
+}
+
+enum <uint> MODELTYPE {
+    MAP = 2,
+    OBJECT = 3,
+    SHADOW = 4,
+};
+
+struct modelFileHeader {
+    MODELTYPE type;
+    uint unk1;
+    uint unk2;
+    uint next_off;
+};
+
+void ReadModel() {
+    FSkip(0x90);
+    modelFileHeader modelHdr;
+    switch (modelHdr.type) {
+        case 2: ReadMapModel(); break;
+        case 3: ReadObjectModel(); break;
+    }
+}
+
+struct doctFileHeader {
+    char magic[4];
+    uint ver;
+    uint unk;
+    uint headerOffset;
+    uint headerLen;
+    uint entry1Offset;
+    uint entry1Len;
+    uint entry2Offset;
+    uint entry2Len;
+    uint entry3Offset;
+    uint entry3Len;
+};
+
+struct doctEntry1 {
+    ushort children[8];
+    float min[3];
+    float max[3];
+    ushort entry2first;
+    ushort entry2last;
+    uint unk;
+};
+
+struct doctEntry2 {
+    uint flags <format=hex>;
+    float min[3];
+    float max[3];
+};
+
+void ReadDoct() {
+    local int64 top = FTell();
+    doctFileHeader doctHdr;
+
+    FSeek(top + doctHdr.entry1Offset);
+    doctEntry1 doctTable1[doctHdr.entry1Len / 48];
+
+    FSeek(top + doctHdr.entry2Offset);
+    doctEntry2 doctTable2[doctHdr.entry2Len / 28];
+}
+
+
+struct coctFileHeader {
+    char magic[4];
+    uint ver;
+    uint unk1;
+    uint unk2;
+    uint headerOffset;
+    uint headerLen;
+
+    uint collisionMeshGroupOffset;
+    uint collisionMeshGroupLen;
+
+    uint collisionMeshOffset;
+    uint collisionMeshLen;
+
+    uint collisionOffset;
+    uint collisionLen;
+
+    uint verticesOffset;
+    uint verticesLen;
+
+    uint planeOffset;
+    uint planeLen;
+
+    uint bboxOffset;
+    uint bboxLen;
+
+    uint surfaceFlagsOffset;
+    uint surfaceFlagsLen;
+};
+
+struct collisionMeshGroup {
+    ushort children[8];
+    short min[3];
+    short max[3];
+    ushort collisionMeshFirst;
+    ushort collisionMeshLast;
+};
+
+struct collisionMesh {
+    short min[3];
+    short max[3];
+    ushort collisionFirst;
+    ushort collisionLast;
+    ushort unk1;
+    ushort unk2;
+};
+
+struct collision {
+    ushort unk1;
+    ushort vertex[4];
+    ushort planeIndex;
+    ushort bboxIndex;
+    ushort surfaceFlagIndex;
+};
+
+struct coctVertex {
+    float x;
+    float y;
+    float z;
+    float w;
+};
+
+struct coctPlane {
+    float x;
+    float y;
+    float z;
+    float d;
+};
+
+struct coctBoundingBox {
+    short min[3];
+    short max[3];
+};
+
+enum <uint> SURFACEFLAGS {
+    SOLID_FLOOR = 0x3f1,
+};
+
+void ReadCoct() {
+    local int64 top = FTell();
+    coctFileHeader coctHdr;
+
+    FSeek(top + coctHdr.collisionMeshGroupOffset);
+    collisionMeshGroup coctMeshGrp[coctHdr.collisionMeshGroupLen / 32];
+
+    FSeek(top + coctHdr.collisionMeshOffset);
+    collisionMesh coctMesh[coctHdr.collisionMeshLen / 20];
+
+    FSeek(top + coctHdr.collisionOffset);
+    collision coctCollision[coctHdr.collisionLen / 16];
+
+    FSeek(top + coctHdr.verticesOffset);
+    coctVertex coctVertices[coctHdr.verticesLen / 16];
+
+    FSeek(top + coctHdr.planeOffset);
+    coctPlane coctPlanes[coctHdr.planeLen / 16];
+
+    FSeek(top + coctHdr.bboxOffset);
+    coctBoundingBox coctBBox[coctHdr.bboxLen / 12];
+
+    FSeek(top + coctHdr.surfaceFlagsOffset);
+    SURFACEFLAGS coctSurfFlags[coctHdr.surfaceFlagsLen / 4] <format=hex>;
+}
+
+struct dataTransfer {
+    ubyte raw[0x90];
+};
+
+struct gsInfo {
+    ubyte raw[0xa0];
+};
+
+struct texAnimUvsc {
+    uint index;
+    float uSpeed;
+    float vSpeed;
+};
+
+struct texAnimFrameEntry {
+    short frameControl : 4 <fgcolor=0xc0c000>;
+    short loopOffset : 12;
+    ushort minLen;
+    ushort maxLen;
+    ushort spriteIndex;
+};
+
+struct texAnimTexa (int64 top) {
+    ushort unk1;
+    ushort texIndex;
+    ushort frameStride;
+    ushort bitsPerPixel;
+    ushort minSlotIdx;
+    ushort maxSlotIdx;
+    ushort numAnims;
+    ushort numSprites;
+    ushort uOff;
+    ushort vOff;
+    ushort rrw;
+    ushort rrh;
+    uint slotTableOffset;
+    uint animTableOffset;
+    uint spriteImageOffset;
+    uint defAnimIdx;
+
+    local int64 cursor = FTell();
+
+    FSeek(top +spriteImageOffset);
+    ubyte startSpriteImage <fgcolor=0x0000c0, comment="startSpriteImage">;
+
+    FSeek(top +slotTableOffset);
+    ushort slotTableOffsets[1+maxSlotIdx-minSlotIdx];
+
+    FSeek(top +animTableOffset);
+    uint animTableOffsets[numAnims];
+
+    local int i, x;
+    for (i=0; i<numAnims; i++) {
+        FSeek(top +animTableOffsets[i]);
+        for (x=0; true; x++) {
+            texAnimFrameEntry frameEntry;
+            if (frameEntry.frameControl >= 2) {
+                break;
+            }
+        }
+    }
+
+    FSeek(cursor);
+};
+
+struct texAnimEnd {
+    char tag[4];
+};
+
+struct texAnimChunk {
+    char key[4];
+
+    if (Strcmp(key, "_KN5") == 0) {
+        return;
+    }
+
+    uint len;
+
+    local int64 top = FTell();
+
+    if (Strcmp(key, "UVSC") == 0) {
+        texAnimUvsc uvsc;
+    }
+    else if (Strcmp(key, "TEXA") == 0) {
+        texAnimTexa texa(top);
+    }
+    FSeek(top +len);
+};
+
+struct modelTextureFileHeader (int64 top) {
+    uint magic;
+    uint colorsCount;
+    uint textureTransferCount;
+    uint gsInfoCount;
+    uint offsetDataOffset;
+    uint dataTransferOffset;
+    uint gsInfoOffset;
+    uint pictureOffset;
+    uint paletteOffset;
+
+    local int64 cursor = FTell();
+    FSeek(top + offsetDataOffset);
+    ubyte offsetData[gsInfoCount];
+
+    FSeek(top + dataTransferOffset);
+    dataTransfer clutTransfer;
+    dataTransfer textureTransfer[textureTransferCount];
+
+    FSeek(top + gsInfoOffset);
+    gsInfo gsInfoList[gsInfoCount];
+
+    FSeek(top + pictureOffset);
+    ubyte pictureData[paletteOffset -pictureOffset];
+
+    FSeek(top + paletteOffset);
+    ubyte paletteData[4 * colorsCount];
+
+    local int64 footerOffset = top + paletteOffset + 4 * colorsCount;
+    local char key[4];
+    local int64 subTop;
+    while (true) {
+        subTop = FTell();
+        texAnimChunk chunk;
+        if (Strcmp(chunk.key, "_KN5") == 0) {
+            break;
+        }
+    }
+
+    FSeek(cursor);
+};
+
+void ReadModelTexture() {
+    local int64 top = FTell();
+
+    modelTextureFileHeader texHdr(top);
+}
+
+struct T1 {
+    ushort joint;
+    ushort channel;
+    float value;
+};
+
+string commentT1(T1 &r) {
+    string s = "";
+    SPrintf(s, "%u, %u, %f", r.joint, r.channel, r.value);
+    return s;
+}
+
+struct T2 {
+    ushort joint;
+    ubyte channel:4;
+    ubyte pre:2;
+    ubyte post:2;
+    ubyte keyCount;
+    ushort t9Idx;
+};
+
+string commentT2(T2 &r) {
+    string s = "";
+    SPrintf(s, "%u, %u, %u, %u, %u, %u"
+        , r.joint
+        , r.channel
+        , r.pre
+        , r.post
+        , r.keyCount
+        , r.t9Idx
+    );
+    return s;
+}
+
+struct T3 {
+    byte action;
+    byte unk1;
+    ushort targetIdx;
+    ushort srcIdx;
+    ushort unk2;
+    uint unk3;
+};
+
+string commentT3(T3 &r) {
+    string s = "";
+    SPrintf(s, "%u, %u, %u, %u, %u, %u"
+        , r.action
+        , r.unk1
+        , r.targetIdx
+        , r.srcIdx
+        , r.unk2
+        , r.unk3
+    );
+    return s;
+}
+
+struct T4 {
+    ushort joint;
+    ushort flags <format=hex>;
+};
+
+string commentT4(T4 &r) {
+    string s = "";
+    SPrintf(s, "%u, 0x%02X"
+        , r.joint
+        , r.flags
+    );
+    return s;
+}
+
+struct AxBone {
+    int index;
+    int parent;
+    int unk[2];
+    float sx, sy, sz, sw;
+    float rx, ry, rz, rw;
+    float tx, ty, tz, tw;
+};
+
+string commentAxBone(AxBone &r) {
+    string s = "";
+    SPrintf(s, "%d, %d"
+        , r.index
+        , r.parent
+    );
+    return s;
+}
+
+struct T9 {
+    ushort interp:2;
+    ushort t11Idx:14;
+    ushort t10Idx;
+    ushort t12IdxA;
+    ushort t12IdxB;
+};
+
+string commentT9(T9 &r) {
+    string s = "";
+    SPrintf(s, "%u, %u, %u, %u, %u"
+        , r.interp
+        , r.t11Idx
+        , r.t10Idx
+        , r.t12IdxA
+        , r.t12IdxB
+    );
+    return s;
+}
+
+struct T6 {
+    short a;
+    short boneIdx;
+    float c;
+    short nextIdx1;
+    short nextIdx2;
+};
+
+struct T7 {
+    short boneIdx;
+    short channel;
+    short c;
+    short t6Idx;
+};
+
+struct T8 {
+    int a;
+    int b;
+    float c;
+    float d;
+    float e0;
+    float e1;
+    float e2;
+    float e3;
+    float f0;
+    float f1;
+    float f2;
+    float f3;
+};
+
+struct MotionHeader (int64 top) {
+    uint version;
+    uint unk1a;
+    uint byteCount;
+    uint unk1b;
+    
+    // 0: compressed format
+    if (version == 0) {
+        ushort cntBones1;
+        ushort cntBones2;
+        uint TotalFrameCount;
+        uint offT5 <format=hex>;
+        uint offT4 <format=hex>;
+    
+        uint cntT11;
+        uint offT1 <format=hex>;
+        uint cntT1;
+        uint unkOff1 <format=hex>;
+    
+        uint offT2 <format=hex>;
+        uint cntT2;
+        uint offT2x <format=hex>;
+        uint cntT2x;
+    
+        uint offT9 <format=hex>;
+        uint offT11 <format=hex>;
+        uint offT10 <format=hex>;
+        uint offT12 <format=hex>;
+    
+        uint offT3 <format=hex>;
+        uint cntT3;
+        uint unkOff2 <format=hex>;
+        uint offT8 <format=hex>;
+    
+        uint offT7 <format=hex>;
+        uint cntT7;
+        uint offT6 <format=hex>;
+        uint cntT6;
+
+        float min[4];
+        float max[4];
+        float FrameLoop;
+        float FrameEnd;
+        float FramePerSecond;
+        float FrameCount;
+        uint unk5[4];
+
+        FSeek(top +offT1);
+        T1 t1[cntT1] <comment=commentT1>;
+    
+        FSeek(top +offT2);
+        T2 t2[cntT2] <comment=commentT2>;
+    
+        FSeek(top +offT2x);
+        T2 t2x[cntT2x] <comment=commentT2>;
+    
+        FSeek(top +offT9);
+        T9 t9[1] <comment=commentT9>;
+
+        FSeek(top +offT11);
+        float t11[1];
+
+        FSeek(top +offT10);
+        float t10[1];
+
+        FSeek(top +offT12);
+        float t12[1];
+
+        FSeek(top +offT3);
+        T3 t3[cntT3] <comment=commentT3>;
+
+        FSeek(top +unkOff2);
+        int unk2;
+
+        FSeek(top +offT8);
+        T8 t8[(offT7-offT8)/48];
+
+        FSeek(top +offT7);
+        T7 t7[cntT7];
+
+        FSeek(top +offT6);
+        T6 t6[cntT6];
+
+        FSeek(top +offT5);
+        AxBone t5[cntBones2-cntBones1]  <comment=commentAxBone>;
+
+        FSeek(top +offT4);
+        T4 t4[cntBones2] <comment=commentT4>;
+
+        FSeek(top +unkOff1);
+        float unkvec[4*3];
+    }
+    // 1: uncompressed form
+    if (version == 1) {
+        // format imported from OpenKh:
+        // - https://github.com/Xeeynamo/OpenKh/pull/293/files
+        uint BoneCount;
+        uint Unk14;
+        uint Unk18;
+        uint Unk1c;
+
+        uint Unk20;
+        uint TotalFrameCount;
+        uint Unk28;
+        uint Unk2c;
+
+        float min[4];
+        float max[4];
+        float FrameLoop;
+        float FrameEnd;
+        float FramePerSecond;
+        float FrameCount;
+        
+        float Matrices[16*BoneCount*TotalFrameCount];
+    }
+
+};
+
+void ReadMotionHeader() {
+    FSkip(0x90);
+    local int64 top = FTell();
+    MotionHeader motion(top);
+}
+
+struct DpdHeader {
+    uint magicCode_96;
+
+    uint NumEffectsGroupList;
+    uint OffEffectsGroupList[NumEffectsGroupList];
+
+    uint NumTextures;
+    uint OffTextures[NumTextures];
+
+    uint NumTab3;
+    uint OffTab3[NumTab3];
+
+    uint NumTab4;
+    uint OffTab4[NumTab4];
+
+    uint NumTab5;
+    uint OffTab5[NumTab5];
+};
+
+struct DpdEffect {
+    uint OffsetNext;
+    uint Unk04;
+    uint Unk08;
+    uint Unk0C;
+    uint Unk10;
+    uint Unk14;
+    uint Unk18;
+    uint Unk1C;
+    uint Unk20;
+    ushort Unk24;
+    ushort CommandsCount;
+};
+
+struct DpdEffectCommand (int64 top) {
+    pppName Command <bgcolor=0xcc0000>;
+    ushort ParamLength;
+    ushort ParamCount;
+    uint OffsetParameters;
+    uint Offset2;
+
+    local int64 prev = FTell();
+    FSeek(top + OffsetParameters);
+    byte Raw[ParamCount * ParamLength] <bgcolor=0xcc0088>;
+    FSeek(top + Offset2);
+    byte Raw2[1] <bgcolor=0x0000cc>;
+    FSeek(prev);
+};
+
+string commentEffectsGroup(DpdEffectCommand &r) {
+    string s = "";
+    SPrintf(s, "%u"
+        , r.Command
+    );
+    return s;
+}
+
+struct EffectsGroup {
+    float Matrix1[16];
+    float Matrix2[16];
+    float Position[4];
+    float Rotation[4];
+    float Scaling[4];
+    uint Dummy[4];
+    uint Dummy1[4];
+    uint Dummy2[4];
+    uint Dummy3[4];
+    uint Dummy4[4];
+    uint Dummy5[4];
+    local int64 top = FTell();
+    uint Unk0;
+    uint Unk4;
+    uint UnkOff8;
+    uint UnkOffC;
+    local int nextOffset = 16;
+    local uint testNextOff;
+    while (true) {
+        FSeek(top + nextOffset);
+        testNextOff = ReadUInt();
+        if (testNextOff == 0) {
+            break;
+        }
+
+        FSeek(top + nextOffset);
+        DpdEffect effect;
+        DpdEffectCommand commands(top)[effect.CommandsCount] <comment=commentEffectsGroup,optimize=false>;
+
+        nextOffset = effect.OffsetNext;
+    }
+    FSeek(top + UnkOff8);
+    uint cnt8 <bgcolor=0xa30000>;
+    uint array8[cnt8];
+    
+    FSeek(top + UnkOffC);
+    uint cntC <bgcolor=0xa30000>;
+    uint arrayC[cntC];
+};
+
+struct EffectsTexture {
+    uint unk0;
+    ushort unk4;
+    ushort fmt;
+    uint unk8;
+    ushort width;
+    ushort height;
+    uint unk10;
+    uint unk14;
+    uint unk18;
+    uint unk1c;
+
+    if (fmt == 19) {
+        byte bitmap[width * height];
+        byte palette[1024];
+    }
+};
+
+struct EffectsTab3A {
+    ushort offset;
+    ushort flag;
+    uint unk;
+};
+
+struct EffectsTab3C {
+    ushort unk0;
+    ushort unk2;
+    ushort unk4;
+    ushort unk6;
+    ushort unk8;
+    ushort unka;
+    ushort unkc;
+    ushort unke;
+};
+
+struct EffectsTab3B {
+    ushort unk0;
+    ushort unk2;
+    uint size;
+    uint unk8;
+    uint unkc;
+
+    EffectsTab3C data[size / 16];
+};
+
+struct EffectsTab3 {
+    uint mark <bgcolor=0x008800>;
+    uint unk04;
+    uint unk08;
+    uint unk0c;
+    local int64 top = FTell();
+    uint unk10;
+    ushort cnt1;
+    ushort cnt2;
+    uint unk18;
+    uint unk1c;
+
+    EffectsTab3A a[cnt1];
+    local int i;
+    for (i=0; i<cnt1; i++) {
+        FSeek(top + a[i].offset);
+        EffectsTab3B b;
+    }
+};
+
+struct EffectsTab4Vtx6 {
+    uint rgba[4];
+    ushort vert[4];
+    ushort uv[2*4];
+};
+
+struct EffectsTab4Vtx4 {
+    uint rgba[4];
+    ushort vert[4];
+};
+
+struct EffectsTab4Vtx0 {
+    uint rgba[3];
+    ushort vert[3];
+    ushort pad;
+};
+
+struct EffectsTab4VertSet {
+    ushort vertFormat;
+    ushort numVerts;
+    uint unk34;
+    uint unk38;
+    uint unk3c;
+
+    if (vertFormat == 0x600) {
+        EffectsTab4Vtx6 verts6[numVerts];
+    }
+    else if (vertFormat == 0x400) {
+        EffectsTab4Vtx4 verts4[numVerts];
+    }
+    else if (vertFormat == 0) {
+        EffectsTab4Vtx0 verts0[numVerts];
+    }
+};
+
+struct EffectsTab4 (int64 top) {
+    uint mark <bgcolor=0x00cc00>;
+    uint unk04;
+    uint unk08;
+    uint unk0c;
+    uint unk10;
+    uint unk14;
+    uint offPoints;
+    uint offNorms;
+    ushort totalVerts;
+    ushort numPoints;
+    ushort unk24;
+    ushort unk26;
+    uint unk28;
+    uint unk2c;
+
+    local int readVerts = 0;
+    while (readVerts < totalVerts) {
+        EffectsTab4VertSet set;
+        readVerts += set.numVerts;
+    }
+
+
+    FSeek(top +offPoints);
+    short norms[3 * numPoints] <bgcolor=0x660000>;
+
+    FSeek(top +offNorms);
+    short points[3 * numPoints] <bgcolor=0x330000>;
+    short morePoints[3 * 3];
+};
+
+struct EffectsTab5 {
+    uint mark <bgcolor=0x00ff00>;
+    uint unk4;
+    uint unk8;
+    ushort unkc;
+    ushort unke;
+};
+
+void ReadDpd() {
+    local int64 top = FTell();
+    DpdHeader dpdHeader;
+
+    local int i;
+    local int g;
+    for (i=0; i<dpdHeader.NumEffectsGroupList; i++) {
+        FSeek(top + dpdHeader.OffEffectsGroupList[i]);
+        EffectsGroup effectsGroup;
+    }
+    for (i=0; i<dpdHeader.NumTextures; i++) {
+        FSeek(top + dpdHeader.OffTextures[i]);
+        EffectsTexture effectsTexture;
+    }
+    for (i=0; i<dpdHeader.NumTab3; i++) {
+        FSeek(top + dpdHeader.OffTab3[i]);
+        EffectsTab3 tab3;
+    }
+    for (i=0; i<dpdHeader.NumTab4; i++) {
+        FSeek(top + dpdHeader.OffTab4[i]);
+        EffectsTab4 tab4(FTell());
+    }
+    for (i=0; i<dpdHeader.NumTab5; i++) {
+        FSeek(top + dpdHeader.OffTab5[i]);
+        EffectsTab5 tab5;
+    }
+}
+
+struct DpxHeader {
+    uint magicCode_82;
+    uint Unk04;
+    uint Unk08;
+    uint dpxEntries;
+};
+
+struct DpxEntry {
+    uint DpdOffset;
+    uint Index;
+    uint Id;
+    uint Unk0C;
+    uint Unk10;
+    uint Unk14;
+    uint Unk18;
+    uint Unk1C;
+};
+
+void ReadDpx() {
+    local int64 top = FTell();
+
+    DpxHeader dpxHeader;
+    DpxEntry dpxEnts[dpxHeader.dpxEntries];
+    local int i;
+    for (i=0; i<dpxHeader.dpxEntries; i++) {
+        FSeek(top + dpxEnts[i].DpdOffset);
+        ReadDpd();
+    }
+}
+
+struct PaxEntry {
+    ushort Effect;
+    ushort Caster;
+    ushort Unk04;
+    ushort Unk06;
+    uint Unk08;
+    uint Unk0c;
+    uint Unk10;
+    uint Unk14;
+    uint SoundEffect;
+    float PosX;
+    float PosZ;
+    float PosY;
+    float RotX;
+    float RotZ;
+    float RotY;
+    float ScaleX;
+    float ScaleZ;
+    float ScaleY;
+    uint Unk40;
+    uint Unk44;
+    uint Unk48;
+    uint Unk4c;
+};
+
+struct PaxHeader {
+    char sig[4];
+    uint offsetName;
+    uint entriesCount;
+    uint offsetDpx;
+};
+
+void ReadPax() {
+    local int64 top = FTell();
+
+    PaxHeader paxHeader;
+    PaxEntry paxEnts[paxHeader.entriesCount];
+    FSeek(top + paxHeader.offsetName);
+    char Name[128];
+    FSeek(top + paxHeader.offsetDpx);
+    ReadDpx();
+}
+
+enum <ushort> ENTRYTYPE {
+    Dummy = 0,
+    Binary = 1,
+    List = 2,
+    Ai = 3,
+    Model = 4,
+    MeshOcclusion = 5,
+    MapCollision = 6,
+    ModelTexture = 7,
+    Dpx = 8,
+    AnimationData = 9,
+    Texture = 10,
+    CameraCollision = 11,
+    SpawnPoint = 12,
+    SpawnScript = 13,
+    MapColorDiffuse = 14,
+    LightData = 15,
+    MovesetInstructions = 16,
+    Bar = 17,
+    Pax = 18,
+    MapCollision2 = 19,
+    AnimationLimit = 20,
+    BobDescriptor = 21,
+    AnimationLoader = 22,
+    ModelCollision = 23,
+    Imgd = 24,
+    Seqd = 25,
+    Layout = 28,
+    Imgz = 29,
+    AnimationMap = 30,
+    Seb = 31,
+    Wd = 32,
+    Unknown33,
+    IopVoice = 34,
+    RawBitmap = 36,
+    MemoryCard = 37,
+    WrappedCollisionData = 38,
+    Unknown39,
+    Unknown40,
+    Unknown41,
+    Minigame = 42,
+    JimiData,
+    Progress = 44,
+    Synthesis,
+    BarUnknown = 46,
+    Vibration = 47,
+    Vag = 48,
+};
+
+struct barEntry {
+    ENTRYTYPE type;
+    ushort duplicate;
+    char name[4];
+    int offset;
+    int size;
+};
+
+struct barHeader {
+    char magic[4];
+    uint num_files;
+    uint zero;
+    uint msetFlag;
+    barEntry entries[num_files] <optimize=false>;
+};
+
+void ReadSubBar() {
+    local int64 top = FTell();
+    barHeader subBarHdr;
+
+    local int i;
+    for (i=0; i<subBarHdr.num_files; i++) {
+        FSeek(top + subBarHdr.entries[i].offset);
+        switch (subBarHdr.entries[i].type) {
+            case 9: ReadMotionHeader(); break;
+        }
+    }
+}
+
+void ReadBar() {
+    local int64 top = FTell();
+    barHeader barHdr;
+
+    local int i;
+    for (i=0; i<barHdr.num_files; i++) {
+        FSeek(top + barHdr.entries[i].offset);
+        switch (barHdr.entries[i].type) {
+            case 4: ReadModel(); break;
+            case 5: ReadDoct(); break;
+            case 6: ReadCoct(); break;
+            case 7: ReadModelTexture(); break;
+            case 9: ReadMotionHeader(); break;
+            case 17: ReadSubBar(); break;
+            case 18: ReadPax(); break;
+        }
+    }
+}
+
+ReadBar();

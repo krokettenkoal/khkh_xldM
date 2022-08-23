@@ -3,10 +3,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
@@ -15,7 +12,6 @@ using ef1Declib;
 using khkh_xldMii.V;
 using System.Text.RegularExpressions;
 using System.Drawing.Imaging;
-using System.Collections;
 using SlimDX.Direct3D9;
 using SlimDX;
 using khkh_xldMii.Models.Mset;

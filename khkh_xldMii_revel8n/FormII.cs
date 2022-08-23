@@ -4,24 +4,21 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using khkh_xldMii.Mx;
-using vconv122;
 using khkh_xldMii.Mo;
 using System.Diagnostics;
 using hex04BinTrack;
-using khkh_xldMii.Mc;
 using ef1Declib;
 using khkh_xldMii.V;
 using System.Text.RegularExpressions;
 using System.Drawing.Imaging;
-using System.Collections;
 using SlimDX.Direct3D9;
 using SlimDX;
+using Msetfst = khkh_xldMii.Mo.Msetfst;
+using khkh_xldMii.Models;
 
 namespace khkh_xldMii {
     public partial class FormII : Form, ILoadf, IVwer {
@@ -146,7 +143,7 @@ namespace khkh_xldMii {
 
             public bool Present { get { return mdlx != null && mset != null; } }
 
-            #region IDisposable ÉÅÉìÉo
+            #region IDisposable ∆í¬Å∆í‚Äú∆ío
 
             public void Dispose() {
                 DisposeMdlx();
@@ -199,7 +196,7 @@ namespace khkh_xldMii {
                 foreach (ReadBar.Barent ent in ents) {
                     switch (ent.k) {
                         case 7:
-                            M.timc = TIMc.Load(new MemoryStream(ent.bin, false));
+                            M.timc = TIMCollection.Load(new MemoryStream(ent.bin, false));
                             M.timf = (M.timc.Length >= 1) ? M.timc[0] : null;
                             break;
                         case 4:
@@ -252,7 +249,7 @@ namespace khkh_xldMii {
             public Sepa[] alsepa;
             public uint[] altri3;
 
-            #region IDisposable ÉÅÉìÉo
+            #region IDisposable ∆í¬Å∆í‚Äú∆ío
 
             public void Dispose() {
                 Close();
@@ -316,7 +313,7 @@ namespace khkh_xldMii {
         private void calcPattex(Mesh M, float tick) {
             foreach (ListViewItem lvi in listView1.SelectedItems) {
                 MotInf mi = (MotInf)lvi.Tag;
-                M.pts = SelTexfacUt.Sel(M.timf.alp, tick, mi.mt1.fm);
+                M.pts = SelTexfacUt.Sel(M.timf.facePatchList, tick, mi.mt1.fm);
                 break;
             }
         }
@@ -667,17 +664,17 @@ namespace khkh_xldMii {
         }
 
         class SelTexfacUt {
-            public static PatTexSel[] Sel(List<Patc> alp, float tick, FacMod fm) {
+            public static PatTexSel[] Sel(List<FacePatch> alp, float tick, FacMod fm) {
                 PatTexSel[] sel = new PatTexSel[alp.Count];
                 foreach (Fac1 f1 in fm.alf1) {
                     if (f1.v2 != -1 && f1.v0 <= tick && tick < f1.v2) {
                         for (int x = 0; x < alp.Count; x++) {
                             int curt = (int)(tick - f1.v0) / 8;
-                            foreach (Texfac tf in alp[x].altf) {
+                            foreach (FaceTexture tf in alp[x].faceTextureList) {
                                 if (tf.i0 == f1.v6) {
                                     if (curt <= 0) {
                                         if (sel[x] == null) {
-                                            sel[x] = new PatTexSel((byte)alp[x].texi, (byte)tf.v6);
+                                            sel[x] = new PatTexSel((byte)alp[x].textureIndex, (byte)tf.v6);
                                             break;
                                         }
                                     }
@@ -710,14 +707,14 @@ namespace khkh_xldMii {
                         M.altex2.Clear();
                         if (M.timf != null) {
                             //int t = 0;
-                            foreach (STim st in M.timf.alt) {
-                                M.altex.Add(TUt.FromBitmap(device, st.pic));
+                            foreach (var st in M.timf.bitmapList) {
+                                M.altex.Add(TUt.FromBitmap(device, st.bitmap));
                                 //st.pic.Save(@"H:\Proj\khkh_xldM\MEMO\pattex\t" + ty + "." + t + ".png", ImageFormat.Png); t++;
                             }
                             if (x == 0) {
                                 for (int p = 0; p < 2; p++) {
                                     for (int pi = 0; ; pi++) {
-                                        Bitmap pic = M.timf.GetPattex(p, pi);
+                                        Bitmap pic = M.timf.GetPatchBitmap(p, pi);
                                         if (pic == null)
                                             break;
                                         //pic.Save(@"H:\Proj\khkh_xldM\MEMO\pattex\p" + p + "." + pi + ".png", ImageFormat.Png);
@@ -990,7 +987,7 @@ namespace khkh_xldMii {
 
         BCForm bcform = null;
 
-        #region ILoadf ÉÅÉìÉo
+        #region ILoadf ∆í¬Å∆í‚Äú∆ío
 
         public void LoadOf(int x, string fp) {
             using (WC wc = new WC()) {
@@ -1025,7 +1022,7 @@ namespace khkh_xldMii {
 
         #endregion
 
-        #region IVwer ÉÅÉìÉo
+        #region IVwer ∆í¬Å∆í‚Äú∆ío
 
         public void BackToViewer() {
             Activate();

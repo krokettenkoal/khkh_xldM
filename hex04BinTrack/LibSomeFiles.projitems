@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>eeafb3f7-bf49-4f35-849d-82eacaf8d098</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>LibSomeFiles</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)KH2texlib.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)KHcv8pal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AxBone.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FacePatch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FaceTexture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mdlx\T11.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mdlx\T12.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mdlx\K2Vif.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mdlx\K2BoneList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mdlx\K2Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mdlx\T32.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\AnbModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\AnbRawAnimFrame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\AnbRawReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\AnbReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\FaceMod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\FaceModSet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\OneMotion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\PosTbl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\T1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\T2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\T3.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\T4.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\T9.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Mset\T9f.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Texex2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TIMBitmap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TIMCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TIMReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ParseVIF1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ReadBar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Texex.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Mdlx\Mdlxfst.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Mset\Msetfst.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\RUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\UtilAxBoneReader.cs" />
+  </ItemGroup>
+</Project>

@@ -95,6 +95,9 @@
     <Compile Include="FormII.Designer.cs">
       <DependentUpon>FormII.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mdlxfst.cs" />
+    <Compile Include="Msetfst.cs" />
+    <Compile Include="MsetRaw.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="..\hex04BinTrack\UC.resx">

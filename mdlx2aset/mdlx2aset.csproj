@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\7zip443\7zip443.csproj" />
+    <ProjectReference Include="..\Custeera\Custeera.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ef1Declib">
+      <HintPath>..\khkh_xldMii_revel8n\ef1Declib.dll</HintPath>
+    </Reference>
+    <Reference Include="SlimDX">
+      <HintPath>..\packages\SlimDX.4.0.13.44\lib\NET20\SlimDX.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

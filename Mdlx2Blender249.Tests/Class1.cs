@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Mdlx2Blender249.Tests {
     public class Class1 {
-        private string KH2DumpRoot => @"H:\KH2fm.OpenKH";
+        private string KH2DumpRoot => @"C:\gamedev\Assets\Kingdom Hearts\_dump_full\KH2";
         private string ExportRoot => Path.Combine(TestContext.CurrentContext.WorkDirectory, "export");
 
         private static string Mkdir(string dir, params string[] paths) {
