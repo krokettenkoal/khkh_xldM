@@ -74,6 +74,86 @@ namespace mdlx2aset {
             ResetDevice();
         }
 
+        #region ILoadf ƒƒ“ƒo
+
+        public void LoadOf(int x, string fp) {
+            switch (x) {
+                case 0: LoadMdlx(fp, 0); break;
+                case 1: LoadMset(fp, 0); break;
+
+                case 2: LoadMdlx(fp, 1); break;
+                case 3: LoadMset(fp, 1); break;
+
+                case 4: LoadMdlx(fp, 2); break;
+                case 5: LoadMset(fp, 2); break;
+
+                default: throw new NotSupportedException();
+            }
+        }
+
+        public void SetJointOf(int x, int joint) {
+            switch (x) {
+                case 1: Model[1].iMa = joint; break;
+                case 2: Model[2].iMa = joint; break;
+
+                default: throw new NotSupportedException();
+            }
+        }
+
+        #endregion
+
+        #region IDisposable
+
+        // Implement IDisposable.
+        public void Dispose() {
+            Dispose(disposing: true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing) {
+            // Check to see if Dispose has already been called.
+            if (disposed)
+                return;
+
+            // If disposing equals true, dispose all managed
+            // and unmanaged resources.
+            if (disposing) {
+                // Dispose managed resources.
+                foreach (var M in Model) {
+                    if (M is not null) {
+                        M.Dispose();
+                    }
+                }
+
+                SlimDevice?.Dispose();
+                D3D?.Dispose();
+            }
+
+            //  Clean up unmanaged resources
+            //CloseHandle(_handle);
+            _handle = IntPtr.Zero;
+            disposed = true;
+        }
+
+        // Use interop to call the method necessary
+        // to clean up the unmanaged resource.
+        [System.Runtime.InteropServices.DllImport("Kernel32")]
+        private extern static Boolean CloseHandle(IntPtr handle);
+
+        // Use C# finalizer syntax for finalization code.
+        // This finalizer will run only if the Dispose method
+        // does not get called.
+        // It gives your base class the opportunity to finalize.
+        // Do not provide finalizer in types derived from this class.
+        ~MdlxConvert() {
+            // Do not re-create Dispose clean-up code here.
+            // Calling Dispose(disposing: false) is optimal in terms of
+            // readability and maintainability.
+            Dispose(disposing: false);
+        }
+
+        #endregion
+
         #region Private methods
 
         /// <summary>
@@ -726,87 +806,6 @@ namespace mdlx2aset {
         }
 
         #endregion
-
-        #region ILoadf ƒƒ“ƒo
-
-        public void LoadOf(int x, string fp) {
-            switch (x) {
-                case 0: LoadMdlx(fp, 0); break;
-                case 1: LoadMset(fp, 0); break;
-
-                case 2: LoadMdlx(fp, 1); break;
-                case 3: LoadMset(fp, 1); break;
-
-                case 4: LoadMdlx(fp, 2); break;
-                case 5: LoadMset(fp, 2); break;
-
-                default: throw new NotSupportedException();
-            }
-        }
-
-        public void SetJointOf(int x, int joint) {
-            switch (x) {
-                case 1: Model[1].iMa = joint; break;
-                case 2: Model[2].iMa = joint; break;
-
-                default: throw new NotSupportedException();
-            }
-        }
-
-        #endregion
-
-        #region IDisposable
-
-        // Implement IDisposable.
-        public void Dispose() {
-            Dispose(disposing: true);
-            GC.SuppressFinalize(this);
-        }
-
-        protected virtual void Dispose(bool disposing) {
-            // Check to see if Dispose has already been called.
-            if (disposed)
-                return;
-
-            // If disposing equals true, dispose all managed
-            // and unmanaged resources.
-            if (disposing) {
-                // Dispose managed resources.
-                foreach (var M in Model) {
-                    if (M is not null) {
-                        M.Dispose();
-                    }
-                }
-
-                SlimDevice?.Dispose();
-                D3D?.Dispose();
-            }
-
-            //  Clean up unmanaged resources
-            //CloseHandle(_handle);
-            _handle = IntPtr.Zero;
-            disposed = true;
-        }
-
-        // Use interop to call the method necessary
-        // to clean up the unmanaged resource.
-        [System.Runtime.InteropServices.DllImport("Kernel32")]
-        private extern static Boolean CloseHandle(IntPtr handle);
-
-        // Use C# finalizer syntax for finalization code.
-        // This finalizer will run only if the Dispose method
-        // does not get called.
-        // It gives your base class the opportunity to finalize.
-        // Do not provide finalizer in types derived from this class.
-        ~MdlxConvert() {
-            // Do not re-create Dispose clean-up code here.
-            // Calling Dispose(disposing: false) is optimal in terms of
-            // readability and maintainability.
-            Dispose(disposing: false);
-        }
-
-        #endregion
-
 
         #region Static methods
         /// <summary>
