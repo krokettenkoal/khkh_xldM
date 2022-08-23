@@ -18,14 +18,41 @@ using Mesh = mdlx2aset.Model.Mesh;
 namespace mdlx2aset {
     public class MdlxConvert : IControllerBindable, IDisposable {
 
+        #region Fields
+        private IntPtr _handle;
+        private bool disposed;
+        #endregion
+
+        #region Properties
+        public string MdlxPath { get; private set; }
+        public string MsetPath { get; private set; }
+        public bool IsLoaded => !(string.IsNullOrEmpty(MdlxPath) || string.IsNullOrEmpty(MsetPath));
+
         /// <summary>
         /// Currently loaded motions. By default, these are loaded from the MSET file corresponding to the loaded MDLX file. However, it is possible to bind the motions of another model. For reference, check the IControllerBindable interface.
         /// </summary>
         private List<MotionInformation> Motions { get; } = new();
+        /// <summary>
+        /// Mesh array of the currently loaded model
+        /// </summary>
+        private Mesh[] Model { get; } = new Mesh[] { new Mesh(), new Mesh(), new Mesh(), };
+        
+        //  SlimDX/DirectX device/objects
+        private Device SlimDevice { get; }
+        private Direct3D D3D { get; } = new();
+        private static PresentParameters PP {
+            get => new() {
+                Windowed = true,
+                SwapEffect = SwapEffect.Discard,
+                EnableAutoDepthStencil = true,
+                AutoDepthStencilFormat = Format.D24X8,
+                BackBufferWidth = 1920,
+                BackBufferHeight = 1080
+            };
+        }
+        #endregion
 
-        private IntPtr _handle;
-        private bool disposed;
-
+        #region Flags
         [Flags]
         private enum UpdateFlags : uint {
             None = 0x00,
@@ -39,26 +66,8 @@ namespace mdlx2aset {
             Base = Body | Transforms | Motion | Buffers,
             Animate = Motion | Vertices,
         }
+        #endregion
 
-        /// <summary>
-        /// Mesh array of the currently loaded model
-        /// </summary>
-        private Mesh[] Model { get; } = new Mesh[] { new Mesh(), new Mesh(), new Mesh(), };
-
-        //  SlimDX/DirectX device/objects
-        //  TODO: Remove if possible
-        private Device SlimDevice { get; }
-        private Direct3D D3D { get; } = new();
-        private static PresentParameters PP {
-            get => new() {
-                Windowed = true,
-                SwapEffect = SwapEffect.Discard,
-                EnableAutoDepthStencil = true,
-                AutoDepthStencilFormat = Format.D24X8,
-                BackBufferWidth = 1920,
-                BackBufferHeight = 1080
-            };
-        }
 
         private MdlxConvert(IntPtr handle) {
             Model[1].parent = Model[0];
@@ -181,6 +190,7 @@ namespace mdlx2aset {
             }
             M.binMdlx = File.ReadAllBytes(fmdlx);
             M.ol = null;
+            MdlxPath = fmdlx;
 
             //  TODO: Remove if possible
             ReloadTextures(ty);
@@ -219,6 +229,7 @@ namespace mdlx2aset {
                     }
                 }
                 M.binMset = File.ReadAllBytes(fmset);
+                MsetPath = fmset;
             }
             M.ol = null;
         }
@@ -621,9 +632,6 @@ namespace mdlx2aset {
                         return false;
                     }
 
-                    // set current tick
-                    //tick = i;
-                    // this tell his viewer to calculate the animation for the frame
                     //  TODO: Remove if possible
                     CalcBody(m.ctb, m, motion.mt1, i, UpdateFlags.Motion);
 
@@ -685,12 +693,10 @@ namespace mdlx2aset {
                 return false;
             }
 
-            // Generate the file name
-            string filename = m.mset.motionID;
-            // change file extension
-            filename = Path.ChangeExtension(filename, ".ASET");
-            // open file
-            var outfile = File.Open(filename, FileMode.Create, FileAccess.ReadWrite);
+            // Set the output file
+            var filePath = Path.ChangeExtension(MdlxPath, ".ASET");
+            // Open the file
+            var outfile = File.Open(filePath, FileMode.Create, FileAccess.ReadWrite);
 
             progress.Update(ExportState.Saving, status);
 
