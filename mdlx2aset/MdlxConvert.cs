@@ -24,8 +24,8 @@ namespace mdlx2aset {
         #endregion
 
         #region Properties
-        public string MdlxPath { get; private set; }
-        public string MsetPath { get; private set; }
+        public string MdlxPath { get; private set; } = string.Empty;
+        public string MsetPath { get; private set; } = string.Empty;
         public bool IsLoaded => !(string.IsNullOrEmpty(MdlxPath) || string.IsNullOrEmpty(MsetPath));
 
         /// <summary>
