@@ -1,0 +1,19 @@
+FSeek(0x4F6480);
+
+typedef struct {
+ uint unk0;
+ char fileName[24];
+ char unk1[16];
+ uint len <format=hex>;
+ uint addr1 <format=hex>;
+ uint addr2 <format=hex>;
+ char unk2[24];
+} Entry <comment=commentEntry>;
+
+string commentEntry(Entry &e) {
+ string s;
+ SPrintf(s, "%08X %s", e.addr1, e.fileName);
+ return s;
+}
+
+Entry ents[200];

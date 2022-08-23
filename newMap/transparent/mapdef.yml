@@ -1,0 +1,9 @@
+skipConversionIfExists: true
+
+materials:
+  - name: void
+    ignore: true
+  - name: floor
+    transparentFlag: 1
+  - name: blue
+    transparentFlag: 0

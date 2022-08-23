@@ -1,0 +1,190 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9100B11-69F3-4300-91B9-356AB4444253}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>traceHLP3</RootNamespace>
+    <AssemblyName>traceHLP3</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net20\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net20\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\ee1Dec\EEDisarm.cs">
+      <Link>EEDisarm.cs</Link>
+    </Compile>
+    <Compile Include="BuildHLPTree.cs" />
+    <Compile Include="DALv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DALv.Designer.cs">
+      <DependentUpon>DALv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RACCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RACCForm.Designer.cs">
+      <DependentUpon>RACCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HexVwer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HexVwer.designer.cs">
+      <DependentUpon>HexVwer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HForm.Designer.cs">
+      <DependentUpon>HForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParserHaxkh2fm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ParserHaxkh2fm.Designer.cs">
+      <DependentUpon>ParserHaxkh2fm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DALv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DALv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RACCForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RACCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HexVwer.resx">
+      <DependentUpon>HexVwer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGAna.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>REGAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StackAna.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StackAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="REGAna.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REGAna.Designer.cs">
+      <DependentUpon>REGAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StackAna.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StackAna.Designer.cs">
+      <DependentUpon>StackAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtRem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

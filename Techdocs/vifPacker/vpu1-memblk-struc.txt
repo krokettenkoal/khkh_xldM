@@ -1,0 +1,44 @@
+Fortunately, there is a full dump of vu1 memory (16KB) which is captured after VIF / DMA transmission.
+https://github.com/OpenKH/OpenKh/blob/master/OpenKh.Tests/Ps2/res/Vu1memory.bin
+
+Sorry for ugly figure again. This is important part of Green part: VPU1 memory layout placement.
+
+```
+0x0000  Header (length is 0x30 or 0x40, depends on type)
+
+0000h: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................  type=1
+0010h: 4D 00 00 00 04 00 00 00 C8 00 00 00 C9 00 00 00  M.......È...É...  indexCount=77 indexLocation=4 unkBoxLocation=0xc8 unknown1cLocation=0xc9
+0020h: 4D 00 00 00 51 00 00 00 00 00 00 00 00 00 00 00  M...Q...........  colorCount=77 colorLocation=0x51 vertexMixerCount=0 vertexMixerOffset=0
+0030h: 2A 00 00 00 9E 00 00 00 00 00 00 00 01 00 00 00  *...ž...........  vertexCount=42 vertexLocation=0x9E unknown38=0 unkBoxCount=1
+
+0x0040  index (U V vertexIdx drawFlag) 16 bytes per index
+
+0040h: 2B 01 00 00 EB 07 00 00 00 00 00 00 10 00 00 00  +...ë........... 
+0050h: 19 01 00 00 95 07 00 00 01 00 00 00 10 00 00 00  ....•........... 
+… 
+
+0x0510  color (R G B A) 16 bytes per index
+
+0510h: 55 00 00 00 55 00 00 00 55 00 00 00 80 00 00 00  U...U...U...€... 
+0520h: 55 00 00 00 55 00 00 00 55 00 00 00 80 00 00 00  U...U...U...€... 
+… 
+
+0x09e0  vertex (X Y Z W) 16 bytes per vertex
+09E0h: 14 E8 6F BF AC 85 36 B4 DE 13 FD 33 00 00 00 00  .èo¿¬…6´Þ.ý3.... 
+09F0h: C6 80 02 B6 BA 86 40 3E 27 1C 36 3F 00 00 00 00  Æ€.¶º†@>'.6?.... 
+… 
+
+0x0c80  box (skinIndices)
+
+0C80h: 2A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  *............... 
+
+0x0c90  unk
+
+0C90h: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................ 
+
+0x0ca0  (unused area)
+0x3fff  (END)
+```
+
+Each item of data block (indices, colors, vertices) may be aligned to 16 bytes.
+VPU1 is vector capable CPU and it can read 4*4 bytes (XYZW) at once.

@@ -1,0 +1,8 @@
+---
+Release4
+2008.03.22
+
+* Alpha channel support implemented (experimental)
+* Raw martices in mset support implemented
+* fps control implemented. no frame skip.
+* Loadling multiple skinned model.

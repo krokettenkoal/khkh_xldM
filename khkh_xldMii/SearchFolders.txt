@@ -1,0 +1,5 @@
+﻿V:\KH2.yaz0r\dump_kh2\obj
+V:\HaxKH2.yaz0r\dump_kh2\obj
+H:\KH2fm.yaz0r\dump_kh2\obj
+H:\KH2.yaz0r\dump_kh2\obj
+H:\KH2haxhax.yaz0r\dump_kh2\obj

@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ef1Declib.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="eerambin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">H:\Proj\khkh_xldM\MEMO\expSim\rc1\eeram.bin</Value>
+    </Setting>
+    <Setting Name="dirlib" Type="System.String" Scope="User">
+      <Value Profile="(Default)">H:\Proj\khkh_xldM\MEMO\expSim\rc1</Value>
+    </Setting>
+    <Setting Name="pressdir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">H:\Proj\khkh_xldM\MEMO\pressram</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

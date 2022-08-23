@@ -1,0 +1,9 @@
+scale: 1
+imageDirs:
+  - "images"
+materials:
+  - name: "Material"
+    ignore: true
+
+  - name: void
+    ignore: true

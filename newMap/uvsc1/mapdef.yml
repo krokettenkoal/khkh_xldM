@@ -1,0 +1,10 @@
+uvscList:
+  - index: 0
+    u: 64000000
+    v: 64000000
+
+materials:
+  - name: void
+    ignore: true
+  - name: floor
+    uvscIndex: 0

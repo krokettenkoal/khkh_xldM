@@ -1,0 +1,46 @@
+imageDirs:
+- 'images2'
+- 'images'
+
+textureOptions:
+  # addressU
+  # addressV are one of: 'Repeat', 'Clamp', 'RegionClamp', 'RegionRepeat'
+  addressU: 'Repeat'
+  addressV: 'Repeat'
+
+materials:
+- name: 'Material'
+  ignore: true
+- name: 'clip'
+  nodraw: true
+- name: 'one'
+  fromFile: '1.imd'
+- name: 'two'
+  fromFile: '2.imd'
+- name: 'three'
+  fromFile: '3.imd'
+- name: 'four'
+  fromFile: '4.imd'
+- name: 'five'
+  fromFile: '5.imd'
+- name: 'six'
+  fromFile: '6.imd'
+- name: 'seven'
+  fromFile: '7.imd'
+- name: 'eight'
+  fromFile: '8.imd'
+- name: 'zero'
+  fromFile: '0.imd'
+- name: 'zerozero'
+  fromFile: '00.imd'
+- name: 'sea'
+  fromFile: 'sea.imd'
+bar:
+  model:
+    name: "MAP"
+  texture:
+    name: "MAP"
+  coct:
+    name: "ID_e"
+  doct:
+    name: "eh_1"

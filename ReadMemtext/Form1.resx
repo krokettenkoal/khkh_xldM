@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>-help to see arguments
+PCSX2 v0.9.3 save ver: 7a30000e
+EE pc offset: 0x2a8, PSX pc offset: 0x208
+        F1 - save state
+        (Shift +) F2 - cycle states
+        F3 - load state
+        F10 - dump performance counters
+        F11 - save GS state
+        F12 - dump hardware registers
+XML Patch Loader: Could not load file 'patches\default.xml'. Error='Error document empty.'.
+Bios Version 1.60
+
+
+
+**************
+rom1 NOT FOUND
+**************
+
+
+
+
+
+**************
+rom2 NOT FOUND
+**************
+
+
+
+
+
+**************
+erom NOT FOUND
+**************
+
+
+GIF reset
+NTSC
+detected blocksize = 2048
+isoOpen: H:\CCD\KH2.iso ok
+offset = 0
+blockofs = 24
+blocksize = 2048
+blocks = 1967648
+type = 2
+creating zerogs
+******
+GS WARNING: Need independent write masks! Some z buffer effects might look bad
+*********
+******
+GS ERROR: Device doesn't support alpha blending for 16bit floating point targets.
+Quality will reduce.
+*********
+Creating effects
+Creating extra effects
+GS Using pixel shaders ps_2_0
+init zerogs
+Using Frame Skipping: Normal
+* PCSX2 *: ExecuteBios
+NTSC
+NTSC
+# Initialize memory (rev:3.63, ctm:393Mhz, cpuclk:295Mhz detected)
+loadcore RegisterLibraryEntries (3af0): excepman
+loadcore RegisterLibraryEntries (526c):  intrman
+loadcore RegisterLibraryEntries (5f1c):   ssbusc
+loadcore RegisterLibraryEntries (75c0):  dmacman
+loadcore RegisterLibraryEntries (837c):  timrman
+loadcore RegisterLibraryEntries (9dcc):  sysclib
+loadcore RegisterLibraryEntries (9dcc):    stdio
+loadcore RegisterLibraryEntries (a9a0):  heaplib
+loadcore RegisterLibraryEntries (10cf0):   thbase
+loadcore RegisterLibraryEntries (10cf0):  thevent
+loadcore RegisterLibraryEntries (10cf0):  thsemap
+loadcore RegisterLibraryEntries (10cf0):  thmsgbx
+loadcore RegisterLibraryEntries (10cf0):  thfpool
+loadcore RegisterLibraryEntries (10cf0):  thvpool
+intrman RegisterIntrHandler (10d34): intr INT_RTC5, handler fcb0
+Write to 32bit count reg counter 5
+Counter 5 count write 0
+loadcore RegisterLibraryEntries (1262c):   vblank
+intrman RegisterIntrHandler (12650): intr INT_VBLANK, handler 122a4
+intrman RegisterIntrHandler (12650): intr INT_EVBLANK, handler 1235c
+loadcore RegisterLibraryEntries (13ae8):    ioman
+loadcore RegisterLibraryEntries (15558):  modload
+loadcore RegisterLibraryEntries (160ec):   romdrv
+loadcore RegisterLibraryEntries (1692c):    stdio
+loadcore RegisterLibraryEntries (1789c):   sifman
+
+PlayStation 2 ======== Hard reset boot
+ ROMGEN=2002-0207, IOP info (CPUID=1f, CACH_CONFIG=1edd8, 2MB, IOP mode)
+ &lt;20020207-164243,ROMconf,PS20160AC20020207.bin:11552&gt;
+intrman RegisterIntrHandler (178c0): intr INT_dmaSIF0, handler 16d94
+# Total accessable memory size: 32 MB (B:2:8:0) (363:2:7c30)
+# TLB spad=0 kernel=1:12 default=13:30 extended=31:38
+# Initialize Start.
+NTSC
+NTSC
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize User Memory ...
+# Initialize Scratch Pad ...
+# Initialize Done.
+
+EE DECI2 Manager version 0.06 Feb  7 2002 16:41:20
+  CPUID=2e20, BoardID=0, ROMGEN=2002-0207, 32M
+
+loadcore RegisterLibraryEntries (1944c):   sifcmd
+intrman RegisterIntrHandler (19478): intr INT_dmaSIF1, handler 183c0
+loadcore RegisterLibraryEntries (21a0c):  cdvdman
+intrman RegisterIntrHandler (21a30): intr INT_CDROM, handler 1f620
+loadcore RegisterLibraryEntries (3d9e8):  cdvdfsv
+loadcore RegisterLibraryEntries (446ec):  secrman
+loadcore RegisterLibraryEntries (44f50):   eesync
+
+IOP Realtime Kernel Ver.0.9.1
+    Copyright 1999 (C) Sony Computer Entertainment Inc.
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+sifcmd sceSifRegisterRpc (3dab8): rpc_id 80000592
+sifcmd sceSifRegisterRpc (3dab8): rpc_id 8000059a
+sifcmd sceSifRegisterRpc (3dab8): rpc_id 80000593
+sifcmd sceSifRegisterRpc (3dab8): rpc_id 80000597
+sifcmd sceSifRegisterRpc (3dab8): rpc_id 80000595
+Load File service.(99/11/05)
+sifcmd sceSifRegisterRpc (1c700): rpc_id 80000006
+Multi Threaded Fileio module.(99/11/15)
+sifcmd sceSifRegisterRpc (40e68): rpc_id 80000001
+iop heap service (99/11/03)
+sifcmd sceSifRegisterRpc (40e68): rpc_id 80000003
+loadelf: fname rom0:OSDSYS secname all
+loadelf version 3.30
+Input ELF format filename = rom0:OSDSYS
+0 00100000 0004c718 .....
+Loaded, rom0:OSDSYS
+start address 0x100008
+gp address 00000000
+# Restart Without Memory Clear.
+NTSC
+NTSC
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize Scratch Pad ...
+# Restart Without Memory Clear Done.
+* PCSX2 *: ExecuteBios Complete
+PCSX2 v0.9.3
+ExecuteBios Complete
+loadElfFile: cdrom0:\SLPM_662.33;1
+loadElfFile: 2686708
+addr 15388 "rom0:OSDSYS" -&gt; "cdrom0:\SLPM_662.33;1"
+addr 15b00 "rom0:OSDSYS" -&gt; "cdrom0:\SLPM_662.33;1"
+addr 215d8 "rom0:OSDSYS" -&gt; "cdrom0:\SLPM_662.33;1"
+addr 90780 "rom0:OSDSYS" -&gt; "cdrom0:\SLPM_662.33;1"
+loadElfFile: cdrom0:\SLPM_662.33;1; CRC = 93F8A60B
+XML Patch Loader: Could not load file 'patches\93f8a60b.xml'. Error='Failed to open file'.
+XML Loader returned an error. Trying to load a pnach...
+gametitle: KH2 ja (SLPM_662.33)
+comment: Skips Video (sceMpegIsEnd)
+ patchnumber: 1
+intrman RegisterIntrHandler (21a30): intr INT_CDROM, handler 1f620
+Get Reboot Request From EE
+loadcore RegisterLibraryEntries (3af0): excepman
+loadcore RegisterLibraryEntries (526c):  intrman
+loadcore RegisterLibraryEntries (5f1c):   ssbusc
+loadcore RegisterLibraryEntries (75c0):  dmacman
+loadcore RegisterLibraryEntries (837c):  timrman
+loadcore RegisterLibraryEntries (9dcc):  sysclib
+loadcore RegisterLibraryEntries (9dcc):    stdio
+loadcore RegisterLibraryEntries (a9a0):  heaplib
+loadcore RegisterLibraryEntries (10cf0):   thbase
+loadcore RegisterLibraryEntries (10cf0):  thevent
+loadcore RegisterLibraryEntries (10cf0):  thsemap
+loadcore RegisterLibraryEntries (10cf0):  thmsgbx
+loadcore RegisterLibraryEntries (10cf0):  thfpool
+loadcore RegisterLibraryEntries (10cf0):  thvpool
+intrman RegisterIntrHandler (10d34): intr INT_RTC5, handler fcb0
+Write to 32bit count reg counter 5
+Counter 5 count write 0
+loadcore RegisterLibraryEntries (1262c):   vblank
+intrman RegisterIntrHandler (12650): intr INT_VBLANK, handler 122a4
+intrman RegisterIntrHandler (12650): intr INT_EVBLANK, handler 1235c
+loadcore RegisterLibraryEntries (13ae8):    ioman
+loadcore RegisterLibraryEntries (15558):  modload
+loadcore RegisterLibraryEntries (160ec):   romdrv
+ROM directory not found
+loadcore RegisterLibraryEntries (1692c):    stdio
+loadcore RegisterLibraryEntries (1789c):   sifman
+
+PlayStation 2 ======== Update rebooting..
+loadcore RegisterLibraryEntries (1ca0c):  cdvdman
+intrman RegisterIntrHandler (1ca30): intr INT_CDROM, handler 1a620
+loadcore RegisterLibraryEntries (367ec):  secrman
+loadcore RegisterLibraryEntries (37c9c):  sio2man
+intrman RegisterIntrHandler (37cc0): intr INT_SIO2, handler 37908
+loadcore RegisterLibraryEntries (4361c):    mcman
+CdRead: Reading Sector 16(1 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 257(1 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 261(1 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1614(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1622(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1630(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1638(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1646(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1654(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1662(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1670(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1678(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1686(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1694(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1702(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1710(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1718(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1726(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1734(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1742(8 Blocks of Size 2048) at Speed=24x
+CdRead: Reading Sector 1749(1 Blocks of Size 2048) at Speed=24x
+loadcore RegisterLibraryEntries (41f0): excepman
+loadcore RegisterLibraryEntries (596c):  intrman
+loadcore RegisterLibraryEntries (661c):   ssbusc
+loadcore RegisterLibraryEntries (7cc0):  dmacman
+loadcore RegisterLibraryEntries (928c):  timrman
+loadcore RegisterLibraryEntries (ad9c):  sysclib
+loadcore RegisterLibraryEntries (ad9c):    stdio
+loadcore RegisterLibraryEntries (b9a0):  heaplib
+loadcore RegisterLibraryEntries (1268c):   thbase
+loadcore RegisterLibraryEntries (1268c):  thevent
+loadcore RegisterLibraryEntries (1268c):  thsemap
+loadcore RegisterLibraryEntries (1268c):  thmsgbx
+loadcore RegisterLibraryEntries (1268c):  thfpool
+loadcore RegisterLibraryEntries (1268c):  thvpool
+intrman RegisterIntrHandler (12530): intr INT_RTC5, handler 1145c
+Write to 32bit count reg counter 5
+Counter 5 count write 0
+loadcore RegisterLibraryEntries (13f2c):   vblank
+intrman RegisterIntrHandler (13f50): intr INT_VBLANK, handler 13ba4
+intrman RegisterIntrHandler (13f50): intr INT_EVBLANK, handler 13c5c
+loadcore RegisterLibraryEntries (15fc0):    ioman
+loadcore RegisterLibraryEntries (197a8):  modload
+loadcore RegisterLibraryEntries (1a5ec):   romdrv
+loadcore RegisterLibraryEntries (1affc):    stdio
+loadcore RegisterLibraryEntries (1c18c):   sifman
+
+PlayStation 2 ======== Update reboot complete
+intrman RegisterIntrHandler (1c1b0): intr INT_dmaSIF0, handler 1b478
+loadcore RegisterLibraryEntries (1e45c):   sifcmd
+intrman RegisterIntrHandler (1e488): intr INT_dmaSIF1, handler 1d018
+loadcore RegisterLibraryEntries (2eab0):  cdvdman
+cdvdman Init
+intrman RegisterIntrHandler (2eae4): intr INT_CDROM, handler 26ab8
+intrman RegisterIntrHandler (2eae4): intr INT_dmaCD, handler 28aa0
+loadcore RegisterLibraryEntries (42b70):  cdvdfsv
+loadcore RegisterLibraryEntries (4b9ec):  secrman
+loadcore RegisterLibraryEntries (4c340):   eesync
+
+IOP Realtime Kernel Ver. 2.2
+    Copyright 1999-2002 (C) Sony Computer Entertainment Inc.
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+sifcmd sceSifRegisterRpc (42d00): rpc_id 80000592
+sifcmd sceSifRegisterRpc (42d00): rpc_id 8000059a
+sifcmd sceSifRegisterRpc (42d00): rpc_id 80000593
+sifcmd sceSifRegisterRpc (42d00): rpc_id 80000597
+sifcmd sceSifRegisterRpc (42d00): rpc_id 80000595
+sifcmd sceSifRegisterRpc (42d00): rpc_id 8000059c
+Load File service.(99/11/05)
+sifcmd sceSifRegisterRpc (221d8): rpc_id 80000006
+Multi Threaded Fileio module.(99/11/15)
+sifcmd sceSifRegisterRpc (4774c): rpc_id 80000001
+iop heap service (99/11/03)
+sifcmd sceSifRegisterRpc (4774c): rpc_id 80000003
+intrman RegisterIntrHandler (2eae4): intr INT_CDROM, handler 26ab8
+intrman RegisterIntrHandler (2eae4): intr INT_dmaCD, handler 28aa0
+loadmodule: fname cdrom0:\SIO2MAN.IRX args 0 arg
+CDGetToc Param[0]=0, Param[1]=1
+DvdRead: Reading Sector 16(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 257(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 261(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1750(4 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+loadcore RegisterLibraryEntries (4d2cc):  sio2man
+intrman RegisterIntrHandler (4d2f0): intr INT_SIO2, handler 4cab4
+loadmodule: id 25, ret 0
+loadmodule: fname cdrom0:\SIO2D.IRX args 0 arg
+DvdRead: Reading Sector 1754(6 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+loadcore RegisterLibraryEntries (4f010):    sio2d
+loadmodule: id 26, ret 0
+loadmodule: fname cdrom0:\DBCMAN.IRX args 0 arg
+DvdRead: Reading Sector 1760(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+loadcore RegisterLibraryEntries (525ac):   dbcman
+sifcmd sceSifRegisterRpc (525d8): rpc_id 80001300
+sifcmd sceSifRegisterRpc (525d8): rpc_id 8000131c
+sifcmd sceSifRegisterRpc (525d8): rpc_id 8000131e
+sifcmd sceSifRegisterRpc (525d8): rpc_id 8000131f
+loadmodule: id 27, ret 0
+loadmodule: fname cdrom0:\PAD2\DS2O.IRX args 0 arg
+DvdRead: Reading Sector 262(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1768(6 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+loadmodule: id 28, ret 0
+loadmodule: fname cdrom0:\PAD2\DS2O.IRX args 0 arg
+loadmodule: id 29, ret 0
+loadmodule: fname cdrom0:\MCMAN.IRX args 0 arg
+DvdRead: Reading Sector 261(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1774(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1782(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1790(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1798(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1806(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1814(7 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+loadcore RegisterLibraryEntries (6bf4c):    mcman
+loadmodule: id 30, ret 2
+loadmodule: fname cdrom0:\MCSERV.IRX args 0 arg
+DvdRead: Reading Sector 1821(4 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+loadcore RegisterLibraryEntries (828dc):   mcserv
+loadmodule: id 31, ret 2
+loadmodule: fname cdrom0:\LIBSD.IRX args 0 arg
+DvdRead: Reading Sector 1825(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+sifcmd sceSifRegisterRpc (829d8): rpc_id 80000400
+DvdRead: Reading Sector 1833(7 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+loadcore RegisterLibraryEntries (89c28):    libsd
+loadmodule: id 32, ret 0
+loadmodule: fname cdrom0:\LIBSSL.IRX args 0 arg
+DvdRead: Reading Sector 1840(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1848(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1856(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1864(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1872(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1880(6 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+intrman RegisterIntrHandler (92b0): intr INT_RTC4, handler 8ca8
+&#x1B;[44mSquare-Enix SoundDriver Nov 24 2005 05:30:12 by Hitoshi Ohori
+=== 64 ===
+sifcmd sceSifRegisterRpc (9a580): rpc_id 11
+loadmodule: id 33, ret 2
+NTSC
+NTSC
+DvdRead: Reading Sector 1925(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1886(39 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_IEXPA: v0(01CB5AC0), a1(01CB5AC0), ra(00167F34), *a0("00objentry.bin") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 956991(17 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01CB5AC0), a1(    162824), a2(     34816), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01CDD700), a1(01CDD700), ra(00167F34), *a0("00progress.bin") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 957011(12 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01CDD700), a1(     30416), a2(     24576), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01CE4E00), a1(01CE4E00), ra(00167F34), *a0("03system.bin") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 957028(17 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01CE4E00), a1(     97784), a2(     34816), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01CFCC00), a1(01CFCC00), ra(00167F34), *a0("00battle.bin") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 956750(32 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01CFCC00), a1(    190104), a2(     65536), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01D2B2C0), a1(01D2B2C0), ra(00167F34), *a0("00common.bdx") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 956782(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01D2B600), a1(01D2B600), ra(00167F34), *a0("00worldpoint.bin") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 957027(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01D2B700), a1(01D2B700), ra(00167F34), *a0("07localset.bin") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 957045(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01D2BC80), a1(01D2BC80), ra(00167F34), *a0("12soundinfo.bar") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 957193(2 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01D2BC80), a1(      7692), a2(      4096), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01D2DAC0), a1(01D2DAC0), ra(00167F34), *a0("14mission.bar") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 957204(1 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01C05B40), a1(01C05B40), ra(00167F34), *a0("msg/jp/fontimage.bar") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1019627(5 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1019632(64 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1019696(64 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1019760(34 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01C05B40), a1(    435328), a2(    342016), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01D2E0C0), a1(01D2E0C0), ra(00167F34), *a0("msg/jp/fontinfo.bar") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1019794(5 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01D2E0C0), a1(     44812), a2(     10240), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01D39000), a1(01D39000), ra(00167F34), *a0("msg/jp/place.bin") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1019865(3 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01D3A740), a1(01D3A740), ra(00167F34), *a0("msg/jp/sys.bar") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1019868(29 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01D3A740), a1(     80144), a2(     59392), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+intrman RegisterIntrHandler (89bcc): intr INT_dmaSPU, handler 87b1c
+intrman RegisterIntrHandler (89bcc): intr INT_dmaSPU2, handler 87b1c
+intrman RegisterIntrHandler (89bcc): intr INT_SPU, handler 89350
+NO. ID  BANK     NO     ADRS   SIZE SPU
+System(017300:017300) SE(038fd8/038fd8:100%) BGM(0: -1:  0%,1: -1:  0%)
+S_IEXPA: v0(01C80B40), a1(01C80B40), ra(00167F34), *a0("se/se000.seb") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1322427(8 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01C80B40), a1(     19720), a2(     16384), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+NO. ID  BANK     NO     ADRS   SIZE SPU
+000 SEB    2      0   1d45f0   4d08
+System(017300:017300) SE(0342c8/038fd8: 91%) BGM(0: -1:  0%,1: -1:  0%)
+S_IEXPA: v0(01C82B40), a1(01C82B40), ra(00167F34), *a0("se/se999.seb") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1322766(4 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01C82B40), a1(     10438), a2(      8192), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+NO. ID  BANK     NO     ADRS   SIZE SPU
+000 SEB    2      0   1d45f0   4d08
+001 SEB    3    999   1d1d20   28c6
+System(017300:017300) SE(0319f8/038fd8: 87%) BGM(0: -1:  0%,1: -1:  0%)
+S_IEXPA: v0(01C4B340), a1(01C4B340), ra(00167F34), *a0("se/wave0000.wd") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1322770(14 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1322784(64 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1322848(37 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01C4B340), a1(    238864), a2(    235520), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+NO. ID  BANK     NO     ADRS   SIZE SPU
+000 SEB    2      0   1d45f0   4d08
+001 SEB    3    999   1d1d20   28c6
+002 WAV    2      0   1d15e8    730 0BC000-0F5DDF
+System(017300:017300) SE(0312c0/038fd8: 86%) BGM(0: -1:  0%,1: -1:  0%)
+S_IEXPA: v0(01C80340), a1(01C80340), ra(00167F34), *a0("se/wave0001.wd") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1322885(11 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+NO. ID  BANK     NO     ADRS   SIZE SPU
+000 SEB    2      0   1d45f0   4d08
+001 SEB    3    999   1d1d20   28c6
+002 WAV    2      0   1d15e8    730 0BC000-0F5DDF
+003 WAV    3      1   1d1350    290 100000-104FFF
+System(017300:017300) SE(031028/038fd8: 85%) BGM(0: -1:  0%,1: -1:  0%)
+S_IEXPA: v0(01FFFC60), a1(01DB7880), ra(00167F34), *a0("menu/jp/pause.2ld") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1018727(3 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01DB7880), a1(     14260), a2(      6144), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+S_IEXPA: v0(01FFFC60), a1(01DBB040), ra(00167F34), *a0("menu/jp/save.2ld") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1018730(6 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1018736(64 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1018800(32 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01DBB040), a1(    421848), a2(    208896), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+00101E70 t7 3712480
+0010235C  a0 00388A30 t7 0014C8A8
+0010235C  a0 0038A580 t7 0014DFB8
+0010235C  a0 00388B50 t7 00167308
+0010235C  a0 0038A640 t7 0014A3C8
+0010235C  a0 0038A5E0 t7 0014ACD0
+0010235C  a0 00388AF0 t7 001682E0
+0010235C  a0 0038A520 t7 002C04B0
+0010235C  a0 00388A90 t7 0014D040
+00101E70 t7    4
+0010235C  a0 00388A30 t7 0014C8A8
+0010235C  a0 0038A580 t7 0014DFB8
+0010235C  a0 00388B50 t7 00167308
+S_IEXPA: v0(0038B810), a1(01F18000), ra(00167F34), *a0("ovl_title.x") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+0010235C  a0 0038A640 t7 0014A3C8
+0010235C  a0 0038A5E0 t7 0014ACD0
+0010235C  a0 00388AF0 t7 001682E0
+0010235C  a0 0038A520 t7 002C04B0
+0010235C  a0 00388A90 t7 0014D040
+DvdRead: Reading Sector 2236(7 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(01F18000), a1(     80112), a2(     14336), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+E_EXPA: ra(001AC4CC) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+E_IEXPA: ra(00167F34) &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+00101E70 t7    8
+0010235C  a0 00388A30 t7 0014C8A8
+0010235C  a0 0038A580 t7 0014DFB8
+0010235C  a0 00388B50 t7 00167308
+0010235C  a0 0038A640 t7 0014A3C8
+0010235C  a0 0038A5E0 t7 0014ACD0
+0010235C  a0 00388AF0 t7 001682E0
+0010235C  a0 0038A520 t7 002C04B0
+0010235C  a0 00388A90 t7 0014D040
+00101E70 t7   12
+0010235C  a0 00388A30 t7 0014C8A8
+0010235C  a0 0038A580 t7 0014DFB8
+0010235C  a0 00388B50 t7 00167308
+0010235C  a0 0038A640 t7 0014A3C8
+0010235C  a0 0038A5E0 t7 0014ACD0
+0010235C  a0 0038B810 t7 002C3F78
+0010235C  a0 00388AF0 t7 001682E0
+0010235C  a0 0038A520 t7 002C04B0
+0010235C  a0 00388A90 t7 0014D040
+S_IEXPA: v0(0038B870), a1(00523B40), ra(00167F34), *a0("menu/jp/title.2ld") &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+DvdRead: Reading Sector 1018961(15 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+DvdRead: Reading Sector 1018976(64 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+00101E70 t7   16
+0010235C  a0 00388A30 t7 0014C8A8
+0010235C  a0 0038A580 t7 0014DFB8
+0010235C  a0 00388B50 t7 00167308
+0010235C  a0 0038A640 t7 0014A3C8
+0010235C  a0 01F1C9F0 t7 00139940
+0010235C  a0 018CE4C0 t7 001398B8
+0010235C  a0 01F1CA50 t7 00139A70
+0010235C  a0 0038A5E0 t7 0014ACD0
+0010235C  a0 0038B810 t7 002C3F78
+0010235C  a0 00388AF0 t7 001682E0
+0010235C  a0 0038A520 t7 002C04B0
+0010235C  a0 00388A90 t7 0014D040
+DvdRead: Reading Sector 1019040(64 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+00101E70 t7   20
+0010235C  a0 00388A30 t7 0014C8A8
+0010235C  a0 0038A580 t7 0014DFB8
+0010235C  a0 00388B50 t7 00167308
+0010235C  a0 0038A640 t7 0014A3C8
+0010235C  a0 01F1C9F0 t7 00139940
+0010235C  a0 018CE4C0 t7 001398B8
+0010235C  a0 01F1CA50 t7 00139A70
+0010235C  a0 0038A5E0 t7 0014ACD0
+0010235C  a0 0038B810 t7 002C3F78
+0010235C  a0 00388AF0 t7 001682E0
+0010235C  a0 0038A520 t7 002C04B0
+0010235C  a0 00388A90 t7 0014D040
+DvdRead: Reading Sector 1019104(11 Blocks of Size 2064) at Speed=4x (psxpc:000290C4)
+S_EXPA: a0(00523B40), a1(    900052), a2(    315392), ra(001AC4CC) &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</value>
+  </data>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>00101E70 t7  804
+0010235C  a0 00388A30 t7 0014C8A8
+0010235C  a0 0038A580 t7 0014DFB8
+0010235C  a0 00388B50 t7 00167308
+0010235C  a0 0038A640 t7 0014A3C8
+0010235C  a0 003A4B40 t7 001615B0
+GIFMODE 1
+0010235C  a0 003A4BA0 t7 00143648
+0010235C  a0 003A3850 t7 0013A398
+0010235C  a0 003A37F0 t7 00181BE8
+0010235C  a0 003A34F0 t7 00195538
+0010235C  a0 003A3610 t7 00197D10
+0010235C  a0 0039AD90 t7 00224558
+0010235C  a0 0039ADF0 t7 00196590
+0010235C  a0 003A3790 t7 001B8660
+0010235C  a0 003A33D0 t7 001B7288
+0010235C  a0 01ABF8A0 t7 00187448
+0010235C  a0 01ABF7E0 t7 00111D08
+0010235C  a0 01ABF780 t7 001B7628
+0010235C  a0 01ABF840 t7 00112008
+0010235C  a0 003A31F0 t7 001DBAE8
+0010235C  a0 003A3430 t7 001120F0
+0010235C  a0 003A35B0 t7 001A4490
+0010235C  a0 003A3730 t7 001B26A8
+0010235C  a0 003A3550 t7 0018C4A0
+0010235C  a0 0039AE50 t7 00196650
+0010235C  a0 003A4AE0 t7 00140F28
+0010235C  a0 003A3310 t7 00160920
+0010235C  a0 01ABE840 t7 00160778
+0010235C  a0 01ABF2B0 t7 00160778
+0010235C  a0 01AB7D00 t7 001608A8
+0010235C  a0 003A4C00 t7 001076D8
+0010235C  a0 003A4C60 t7 001DA730
+0010235C  a0 003A3670 t7 001AF9A8
+0010235C  a0 003A36D0 t7 0019D688
+0010235C  a0 003A4CC0 t7 001444B0
+0010235C  a0 003A4D20 t7 00161618
+0010235C  a0 003A4D80 t7 00161638
+GIFMODE 0
+0010235C  a0 003A4DE0 t7 001DAD98
+0010235C  a0 003A4EA0 t7 0015DC00
+0010235C  a0 003A4E40 t7 00166F18
+0010235C  a0 00398A40 t7 0014A8E8
+0010235C  a0 00398AA0 t7 0014AD00
+0010235C  a0 00398B00 t7 0014AD20
+0010235C  a0 003A3370 t7 00160970
+0010235C  a0 003A3490 t7 001B7838
+0010235C  a0 003A3250 t7 001DBB28
+0010235C  a0 003A4F00 t7 001DAEF0
+0010235C  a0 003A38B0 t7 00139940
+0010235C  a0 01ADC2E0 t7 001397B0
+0010235C  a0 01AD49F0 t7 001397B0
+0010235C  a0 01AD4A50 t7 001397B0
+0010235C  a0 01AD4AB0 t7 001397B0
+0010235C  a0 01AD4B10 t7 001397B0
+0010235C  a0 01AD4B70 t7 001397B0
+0010235C  a0 01AD4BD0 t7 001397B0
+0010235C  a0 01AD4C30 t7 001397B0
+0010235C  a0 01AD4C90 t7 001397B0
+0010235C  a0 01AD4CF0 t7 001397B0
+0010235C  a0 01AD4D50 t7 001397B0
+0010235C  a0 01AD4DB0 t7 001397B0
+0010235C  a0 01AD4E10 t7 001397B0
+0010235C  a0 01AD4E70 t7 001397B0
+0010235C  a0 01AD4ED0 t7 001397B0
+0010235C  a0 01AD4F30 t7 001397B0
+0010235C  a0 01AD4F90 t7 001397B0
+0010235C  a0 01AD4FF0 t7 001397B0
+0010235C  a0 01AD5050 t7 001397B0
+0010235C  a0 01AD50B0 t7 001397B0
+0010235C  a0 01AD5110 t7 001397B0
+0010235C  a0 01AD5170 t7 001397B0
+0010235C  a0 01AD51D0 t7 001397B0
+0010235C  a0 01AD5230 t7 001397B0
+0010235C  a0 01AD5290 t7 001397B0
+0010235C  a0 01AD52F0 t7 001397B0
+0010235C  a0 01AD5350 t7 001397B0
+0010235C  a0 01AD53B0 t7 001397B0
+0010235C  a0 01AD5410 t7 001397B0
+0010235C  a0 01AD5470 t7 001397B0
+0010235C  a0 01AD54D0 t7 001397B0
+0010235C  a0 01AD5530 t7 001397B0
+0010235C  a0 01AD5590 t7 001397B0
+0010235C  a0 01AD55F0 t7 001397B0
+0010235C  a0 01AD5650 t7 001397B0
+0010235C  a0 01AD56B0 t7 001397B0
+0010235C  a0 01AD5710 t7 001397B0
+0010235C  a0 01AD5770 t7 001397B0
+0010235C  a0 01AD57D0 t7 001397B0
+0010235C  a0 01AD5830 t7 001397B0
+0010235C  a0 01AD5890 t7 001397B0
+0010235C  a0 01AD58F0 t7 001397B0
+0010235C  a0 01AD5950 t7 001397B0
+0010235C  a0 01AD59B0 t7 001397B0
+0010235C  a0 01AD5A10 t7 001397B0
+0010235C  a0 01AD5A70 t7 001397B0
+0010235C  a0 01AD5B90 t7 001397B0
+0010235C  a0 01AD5BF0 t7 001397B0
+0010235C  a0 01AD5C50 t7 001397B0
+0010235C  a0 01AD5CB0 t7 001397B0
+0010235C  a0 01AD5D10 t7 001397B0
+0010235C  a0 01AD5D70 t7 001397B0
+0010235C  a0 01AD5DD0 t7 001397B0
+0010235C  a0 01AD5E30 t7 001397B0
+0010235C  a0 01AD5E90 t7 001397B0
+0010235C  a0 01AD5EF0 t7 001397B0
+0010235C  a0 01AD5F50 t7 001397B0
+0010235C  a0 01AD5FB0 t7 001397B0
+0010235C  a0 01AD6010 t7 001397B0
+0010235C  a0 01AD6070 t7 001397B0
+0010235C  a0 01AD60D0 t7 001397B0
+0010235C  a0 01AD6130 t7 001397B0
+0010235C  a0 01AD6190 t7 001397B0
+0010235C  a0 01AD61F0 t7 001397B0
+0010235C  a0 01AD6250 t7 001397B0
+0010235C  a0 01AD62B0 t7 001397B0
+0010235C  a0 01AD6310 t7 001397B0
+0010235C  a0 01AD6370 t7 001397B0
+0010235C  a0 01AD63D0 t7 001397B0
+0010235C  a0 01AD6430 t7 001397B0
+0010235C  a0 01AD6490 t7 001397B0
+0010235C  a0 01AD64F0 t7 001397B0
+0010235C  a0 01AD6550 t7 001397B0
+0010235C  a0 01AD65B0 t7 001397B0
+0010235C  a0 01AD6610 t7 001397B0
+0010235C  a0 01AD6670 t7 001397B0
+0010235C  a0 01AD66D0 t7 001397B0
+0010235C  a0 01AD6730 t7 001397B0
+0010235C  a0 01AD6790 t7 001397B0
+0010235C  a0 01AD67F0 t7 001397B0
+0010235C  a0 01AD6850 t7 001397B0
+0010235C  a0 01AD68B0 t7 001397B0
+0010235C  a0 01AD6910 t7 001397B0
+0010235C  a0 01AD6970 t7 001397B0
+0010235C  a0 01AD69D0 t7 001397B0
+0010235C  a0 01AD5B30 t7 001397B0
+0010235C  a0 01AD5AD0 t7 001397B0
+0010235C  a0 01AE4110 t7 001397B0
+0010235C  a0 01AE0920 t7 001397B0
+0010235C  a0 01AC7EA0 t7 001398B8
+0010235C  a0 003A3910 t7 00139A70
+0010235C  a0 00398B60 t7 0014AD48
+0010235C  a0 00398BC0 t7 0014AD68
+0010235C  a0 003A32B0 t7 001DDA40
+0010235C  a0 003A4F60 t7 00137718
+0010235C  a0 0038A5E0 t7 0014ACD0
+0010235C  a0 00388AF0 t7 001682E0
+0010235C  a0 0038A520 t7 002C04B0
+0010235C  a0 00388A90 t7 0014D040</value>
+  </data>
+</root>

@@ -1,0 +1,11 @@
+import Blender
+
+o = Blender.Object.Get('Am2')
+pose = o.getPose()
+bones = pose.bones
+names = bones.keys()
+names.sort()
+
+for n in names:
+	v = bones[n]
+	print(n+" "+str(v.poseMatrix.translationPart())+" "+str(v.poseMatrix.toQuat()))

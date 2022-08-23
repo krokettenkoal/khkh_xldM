@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System.Diagnostics;
+
+namespace khkh_xldM {
+    public class ReadBar {
+        public class Barent {
+            public int k;
+            public string id;
+            public int off, len;
+            public byte[] bin;
+        }
+        public static Barent[] Explode(Stream si) {
+            if (si.Length < 16) {
+                // Dummy bar
+                return new Barent[0];
+            }
+            BinaryReader br = new BinaryReader(si);
+            if (br.ReadByte() != 'B' || br.ReadByte() != 'A' || br.ReadByte() != 'R' || br.ReadByte() != 1)
+                throw new NotSupportedException();
+            int cx = br.ReadInt32();
+            br.ReadBytes(8);
+            List<Barent> al = new List<Barent>();
+            for (int x = 0; x < cx; x++) {
+                Barent ent = new Barent();
+                ent.k = br.ReadInt32();
+                ent.id = Encoding.ASCII.GetString(br.ReadBytes(4)).TrimEnd((char)0);
+                ent.off = br.ReadInt32();
+                ent.len = br.ReadInt32();
+                al.Add(ent);
+            }
+            for (int x = 0; x < cx; x++) {
+                Barent ent = al[x];
+                si.Position = ent.off;
+                ent.bin = br.ReadBytes(ent.len);
+                Debug.Assert(ent.bin.Length == ent.len);
+            }
+            return al.ToArray();
+        }
+    }
+}

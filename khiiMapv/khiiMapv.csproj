@@ -1,0 +1,233 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{74734A53-6B11-48CA-94EF-267C2CC5FE53}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>khiiMapv</RootNamespace>
+    <AssemblyName>khiiMapv</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>NOTE15.ICO</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SlimDX, Version=4.0.13.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
+      <HintPath>..\packages\SlimDX.4.0.13.44\lib\NET40\SlimDX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xe.BinaryMapper, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xe.BinaryMapper.1.4.1\lib\net40\Xe.BinaryMapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\hex04BinTrack\UC.cs">
+      <Link>UC.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\hex04BinTrack\UC.designer.cs">
+      <Link>UC.designer.cs</Link>
+      <DependentUpon>UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bar.cs" />
+    <Compile Include="BEXForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BEXForm.Designer.cs">
+      <DependentUpon>BEXForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DContext.cs" />
+    <Compile Include="Models\Coct\Co1.cs" />
+    <Compile Include="Models\Coct\Co2.cs" />
+    <Compile Include="Models\Coct\Co3.cs" />
+    <Compile Include="Models\Coct\Co6.cs" />
+    <Compile Include="Models\Coct\Co7.cs" />
+    <Compile Include="Models\Coct\CollisionReader.cs" />
+    <Compile Include="CustomVertex.cs" />
+    <Compile Include="Extensions\ByteArraySegmentExtensions.cs" />
+    <Compile Include="MEForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEForm.Designer.cs">
+      <DependentUpon>MEForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HexVwer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HexVwer.Designer.cs">
+      <DependentUpon>HexVwer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CollisionSet.cs" />
+    <Compile Include="Models\HexView\MicroLabels.cs" />
+    <Compile Include="Models\PAX\D1.cs" />
+    <Compile Include="Models\PAX\D101.cs" />
+    <Compile Include="Models\PAX\D1Chunk.cs" />
+    <Compile Include="Models\PAX\D1Vert.cs" />
+    <Compile Include="Models\PAX\D301.cs" />
+    <Compile Include="Models\PAX\D302.cs" />
+    <Compile Include="Models\PAX\DpdPic.cs" />
+    <Compile Include="Models\PAX\D3.cs" />
+    <Compile Include="Parse02StrTbl.cs" />
+    <Compile Include="Parse4Mdlx.cs" />
+    <Compile Include="Models\PAX\ParseDPD.cs" />
+    <Compile Include="Models\PAX\ParseDPX.cs" />
+    <Compile Include="ParseIMGD.cs" />
+    <Compile Include="Models\PAX\ParsePAX.cs" />
+    <Compile Include="ParseRADA.cs" />
+    <Compile Include="ParseSD.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\hex04BinTrack\UC.resx">
+      <Link>UC.resx</Link>
+      <DependentUpon>UC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BEXForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BEXForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MEForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HexVwer.resx">
+      <DependentUpon>HexVwer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visf.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Visf.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Q3Radiant\WindingUtil.cs" />
+    <Compile Include="SimaVU1e.cs" />
+    <Compile Include="TexUt2.cs" />
+    <Compile Include="Utils\BER.cs" />
+    <Compile Include="Utils\CoctComputer.cs" />
+    <Compile Include="Utils\Csvw.cs" />
+    <Compile Include="Utils\DoctComputer.cs" />
+    <Compile Include="Utils\DoctReader.cs" />
+    <Compile Include="Utils\DxReadUtil.cs" />
+    <Compile Include="Utils\GSRegsRecorder.cs" />
+    <Compile Include="Utils\HexDump.cs" />
+    <Compile Include="Utils\SPUConv.cs" />
+    <Compile Include="Visf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visf.Designer.cs">
+      <DependentUpon>Visf.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActualSizeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EVTjp0.txt" />
+    <Content Include="EVTjp1.txt" />
+    <Content Include="EVTjp2.txt" />
+    <Content Include="EVTjp3.txt" />
+    <Content Include="NOTE15.ICO" />
+    <Content Include="objname.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\ROCKET.ICO" />
+    <None Include="Resources\search4files.ico" />
+    <Content Include="SYSjp.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\PAX\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib03\Lib03.csproj">
+      <Project>{10ffc4c6-170e-40fe-8045-cc669e132e2c}</Project>
+      <Name>Lib03</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\LibSomeFiles\LibSomeFiles.projitems" Label="Shared" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

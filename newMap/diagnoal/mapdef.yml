@@ -1,0 +1,6 @@
+maxColorIntensity: 64
+maxAlpha: 255
+
+materials:
+  - name: void
+    ignore: true

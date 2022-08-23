@@ -1,0 +1,418 @@
+(mypy)Ensure module: monitor.F266B00B 
+Opening plugins...
+	Opening GS
+	Opening PAD
+	Opening SPU2
+Current Renderer: Direct3D 11 (Hardware renderer)
+	Opening CDVD
+isoFile open ok: H:\CCD\KH2fm.ISO
+	Image type  = DVD
+ * CDVD Disk Open: DVD, Single layer or unknown:
+ * * Track 1: Data (Mode 1) (2114352 sectors)
+	Opening USB
+	Opening FW
+	Opening DEV9
+GSdx Lookup CRC:F266B00B
+McdSlot 0 [File]: H:\Proj\pcsx2\bin\memcards\Mcd001.ps2
+McdSlot 1 [File]: H:\Proj\pcsx2\bin\memcards\Mcd002.ps2
+Plugins opened successfully.
+Savestate slot 9 is empty.
+ > Selected savestate slot 0
+Loading savestate from slot 0...
+	filename: H:\Proj\pcsx2\bin\sstates\SLPM-66675 (F266B00B).00.p2s
+EE/iR5900-32 Recompiler Reset
+	Loading GS
+	Loading PAD
+	Loading SPU2
+MTVU speedhack is enabled, saved states may not be stable
+Closing plugins...
+	Closing DEV9
+	Closing FW
+	Closing USB
+	Closing CDVD
+	Closing SPU2
+	Closing PAD
+	Closing GS
+Plugins closed successfully.
+HLE Notice: ELF does not have a path.
+
+Opening plugins...
+	Opening GS
+	Opening PAD
+	Opening SPU2
+Current Renderer: Direct3D 11 (Hardware renderer)
+	Opening CDVD
+isoFile open ok: H:\CCD\KH2fm.ISO
+	Image type  = DVD
+ * CDVD Disk Open: DVD, Single layer or unknown:
+ * * Track 1: Data (Mode 1) (2114352 sectors)
+	Opening USB
+	Opening FW
+	Opening DEV9
+GSdx Lookup CRC:F266B00B
+McdSlot 0 [File]: H:\Proj\pcsx2\bin\memcards\Mcd001.ps2
+McdSlot 1 [File]: H:\Proj\pcsx2\bin\memcards\Mcd002.ps2
+Plugins opened successfully.
+EE/iR5900-32 Recompiler Reset
+	Bios Found: Japan   v01.00(17/01/2000)  Console
+	BIOS rom1 module not found, skipping...
+	BIOS rom2 module not found, skipping...
+	BIOS erom module not found, skipping...
+Patches: No CRC found, using 00000000 instead.
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SLPM_666.75;1
+(SYSTEM.CNF) Software version = 1.01
+(SYSTEM.CNF) Disc region type = NTSC
+ELF (cdrom0:\SLPM_666.75;1) Game CRC = 0xF266B00B, EntryPoint = 0x0010001C
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SLPM_666.75;1
+(SYSTEM.CNF) Software version = 1.01
+(SYSTEM.CNF) Disc region type = NTSC
+Elf entry point @ 0x0010001c about to get recompiled. Load patches first.
+GSdx Lookup CRC:F266B00B
+# rec.S_IEXPA: 01c94100  00objentry.bin 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01cc09c0  00progress.bin 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01ccb300  03system.bin 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01ce5d80  00battle.bin 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d1b280  00common.bdx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d1b5c0  00worldpoint.bin 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d1b6c0  07localset.bin 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d1cd40  12soundinfo.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d1ed80  14mission.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01bdc440  msg/jp/fontimage.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d1f400  msg/jp/fontinfo.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d2a340  msg/jp/place.bin 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d2aa40  msg/jp/sys.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d40f40  15jigsaw.bin 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01c57440  se/se000.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01c59440  se/se999.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01c20c40  se/wave0000.wd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01c56c40  se/wave0001.wd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01dae6c0  menu/fm/pause.2ld 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01db1e80  menu/fm/save.2ld 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01f18000  ovl_title.x 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 004fdc40  eventviewer.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 005da440  menu/fm/title.2ld 
+#     S_IEXPA: Inject ok. 4647580 
+# rec.S_IEXPA: 004fa440  msg/jp/title.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01c81380  000eh.idx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01c4d440  ard/eh18.ard 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 018cbc40  se/se019.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 018b6c40  se/wave1054.wd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0189ac40  se/wave0635.wd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 018cb440  se/se714.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 018cb440  se/se715.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 018cb440  se/se716.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 018cb440  se/se717.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 018ccc40  se/se729.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0184d440  voice/us/battle/eh0_sora.vsb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0184d440  voice/us/battle/eh0_riku.vsb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0184d440  voice/us/battle/eh0_goofy.vsb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 004193c0  field2d/jp/eh0command.2dd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 003b8bc0  field2d/jp/eh0field.2dd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01d5bb40  effect/texcommon.dpd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00650440  libretto-eh.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00650c40  map/jp/eh18.map 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00642440  msg/jp/eh.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 004fa440  00effect.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00551c40  magic/BLIZZARD_3.mag 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 005a7440  magic/CURE_3.mag 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0053f440  magic/FIRE_3.mag 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 005bfc40  magic/MAGNET_3.mag 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 005ddc40  magic/REFLECT_3.mag 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0056cc40  magic/THUNDER_3.mag 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b9fc40  obj/F_EX000.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0117a640  obj/N_EX560_RTN.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 011dfe40  obj/N_EX560_RTN.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0061f440  obj/PRIZE.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00633c40  obj/PRIZE_BOX_BLUE.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0063b440  obj/PRIZE_BOX_GREEN.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0062cc40  obj/PRIZE_BOX_RED.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00625c40  obj/PRIZE_BOX_YELLOW.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00fc9e40  obj/P_EH000.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01028640  obj/P_EH000_MEMO.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0120be40  obj/P_EH000_RTN.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01267e40  obj/P_EH000_RTN.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0109f640  obj/P_EX020.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 010fbe40  obj/P_EX020_MEMO.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0127de40  obj/P_EX020_RTN.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 012d8e40  obj/P_EX020_RTN.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01032e40  obj/P_EX030.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01094e40  obj/P_EX030_MEMO.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 012ed640  obj/P_EX030_RTN.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0134de40  obj/P_EX030_RTN.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00c1b440  obj/P_EX100.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00bb0440  obj/P_EX100.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00ca0440  obj/P_EX100.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01104e40  obj/P_EX220_RTN.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01158640  obj/P_EX220_RTN.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00ba0c40  obj/WORLD_POINT.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00ba0440  obj/WORLD_POINT.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00f5bc40  obj/W_EX010.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00f2f440  obj/W_EX010_N0.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00f1e440  obj/W_EX010_N0.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 019e4cc0  bgm/music054.bgm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 019e4cc0  bgm/wave0054.wd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 019e4cc0  bgm/music055.bgm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01364e40  limit/fm/trinity_zz.bar 
+#     E_IEXPA: Out ok. 
+Closing plugins...
+	Closing DEV9
+	Closing FW
+	Closing USB
+	Closing CDVD
+	Closing SPU2
+	Closing PAD
+	Closing GS
+Plugins closed successfully.
+(mypy)Ensure module: monitor.F266B00B 
+Opening plugins...
+	Opening GS
+	Opening PAD
+	Opening SPU2
+Current Renderer: Direct3D 11 (Hardware renderer)
+	Opening CDVD
+GSdx Lookup CRC:F266B00B
+isoFile open ok: H:\CCD\KH2fm.ISO
+	Image type  = DVD
+ * CDVD Disk Open: DVD, Single layer or unknown:
+ * * Track 1: Data (Mode 1) (2114352 sectors)
+	Opening USB
+	Opening FW
+	Opening DEV9
+McdSlot 0 [File]: H:\Proj\pcsx2\bin\memcards\Mcd001.ps2
+McdSlot 1 [File]: H:\Proj\pcsx2\bin\memcards\Mcd002.ps2
+Plugins opened successfully.
+# rec.S_IEXPA: 01c81380  000wm.idx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01c5ac40  ard/wm00.ard 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 018d9c40  se/se016.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 018d0440  se/wave1053.wd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 004fac40  file/jp/wm_ws.2ld 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 004fa440  msn/jp/WORLDMAP.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00534c40  npack/worldobj.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 004193c0  field2d/jp/wm0command.2dd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 003b8bc0  field2d/jp/wm0field.2dd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0074dc40  libretto-wm.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00750440  map/jp/wm00.map 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00743440  msg/jp/wm.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00534c40  70landing.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 012f2c40  menu/fm/jiminy.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 012f8c40  msg/jp/jm.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 019f24c0  bgm/music137.bgm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 019f24c0  bgm/wave0137.wd 
+#     E_IEXPA: Out ok. 
+Closing plugins...
+	Closing DEV9
+	Closing FW
+	Closing USB
+	Closing CDVD
+	Closing SPU2
+	Closing PAD
+	Closing GS
+Plugins closed successfully.
+(mypy)Ensure module: monitor.F266B00B 
+Opening plugins...
+	Opening GS
+	Opening PAD
+	Opening SPU2
+	Opening CDVD
+Current Renderer: Direct3D 11 (Hardware renderer)
+GSdx Lookup CRC:F266B00B
+isoFile open ok: H:\CCD\KH2fm.ISO
+	Image type  = DVD
+ * CDVD Disk Open: DVD, Single layer or unknown:
+ * * Track 1: Data (Mode 1) (2114352 sectors)
+	Opening USB
+	Opening FW
+	Opening DEV9
+McdSlot 0 [File]: H:\Proj\pcsx2\bin\memcards\Mcd001.ps2
+McdSlot 1 [File]: H:\Proj\pcsx2\bin\memcards\Mcd002.ps2
+Plugins opened successfully.
+# rec.S_IEXPA: 01c81380  000hb.idx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01c1fc40  ard/hb05.ard 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0189d440  se/se005.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0188d440  se/wave1050.wd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01870c40  se/wave0630.wd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0189dc40  se/se711.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0189dc40  se/se712.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0189dc40  se/se713.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0189d440  se/se628.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0189f440  se/se729.seb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 004fa440  file/jp/hb_co.2ld 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0181fc40  voice/us/battle/hb0_sora.vsb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0181fc40  voice/us/battle/hb0_donald.vsb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0181fc40  voice/us/battle/hb0_goofy.vsb 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 004193c0  field2d/jp/hb0command.2dd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 003b8bc0  field2d/jp/hb0field.2dd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0071e440  libretto-hb.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0071f440  map/jp/hb05.map 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0070cc40  msg/jp/hb.bar 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b62c40  obj/F_EX000.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b23c40  obj/F_EX030.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b19c40  obj/F_EX030.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b29440  obj/F_EX030.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b44c40  obj/F_EX040.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b32c40  obj/F_EX040.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b52440  obj/F_EX040.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b73c40  obj/F_EX260.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b73440  obj/F_EX260.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00ff0640  obj/P_EX020.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00f93e40  obj/P_EX020.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 0102fe40  obj/P_EX020.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01182b40  obj/P_EX030.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01120b40  obj/P_EX030.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01193b40  obj/P_EX030.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b63c40  obj/WORLD_POINT.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 00b63440  obj/WORLD_POINT.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 010fde40  obj/W_EX020.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 010f0640  obj/W_EX020_A0.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 010e4640  obj/W_EX020_A0.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01291340  obj/W_EX030.mset 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01282340  obj/W_EX030_A0.a.fm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 01275340  obj/W_EX030_A0.mdlx 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 019b74c0  bgm/music152.bgm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 019b74c0  bgm/wave0152.wd 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 019b74c0  bgm/music153.bgm 
+#     E_IEXPA: Out ok. 
+# rec.S_IEXPA: 012ad840  limit/fm/trinity.bar 
+#     E_IEXPA: Out ok. 

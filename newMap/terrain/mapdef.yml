@@ -1,0 +1,8 @@
+imageDirs:
+- 'images'
+imgtoolOptions: '-b 4'
+materials:
+- name: 'Material*'
+  ignore: true
+
+disableTriangleStripsOptimization: false

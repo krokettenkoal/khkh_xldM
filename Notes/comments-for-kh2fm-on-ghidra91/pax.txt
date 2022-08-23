@@ -1,0 +1,563 @@
+001050D0|fm:EffectsTab4Vtx4.Vert2
+00198180|fm:FileEntry.Offset
+001DC024|fm:Kh2Dpx.DpxEntries
+001DC030|fm:DpxEntry.Id
+001DC03C|fm:DpxEntry.DpdOffset
+001DC048|fm:DpxEntry.Index
+001DC108|fm:a.fm+ 532 
+001DDDF4|fm:Kh2Pax.OffsetDpx
+001DDE08|fm:PaxEntry.Unk04
+001DDF20|fm:PaxEntry.Unk10
+001DDF30|fm:PaxEntry.Unk14
+001DDF4C|fm:PaxEntry.Effect
+001DDF60|fm:PaxEntry.PosX
+001DDF70|fm:PaxEntry.PosZ
+001DDF80|fm:PaxEntry.PosY
+001DDF90|fm:PaxEntry.RotX
+001DDFA0|fm:PaxEntry.RotZ
+001DDFB0|fm:PaxEntry.RotY
+001DDFC0|fm:PaxEntry.ScaleX
+001DDFD0|fm:PaxEntry.ScaleZ
+001DDFE0|fm:PaxEntry.ScaleY
+001DE024|fm:PaxEntry.Unk10
+001DE040|fm:PaxEntry.Unk10
+001DE17C|fm:Kh2Pax.EntriesCount
+001DE18C|fm:PaxEntry.Caster
+001DEAB8|fm:PaxEntry.Unk10
+001DEAD4|fm:PaxEntry.Unk10
+001DEAE4|fm:PaxEntry.Unk10
+001DF21C|fm:PaxEntry.Unk10
+001DF268|fm:PaxEntry.PosX
+001DF270|fm:PaxEntry.PosZ
+001DF278|fm:PaxEntry.PosY
+001DF280|fm:PaxEntry.RotX
+001DF288|fm:PaxEntry.RotZ
+001DF290|fm:PaxEntry.RotY
+001DF298|fm:PaxEntry.ScaleX
+001DF2A0|fm:PaxEntry.ScaleZ
+001DF2A8|fm:PaxEntry.ScaleY
+001DF2B0|fm:PaxEntry.Unk10
+001DF730|fm:PaxEntry.Unk06
+001DFA60|fm:PaxEntry.Unk10
+001DFAE8|fm:PaxEntry.SoundEffect
+001DFB78|fm:PaxEntry.Unk10
+001DFBDC|fm:PaxEntry.Unk10
+001DFC8C|fm:PaxEntry.Unk10
+001E2CD4|fm:EffectsTab4.Unk14
+001E2CD8|6 usages. |fm:a.fm+ 39842 |fm:a.fm+ 41122 |fm:a.fm+ 43410 |fm:a.fm+ 44434 |fm:a.fm+ 46722 |fm:a.fm+ 46898 
+001E2CFC|6 usages. |fm:a.fm+ 39842 |fm:a.fm+ 41122 |fm:a.fm+ 43410 |fm:a.fm+ 44434 |fm:a.fm+ 46722 |fm:a.fm+ 46898 
+001E2D18|fm:EffectsTab4.Unk04
+001E2D2C|6 usages. |fm:a.fm+ 39889 |fm:a.fm+ 41169 |fm:a.fm+ 43457 |fm:a.fm+ 44481 |fm:a.fm+ 46769 |fm:a.fm+ 46945 
+001E2D98|fm:EffectsTab4VertSet.NumVerts
+001E2DA4|fm:EffectsTab4VertSet.Unk38
+001E2DBC|fm:EffectsTab4VertSet.Unk38
+001E2DC8|fm:EffectsTab4VertSet.Unk3c
+001E2E14|fm:EffectsTab4VertSet.Unk38
+001E2E70|fm:EffectsTab4VertSet.Unk38
+001E2EC8|fm:EffectsTab4VertSet.Unk3c
+001E2EDC|fm:EffectsTab4VertSet.NumVerts
+001E2F24|fm:EffectsTab4VertSet.Unk3c
+001E2F74|fm:EffectsTab4VertSet.NumVerts
+001E2F88|8 usages. |fm:a.fm+ 40705 |fm:a.fm+ 41825 |fm:a.fm+ 42609 |fm:a.fm+ 44113 |fm:a.fm+ 45137 |fm:a.fm+ 45921 |fm:a.fm+ 46825 |fm:a.fm+ 48561 
+001E3088|fm:a.fm+ 38290 
+001E30AC|fm:a.fm+ 38290 
+001E30C8|fm:EffectsTab3.Unk04
+001E30D8|fm:EffectsTab3Sub.Cnt2
+001E30E4|fm:EffectsTab3A.Offset
+001E30F0|fm:EffectsTab3C.Unk0
+001E3108|fm:EffectsTab3C.Unk0
+001E3120|fm:EffectsTab3C.Unk4
+001E3160|fm:EffectsTab3C.Unk0
+001E3218|fm:EffectsTab3C.Unk4
+001E3668|5 usages. |fm:Kh2Dpd.NumTextures|fm:Kh2Dpd.NumTab3|fm:Kh2Dpd.NumTab4|fm:Kh2Dpd.NumTab5|fm:Kh2Dpd.NumEffectsGroupList
+001E36C0|fm:Kh2Dpd.NumEffectsGroupList
+001E36D8|fm:EffectsGroupParent.Offset
+001E36FC|fm:a.fm+ 752 
+001E3744|fm:a.fm+ 756 
+001E3748|fm:a.fm+ 760 
+001E3798|fm:a.fm+ 764 
+001E3940|fm:Kh2Dpd.NumTab3
+001E394C|fm:EffectsTab3Parent.Offset
+001E3A10|fm:EffectsGroup.Dummy1
+001E3AD0|fm:Kh2Dpd.NumTab4
+001E3ADC|fm:EffectsTab4Parent.Offset
+001E3BA0|fm:EffectsGroup.Dummy2, fm:a.fm+ 11233 
+001E3CD0|fm:Kh2Dpd.NumTab3
+001E3CE4|fm:EffectsTab3Parent.Offset
+001E3DA4|fm:EffectsGroup.Dummy1
+001E3DB8|fm:EffectsTab3.Mark
+001E3DF8|fm:EffectsTab3.Unk08
+001E3E80|fm:Kh2Dpd.NumTab4
+001E3E94|fm:EffectsTab4Parent.Offset
+001E3F54|fm:EffectsGroup.Dummy2, fm:a.fm+ 11233 
+001E3F68|fm:EffectsTab4.Mark
+001E3FA8|fm:EffectsTab4.NumPoints
+001E3FB0|fm:EffectsTab4.Unk24
+001E3FB8|fm:EffectsTab4.TotalVerts
+001E3FC0|fm:EffectsTab4.OffPoints
+001E3FCC|fm:EffectsTab4.OffNorms
+001E3FD8|fm:EffectsTab4.Unk08
+001E4060|fm:Kh2Dpd.NumTab5
+001E4074|fm:EffectsTab5Parent.Offset
+001E4134|fm:EffectsGroup.Dummy3
+001E4148|fm:EffectsTab5.Mark
+001E4154|fm:EffectsTab5.Unk4
+001E418C|fm:EffectsTab5.Unk8
+001E523C|fm:EffectsTexture.Unk0
+001E5260|fm:EffectsTexture.Unk4
+001E5268|fm:EffectsTexture.Fmt
+001E526C|fm:EffectsTexture.Unk8
+001E5274|fm:a.fm+ 23018 , fm:a.fm+ 32266 
+001E527C|fm:EffectsTexture.Width
+001E5288|fm:EffectsTexture.Height
+001E52DC|fm:a.fm+ 23010 , fm:a.fm+ 32258 
+001E5364|fm:a.fm+ 23038 , fm:a.fm+ 32286 
+001E5374|fm:EffectsTexture.Fmt
+001E5408|fm:EffectsTexture.Unk18
+001E54E4|fm:Kh2Dpd.NumTextures
+001E54F4|fm:EffectsTextureParent.Offset
+001E55B4|fm:EffectsGroup.Dummy
+001E576C|fm:Kh2Dpd.NumTextures
+001E577C|fm:EffectsTextureParent.Offset
+001E583C|fm:EffectsGroup.Dummy
+001E783C|fm:DpdEffectSub.Items
+001E78A4|fm:DpdEffectSub.Items
+001E790C|fm:DpdEffectSub.Items
+001E7970|fm:DpdEffect.Unk20
+001E7974|fm:DpdEffect.CommandsCount
+001E7988|fm:DpdEffectCommand.Command
+001E7990|fm:DpdEffectCommand.OffsetParameters
+001E79AC|fm:DpdEffect.CommandsCount
+001E79B8|fm:DpdEffect.CommandsCount
+001E79C8|fm:DpdEffectCommand.Command
+001E7A18|fm:DpdEffect.Unk20
+001E7A1C|fm:DpdEffect.CommandsCount
+001E7A30|fm:DpdEffectCommand.Command
+001E7A38|fm:DpdEffectCommand.OffsetParameters
+001E7A54|fm:DpdEffect.CommandsCount
+001E7A60|fm:DpdEffect.CommandsCount
+001E7A70|fm:DpdEffectCommand.Command
+001E7AC4|fm:DpdEffect.CommandsCount
+001E7AC8|fm:DpdEffect.Unk20
+001E7B84|fm:DpdEffect.Unk24
+001E7BA8|fm:DpdEffect.Unk24
+001E7E4C|fm:a.fm+ 11273 
+001E7EC0|fm:EffectsGroup.Scaling
+001E7EDC|fm:EffectsGroup.Scaling
+001E7EF8|fm:EffectsGroup.Scaling
+001E7F1C|fm:EffectsGroup.Position
+001E7F24|fm:EffectsGroup.Position
+001E7F2C|fm:EffectsGroup.Position
+001E8070|fm:DpdEffectParent.Unk0
+001E8078|fm:DpdEffectParent.Unk4
+001E8084|fm:DpdEffectParent.Offset8
+001E8090|fm:DpdEffectParent.Offsetc
+001E80A8|fm:DpdEffectSub.Count
+001E80B8|fm:DpdEffectSub.Count
+001E80E0|fm:DpdEffect.OffsetNext
+001E8120|fm:DpdEffect.Unk10
+001E8138|fm:DpdEffect.OffsetNext
+001E839C|fm:DpdEffect.CommandsCount
+001E83B4|fm:DpdEffectCommand.Command
+001E83F4|fm:DpdEffect.Unk20
+001E840C|fm:DpdEffectCommand.ParamLength
+001E8474|85 usages. |fm:a.fm+ 11524 |fm:a.fm+ 11572 |fm:a.fm+ 11624 |fm:a.fm+ 11648 |fm:a.fm+ 11672 |fm:a.fm+ 11692 |fm:a.fm+ 11740 |fm:a.fm+ 11760 |fm:a.fm+ 11800 |fm:a.fm+ 12192 |fm:a.fm+ 12232 |fm:a.fm+ 12296 |fm:a.fm+ 12336 |fm:a.fm+ 12400 |fm:a.fm+ 12424 |fm:a.fm+ 12448 |fm:a.fm+ 12500 |fm:a.fm+ 12560 |fm:a.fm+ 12580 |fm:a.fm+ 12620 |fm:a.fm+ 13012 |fm:a.fm+ 13052 |fm:a.fm+ 13104 |fm:a.fm+ 13144 |fm:a.fm+ 13196 |fm:a.fm+ 13220 |fm:a.fm+ 13244 |fm:a.fm+ 13280 |fm:a.fm+ 13316 |fm:a.fm+ 13336 |fm:a.fm+ 13376 |fm:a.fm+ 13700 |fm:a.fm+ 13724 |fm:a.fm+ 13748 |fm:a.fm+ 13768 |fm:a.fm+ 13780 |fm:a.fm+ 14380 |fm:a.fm+ 14428 |fm:a.fm+ 14480 |fm:a.fm+ 14504 |fm:a.fm+ 14524 |fm:a.fm+ 14572 |fm:a.fm+ 14588 |fm:a.fm+ 14628 |fm:a.fm+ 14980 |fm:a.fm+ 15056 |fm:a.fm+ 15100 |fm:a.fm+ 15176 |fm:a.fm+ 15220 |fm:a.fm+ 15308 |fm:a.fm+ 15364 |fm:a.fm+ 15376 |fm:a.fm+ 15412 |fm:a.fm+ 15764 |fm:a.fm+ 15840 |fm:a.fm+ 15884 |fm:a.fm+ 15960 |fm:a.fm+ 16004 |fm:a.fm+ 16092 |fm:a.fm+ 16148 |fm:a.fm+ 16160 |fm:a.fm+ 16172 |fm:a.fm+ 16208 |fm:a.fm+ 17112 |fm:a.fm+ 17160 |fm:a.fm+ 17212 |fm:a.fm+ 17236 |fm:a.fm+ 17256 |fm:a.fm+ 17304 |fm:a.fm+ 17320 |fm:a.fm+ 17360 |fm:a.fm+ 16512 |fm:a.fm+ 16536 |fm:a.fm+ 16560 |fm:a.fm+ 16580 |fm:a.fm+ 16592 |fm:a.fm+ 16620 |fm:a.fm+ 15072 |fm:a.fm+ 15192 |fm:a.fm+ 15324 |fm:a.fm+ 15432 |fm:a.fm+ 15856 |fm:a.fm+ 15976 |fm:a.fm+ 16108 |fm:a.fm+ 16228 
+001E84E0|fm:DpdEffect.CommandsCount
+001E85C0|fm:DpdEffect.CommandsCount
+001E85D8|fm:DpdEffectCommand.Command
+001E8614|fm:DpdEffect.Unk20
+001E8638|fm:DpdEffectCommand.ParamLength
+001E8694|5 usages. |fm:a.fm+ 13424 |fm:a.fm+ 14064 |fm:a.fm+ 14656 |fm:a.fm+ 17388 |fm:a.fm+ 16792 
+001E8758|fm:DpdEffect.CommandsCount
+001E8890|fm:DpdEffect.Unk1C
+001E889C|fm:DpdEffect.Unk14
+001E88A0|fm:DpdEffect.Unk18
+001E88D4|fm:DpdEffect.Unk18
+001E8A20|fm:DpdEffect.Unk20
+001E8A38|fm:DpdEffectCommand.ParamLength
+001E8A4C|fm:a.fm+ 11824 , fm:a.fm+ 12644 
+001E8AC0|fm:DpdEffect.CommandsCount
+001E8E54|fm:DpdEffect.Unk20
+001E8E64|fm:DpdEffect.CommandsCount
+001E8E80|fm:DpdEffectCommand.Command
+001E8E90|fm:DpdEffectCommand.ParamLength
+001E8E9C|9 usages. |fm:a.fm+ 17112 |fm:a.fm+ 17160 |fm:a.fm+ 17212 |fm:a.fm+ 17236 |fm:a.fm+ 17256 |fm:a.fm+ 17304 |fm:a.fm+ 17320 |fm:a.fm+ 17360 |fm:a.fm+ 17388 
+001E8EF8|fm:DpdEffect.CommandsCount
+001E9010|fm:EffectsGroup.Rotation
+001E901C|fm:EffectsGroup.Rotation
+001E9038|fm:EffectsGroup.Rotation
+001E9108|fm:DpdEffectCommand.Raw1
+001E9118|fm:DpdEffectCommand.Offset2
+001E911C|9 usages. |fm:a.fm+ 11620 |fm:a.fm+ 12396 |fm:a.fm+ 13192 |fm:a.fm+ 13696 |fm:a.fm+ 14476 |fm:a.fm+ 15216 |fm:a.fm+ 16000 |fm:a.fm+ 17208 |fm:a.fm+ 16508 
+001E9120|fm:DpdEffectCommand.Raw2
+001E9124|9 usages. |fm:a.fm+ 11612 |fm:a.fm+ 12388 |fm:a.fm+ 13184 |fm:a.fm+ 13688 |fm:a.fm+ 14468 |fm:a.fm+ 15208 |fm:a.fm+ 15992 |fm:a.fm+ 17200 |fm:a.fm+ 16500 
+001E912C|9 usages. |fm:a.fm+ 11616 |fm:a.fm+ 12392 |fm:a.fm+ 13188 |fm:a.fm+ 13692 |fm:a.fm+ 14472 |fm:a.fm+ 15212 |fm:a.fm+ 15996 |fm:a.fm+ 17204 |fm:a.fm+ 16504 
+001E9160|fm:DpdEffectCommand.Offset2
+001E9168|fm:DpdEffectCommand.Raw2
+001E918C|fm:DpdEffectCommand.Offset2
+001E9194|fm:DpdEffectCommand.Raw2
+001E9198|fm:a.fm+ 15156 , fm:a.fm+ 15940 
+001E91D8|fm:DpdEffectCommand.Raw1
+001E91E4|fm:a.fm+ 15096 , fm:a.fm+ 15880 
+001E91EC|fm:a.fm+ 15088 , fm:a.fm+ 15872 
+001E91F4|fm:a.fm+ 15092 , fm:a.fm+ 15876 
+001E9250|fm:DpdEffectCommand.Offset2
+001E9258|fm:a.fm+ 15156 , fm:a.fm+ 15940 
+001E927C|fm:DpdEffectCommand.Offset2
+001E9284|fm:DpdEffectCommand.Raw2
+001E9288|fm:a.fm+ 15036 , fm:a.fm+ 15820 
+001E92C8|fm:DpdEffectCommand.Raw1
+001E92D4|fm:a.fm+ 14976 , fm:a.fm+ 15760 
+001E92DC|fm:a.fm+ 14968 , fm:a.fm+ 15752 
+001E92E4|fm:a.fm+ 14972 , fm:a.fm+ 15756 
+001E9340|fm:DpdEffectCommand.Offset2
+001E9348|fm:a.fm+ 15036 , fm:a.fm+ 15820 
+001E9398|fm:DpdEffectCommand.Raw1, fm:a.fm+ 15308 , fm:a.fm+ 16092 
+001E93A8|fm:DpdEffectCommand.Offset2
+001E93AC|9 usages. |fm:a.fm+ 11644 |fm:a.fm+ 12420 |fm:a.fm+ 13216 |fm:a.fm+ 13720 |fm:a.fm+ 15304 |fm:a.fm+ 16088 |fm:a.fm+ 15320 |fm:a.fm+ 16104 |fm:a.fm+ 16532 
+001E93B0|fm:DpdEffectCommand.Raw2
+001E93B4|9 usages. |fm:a.fm+ 11636 |fm:a.fm+ 12412 |fm:a.fm+ 13208 |fm:a.fm+ 13712 |fm:a.fm+ 15296 |fm:a.fm+ 16080 |fm:a.fm+ 15312 |fm:a.fm+ 16096 |fm:a.fm+ 16524 
+001E93BC|9 usages. |fm:a.fm+ 11640 |fm:a.fm+ 12416 |fm:a.fm+ 13212 |fm:a.fm+ 13716 |fm:a.fm+ 15300 |fm:a.fm+ 16084 |fm:a.fm+ 15316 |fm:a.fm+ 16100 |fm:a.fm+ 16528 
+001E93F0|fm:DpdEffectCommand.Offset2
+001E93F4|fm:DpdEffectCommand.Raw2
+001E9414|fm:DpdEffectCommand.Offset2
+001E941C|fm:DpdEffectCommand.Raw2
+001E9420|fm:a.fm+ 15200 , fm:a.fm+ 15984 
+001E9460|fm:DpdEffectCommand.Raw1, fm:a.fm+ 15176 , fm:a.fm+ 15960 
+001E946C|4 usages. |fm:a.fm+ 15172 |fm:a.fm+ 15956 |fm:a.fm+ 15188 |fm:a.fm+ 15972 
+001E9474|4 usages. |fm:a.fm+ 15164 |fm:a.fm+ 15948 |fm:a.fm+ 15180 |fm:a.fm+ 15964 
+001E947C|4 usages. |fm:a.fm+ 15168 |fm:a.fm+ 15952 |fm:a.fm+ 15184 |fm:a.fm+ 15968 
+001E94D8|fm:DpdEffectCommand.Offset2
+001E94DC|fm:a.fm+ 15200 , fm:a.fm+ 15984 
+001E94FC|fm:DpdEffectCommand.Offset2
+001E9504|fm:DpdEffectCommand.Raw2
+001E9508|fm:a.fm+ 15080 , fm:a.fm+ 15864 
+001E9548|fm:DpdEffectCommand.Raw1, fm:a.fm+ 15056 , fm:a.fm+ 15840 
+001E9554|4 usages. |fm:a.fm+ 15052 |fm:a.fm+ 15836 |fm:a.fm+ 15068 |fm:a.fm+ 15852 
+001E955C|4 usages. |fm:a.fm+ 15044 |fm:a.fm+ 15828 |fm:a.fm+ 15060 |fm:a.fm+ 15844 
+001E9564|4 usages. |fm:a.fm+ 15048 |fm:a.fm+ 15832 |fm:a.fm+ 15064 |fm:a.fm+ 15848 
+001E95C0|fm:DpdEffectCommand.Offset2
+001E95C4|fm:a.fm+ 15080 , fm:a.fm+ 15864 
+001E9610|fm:DpdEffectCommand.Raw1
+001E9620|fm:DpdEffectCommand.Offset2
+001E9624|9 usages. |fm:a.fm+ 11668 |fm:a.fm+ 12444 |fm:a.fm+ 13240 |fm:a.fm+ 13744 |fm:a.fm+ 14500 |fm:a.fm+ 15360 |fm:a.fm+ 16144 |fm:a.fm+ 17232 |fm:a.fm+ 16556 
+001E9628|fm:DpdEffectCommand.Raw2
+001E962C|9 usages. |fm:a.fm+ 11660 |fm:a.fm+ 12436 |fm:a.fm+ 13232 |fm:a.fm+ 13736 |fm:a.fm+ 14492 |fm:a.fm+ 15352 |fm:a.fm+ 16136 |fm:a.fm+ 17224 |fm:a.fm+ 16548 
+001E9634|9 usages. |fm:a.fm+ 11664 |fm:a.fm+ 12440 |fm:a.fm+ 13236 |fm:a.fm+ 13740 |fm:a.fm+ 14496 |fm:a.fm+ 15356 |fm:a.fm+ 16140 |fm:a.fm+ 17228 |fm:a.fm+ 16552 
+001E9668|fm:DpdEffectCommand.Offset2
+001E9670|fm:DpdEffectCommand.Raw2
+001E9694|fm:DpdEffectCommand.Offset2
+001E969C|fm:DpdEffectCommand.Raw2
+001E96A0|fm:a.fm+ 12320 , fm:a.fm+ 13128 
+001E96E0|fm:DpdEffectCommand.Raw1
+001E96EC|fm:a.fm+ 12292 , fm:a.fm+ 13100 
+001E96F4|fm:a.fm+ 12284 , fm:a.fm+ 13092 
+001E96FC|fm:a.fm+ 12288 , fm:a.fm+ 13096 
+001E9758|fm:DpdEffectCommand.Offset2
+001E9760|fm:a.fm+ 12320 , fm:a.fm+ 13128 
+001E9784|fm:DpdEffectCommand.Offset2
+001E978C|fm:DpdEffectCommand.Raw2
+001E9790|fm:a.fm+ 12216 , fm:a.fm+ 13036 
+001E97D0|fm:DpdEffectCommand.Raw1
+001E97DC|fm:a.fm+ 12188 , fm:a.fm+ 13008 
+001E97E4|fm:a.fm+ 12180 , fm:a.fm+ 13000 
+001E97EC|fm:a.fm+ 12184 , fm:a.fm+ 13004 
+001E9848|fm:DpdEffectCommand.Offset2
+001E9850|fm:a.fm+ 12216 , fm:a.fm+ 13036 
+001E9874|fm:DpdEffectCommand.Offset2
+001E9880|fm:DpdEffectCommand.Raw2
+001E9898|7 usages. |fm:a.fm+ 5000 |fm:a.fm+ 5664 |fm:a.fm+ 6484 |fm:a.fm+ 7204 |fm:DpdEffectCommand.Raw2|fm:a.fm+ 10588 |fm:a.fm+ 10000 
+001E98B8|fm:DpdEffectCommand.Raw1
+001E98C4|7 usages. |fm:a.fm+ 11684 |fm:a.fm+ 12492 |fm:a.fm+ 13272 |fm:a.fm+ 13760 |fm:a.fm+ 14516 |fm:a.fm+ 17248 |fm:a.fm+ 16572 
+001E98CC|7 usages. |fm:a.fm+ 11690 |fm:a.fm+ 12498 |fm:a.fm+ 13278 |fm:a.fm+ 13766 |fm:a.fm+ 14522 |fm:a.fm+ 17254 |fm:a.fm+ 16578 
+001E98D8|7 usages. |fm:a.fm+ 11686 |fm:a.fm+ 12494 |fm:a.fm+ 13274 |fm:a.fm+ 13762 |fm:a.fm+ 14518 |fm:a.fm+ 17250 |fm:a.fm+ 16574 
+001E98E0|7 usages. |fm:a.fm+ 11688 |fm:a.fm+ 12496 |fm:a.fm+ 13276 |fm:a.fm+ 13764 |fm:a.fm+ 14520 |fm:a.fm+ 17252 |fm:a.fm+ 16576 
+001E99F0|fm:DpdEffectCommand.Offset2
+001E99F4|fm:DpdEffectCommand.Raw2
+001E9A1C|fm:DpdEffectCommand.Offset2
+001E9A24|fm:DpdEffectCommand.Raw2
+001E9A28|5 usages. |fm:a.fm+ 11604 |fm:a.fm+ 12380 |fm:a.fm+ 13176 |fm:a.fm+ 14460 |fm:a.fm+ 17192 
+001E9A68|fm:DpdEffectCommand.Raw1
+001E9A74|5 usages. |fm:a.fm+ 11564 |fm:a.fm+ 12328 |fm:a.fm+ 13136 |fm:a.fm+ 14420 |fm:a.fm+ 17152 
+001E9A78|5 usages. |fm:a.fm+ 11570 |fm:a.fm+ 12334 |fm:a.fm+ 13142 |fm:a.fm+ 14426 |fm:a.fm+ 17158 
+001E9A84|5 usages. |fm:a.fm+ 11566 |fm:a.fm+ 12330 |fm:a.fm+ 13138 |fm:a.fm+ 14422 |fm:a.fm+ 17154 
+001E9A8C|5 usages. |fm:EffectsGroup.DpdEffect|fm:a.fm+ 12332 |fm:a.fm+ 13140 |fm:a.fm+ 14424 |fm:a.fm+ 17156 
+001E9AF8|fm:DpdEffectCommand.Offset2
+001E9AFC|5 usages. |fm:a.fm+ 11604 |fm:a.fm+ 12380 |fm:a.fm+ 13176 |fm:a.fm+ 14460 |fm:a.fm+ 17192 
+001E9B24|fm:DpdEffectCommand.Offset2
+001E9B2C|fm:DpdEffectCommand.Raw2
+001E9B30|5 usages. |fm:a.fm+ 11556 |fm:a.fm+ 12276 |fm:a.fm+ 13084 |fm:a.fm+ 14412 |fm:a.fm+ 17144 
+001E9B70|fm:DpdEffectCommand.Raw1
+001E9B7C|5 usages. |fm:a.fm+ 11516 |fm:a.fm+ 12224 |fm:a.fm+ 13044 |fm:a.fm+ 14372 |fm:a.fm+ 17104 
+001E9B80|5 usages. |fm:a.fm+ 11522 |fm:a.fm+ 12230 |fm:a.fm+ 13050 |fm:a.fm+ 14378 |fm:a.fm+ 17110 
+001E9B8C|5 usages. |fm:a.fm+ 11518 |fm:a.fm+ 12226 |fm:a.fm+ 13046 |fm:a.fm+ 14374 |fm:a.fm+ 17106 
+001E9B94|5 usages. |fm:a.fm+ 11520 |fm:a.fm+ 12228 |fm:a.fm+ 13048 |fm:a.fm+ 14376 |fm:a.fm+ 17108 
+001E9C00|fm:DpdEffectCommand.Offset2
+001E9C04|5 usages. |fm:a.fm+ 11556 |fm:a.fm+ 12276 |fm:a.fm+ 13084 |fm:a.fm+ 14412 |fm:a.fm+ 17144 
+001E9D30|fm:DpdEffectCommand.Offset2
+001E9D34|fm:DpdEffectCommand.Raw2
+001E9D70|fm:a.fm+ 15404 , fm:a.fm+ 16200 
+001E9E04|fm:a.fm+ 15408 , fm:a.fm+ 16204 
+001E9E7C|fm:DpdEffectCommand.Offset2
+001E9E84|fm:DpdEffectCommand.Raw2
+001E9E98|fm:DpdEffectCommand.ParamLength, fm:a.fm+ 9800 
+001E9EC8|4 usages. |fm:a.fm+ 15396 |fm:a.fm+ 16192 |fm:a.fm+ 15416 |fm:a.fm+ 16212 
+001E9F20|4 usages. |fm:a.fm+ 15400 |fm:a.fm+ 16196 |fm:a.fm+ 15420 |fm:a.fm+ 16216 
+001E9F28|4 usages. |fm:a.fm+ 15398 |fm:a.fm+ 16194 |fm:a.fm+ 15418 |fm:a.fm+ 16214 
+001E9F38|fm:a.fm+ 15419 , fm:a.fm+ 16215 
+001EA09C|fm:EffectsTab5.Unkc
+001EA0A8|fm:a.fm+ 48777 
+001EA0AC|fm:EffectsTab4.Norms
+001EA0B0|fm:EffectsTab4.Norms
+001EA0D0|fm:a.fm+ 15399 , fm:a.fm+ 16195 
+001EA974|fm:DpdEffectCommand.Offset2
+001EA994|7 usages. |fm:a.fm+ 4984 |fm:DpdEffectCommand.Raw1|fm:a.fm+ 6468 |fm:a.fm+ 7188 |fm:a.fm+ 8468 |fm:a.fm+ 9252 |fm:a.fm+ 9984 
+001EA998|7 usages. |fm:a.fm+ 11748 |fm:a.fm+ 12568 |fm:a.fm+ 13324 |fm:a.fm+ 13788 |fm:a.fm+ 15384 |fm:a.fm+ 16180 |fm:a.fm+ 16600 
+001EA99C|7 usages. |fm:a.fm+ 11752 |fm:a.fm+ 12572 |fm:a.fm+ 13328 |fm:a.fm+ 13792 |fm:a.fm+ 15388 |fm:a.fm+ 16184 |fm:a.fm+ 16604 
+001EA9A4|fm:DpdEffectCommand.Raw2
+001EAF54|fm:DpdEffectCommand.Offset2
+001EAF74|fm:a.fm+ 7840 , fm:a.fm+ 10572 
+001EAF78|fm:a.fm+ 14580 , fm:a.fm+ 17312 
+001EAF7C|fm:DpdEffectCommand.Raw2
+001EB2EC|fm:a.fm+ 10588 
+001EB508|fm:DpdEffectCommand.Offset2
+001EB50C|fm:DpdEffectCommand.Raw2
+001F1730|fm:a.fm+ 16645 
+001F187C|fm:a.fm+ 16784 
+001F1880|fm:EffectsTab4VertSet.VertFormat
+001F189C|fm:a.fm+ 16785 
+001F18B8|fm:a.fm+ 16786 
+001F19F0|fm:a.fm+ 16646 
+001F1A28|fm:EffectsTab4.Unk14
+001F1A30|fm:EffectsTab4VertSet.Unk3c
+001F1A34|fm:EffectsTab4VertSet.Unk38
+001F1A54|fm:a.fm+ 16789 
+001F1A5C|fm:a.fm+ 16788 
+001F1A7C|fm:a.fm+ 16651 
+001F1A8C|fm:a.fm+ 16652 
+001F1B58|fm:a.fm+ 16648 
+001F1BD4|fm:a.fm+ 16649 
+001F1C68|fm:a.fm+ 16647 
+001F1D80|fm:a.fm+ 16780 
+001F1D9C|fm:a.fm+ 16776 
+001F1ED4|fm:a.fm+ 16651 
+001F1FA0|fm:a.fm+ 16772 
+001F1FE0|fm:a.fm+ 16650 
+001F223C|fm:a.fm+ 16788 
+001F2338|fm:a.fm+ 16650 
+001F2FB4|fm:DpdEffectCommand.Offset2
+001F2FB8|fm:a.fm+ 16646 
+001F2FC0|fm:a.fm+ 16808 
+001F2FD0|fm:a.fm+ 16800 
+001F2FD8|fm:a.fm+ 16804 
+001F3000|fm:a.fm+ 16632 
+001F302C|fm:a.fm+ 16645 
+001F3318|fm:a.fm+ 16636 
+001F3428|fm:a.fm+ 16644 
+001F3544|fm:a.fm+ 16772 
+001F35B4|fm:a.fm+ 16637 
+001F35CC|fm:a.fm+ 16640 
+001F372C|fm:a.fm+ 16644 
+001F3920|fm:a.fm+ 16637 
+001F3ADC|fm:DpdEffectCommand.Offset2
+001F3AE4|fm:a.fm+ 16808 
+001F3AF8|fm:DpdEffectCommand.OffsetParameters
+001F3B18|fm:a.fm+ 16638 
+001F3B68|fm:a.fm+ 16637 
+001F3B6C|fm:a.fm+ 16639 
+001F3BB0|fm:a.fm+ 16787 
+001F3BC0|fm:a.fm+ 16637 
+001F3BE0|fm:a.fm+ 16638 
+001F3C34|fm:a.fm+ 16656 
+001F3C40|fm:a.fm+ 16637 
+001F3E24|fm:DpdEffectCommand.Raw1
+001F3E30|fm:a.fm+ 16657 
+001F3E34|fm:a.fm+ 16672 
+001F3E40|fm:a.fm+ 16676 
+001F3E4C|fm:a.fm+ 16680 
+001F3E58|fm:a.fm+ 16657 
+001F3E64|fm:a.fm+ 16637 
+001F3F30|fm:DpdEffectCommand.Raw1
+001F3F3C|fm:a.fm+ 16658 
+001F3F40|fm:a.fm+ 16684 
+001F3F64|fm:a.fm+ 16688 
+001F3F7C|fm:a.fm+ 16692 
+001F3F88|fm:a.fm+ 16696 
+001F3F94|fm:a.fm+ 16700 
+001F3FA0|fm:a.fm+ 16704 
+001F3FAC|fm:a.fm+ 16708 
+001F3FB8|fm:a.fm+ 16712 
+001F3FC4|fm:a.fm+ 16716 
+001F3FD0|fm:a.fm+ 16658 
+001F3FDC|fm:a.fm+ 16638 
+001F4318|fm:a.fm+ 16656 
+001F4488|fm:a.fm+ 16637 
+001F4498|fm:DpdEffectCommand.Offset2
+001F44A4|fm:a.fm+ 16808 
+001FD554|fm:DpdEffectCommand.Offset2
+001FD55C|fm:DpdEffectCommand.Raw2
+001FD560|fm:a.fm+ 11784 , fm:a.fm+ 12604 , fm:a.fm+ 13360 
+001FD57C|fm:a.fm+ 11788 , fm:a.fm+ 12608 , fm:a.fm+ 13364 
+001FD590|fm:a.fm+ 11792 , fm:a.fm+ 12612 , fm:a.fm+ 13368 
+001FD5AC|fm:a.fm+ 11796 , fm:a.fm+ 12616 , fm:a.fm+ 13372 
+001FD5C8|fm:a.fm+ 11780 , fm:a.fm+ 12600 , fm:a.fm+ 13356 
+001FD604|fm:a.fm+ 11772 , fm:a.fm+ 12592 , fm:a.fm+ 13348 
+001FD618|fm:a.fm+ 11776 , fm:a.fm+ 12596 , fm:a.fm+ 13352 
+001FD75C|fm:DpdEffectCommand.Offset2
+001FD764|fm:a.fm+ 10604 
+001FD768|fm:DpdEffectCommand.Raw2
+001FD7BC|fm:a.fm+ 14612 , fm:a.fm+ 17344 
+001FD7C8|fm:a.fm+ 14616 , fm:a.fm+ 17348 
+001FD7D0|fm:a.fm+ 14624 , fm:a.fm+ 17356 
+001FD7D8|fm:a.fm+ 14620 , fm:a.fm+ 17352 
+001FD914|fm:a.fm+ 14608 , fm:a.fm+ 17340 
+001FD91C|fm:a.fm+ 14600 , fm:a.fm+ 17332 
+001FD924|fm:a.fm+ 14604 , fm:a.fm+ 17336 
+001FD978|fm:a.fm+ 11812 , fm:a.fm+ 12632 
+001FD984|fm:DpdEffectCommand.Offset2
+001FD988|fm:DpdEffectCommand.Raw2
+001FD9A4|fm:a.fm+ 11816 , fm:a.fm+ 12636 
+001FD9D4|fm:EffectsTab4.Unk10
+001FD9F8|fm:a.fm+ 11817 , fm:a.fm+ 12637 
+001FDA1C|fm:a.fm+ 11819 , fm:a.fm+ 12639 
+001FDA30|fm:a.fm+ 11818 , fm:a.fm+ 12638 
+001FDA64|fm:a.fm+ 11820 , fm:a.fm+ 12640 
+001FDA84|fm:EffectsTab4.Unk26
+001FDAA8|fm:a.fm+ 11822 , fm:a.fm+ 12642 
+001FDABC|fm:a.fm+ 6028 , fm:a.fm+ 6692 
+001FDACC|fm:a.fm+ 11821 , fm:a.fm+ 12641 
+001FDDC8|fm:DpdEffectCommand.Offset2
+001FDDD0|fm:a.fm+ 13436 
+001FDDFC|fm:DpdEffectCommand.Offset2
+001FDE04|fm:a.fm+ 13436 
+001FDE18|fm:DpdEffectCommand.Raw2
+001FDE74|fm:DpdEffectCommand.Raw1
+001FDE80|fm:a.fm+ 13392 
+001FDE8C|fm:a.fm+ 13396 
+001FDE98|fm:a.fm+ 13400 
+001FDEA4|fm:a.fm+ 13404 
+001FDEB0|fm:a.fm+ 13408 
+001FDEBC|fm:a.fm+ 13412 
+001FDF08|fm:DpdEffectCommand.Offset2
+001FDF0C|fm:a.fm+ 13388 
+001FDF10|fm:a.fm+ 13436 
+001FDF20|fm:DpdEffectCommand.Raw2
+001FDF3C|fm:a.fm+ 13416 
+001FDF6C|fm:EffectsTab4.Unk10
+001FDFA0|fm:a.fm+ 13417 
+001FDFB4|fm:a.fm+ 13419 
+001FDFC8|fm:a.fm+ 13418 
+001FDFFC|fm:a.fm+ 13420 
+001FE01C|fm:EffectsTab4.Unk26
+001FE078|fm:a.fm+ 13421 
+001FE688|fm:DpdEffectCommand.Offset2
+001FE68C|fm:DpdEffectCommand.Raw2
+001FE6D8|fm:DpdEffectCommand.Offset2
+001FE6DC|fm:a.fm+ 14640 , fm:a.fm+ 17372 
+001FE6E0|fm:DpdEffectCommand.Raw2
+001FE72C|fm:a.fm+ 14644 , fm:a.fm+ 17376 
+001FE73C|fm:EffectsTab3A.Flags
+001FE760|fm:EffectsTab3Sub.Cnt2
+001FE770|fm:EffectsTab3A.Unk
+001FE7A4|fm:DpdEffectCommand.Offset2
+001FE7A8|fm:a.fm+ 14640 , fm:a.fm+ 17372 
+001FE7AC|fm:DpdEffectCommand.Raw2
+001FE7B0|fm:a.fm+ 14664 , fm:a.fm+ 17396 
+001FE7D0|fm:a.fm+ 14651 , fm:a.fm+ 17383 
+001FE7F0|fm:a.fm+ 14652 , fm:a.fm+ 17384 
+001FE7FC|fm:a.fm+ 14648 , fm:a.fm+ 17380 
+001FE820|fm:a.fm+ 14649 , fm:a.fm+ 17381 
+001FE834|fm:a.fm+ 14650 , fm:a.fm+ 17382 
+001FE840|fm:a.fm+ 14672 , fm:a.fm+ 17404 
+001FE8A4|fm:EffectsTab3A.Offset
+00207314|fm:a.fm+ 14058 
+0020731C|fm:a.fm+ 14053 
+002087E0|fm:a.fm+ 13828 
+00208848|fm:DpdEffectCommand.Offset2
+0020884C|fm:a.fm+ 14076 
+00208850|fm:a.fm+ 14072 
+0020886C|fm:a.fm+ 13824 
+002088A4|fm:a.fm+ 14058 
+002088D8|fm:a.fm+ 14053 
+00208910|fm:a.fm+ 14004 
+00208920|fm:a.fm+ 14008 
+00208928|fm:a.fm+ 14012 
+0020899C|fm:a.fm+ 13834 
+00208CE4|fm:DpdEffectCommand.Offset2
+00208CE8|fm:a.fm+ 14076 
+00208CEC|fm:a.fm+ 14072 
+00208D20|fm:a.fm+ 13800 
+00208D38|fm:a.fm+ 13800 
+00208D4C|fm:a.fm+ 13809 
+00208D64|fm:a.fm+ 13812 
+00208D6C|fm:a.fm+ 13816 
+00208D70|fm:a.fm+ 13820 
+00208DA4|fm:a.fm+ 13804 
+00208DF0|fm:EffectsTab4.Unk10
+00208E14|fm:a.fm+ 13805 
+00208E38|fm:a.fm+ 13807 
+00208E4C|fm:EffectsTab4.Unk26
+00208E50|fm:a.fm+ 13808 
+00208E54|fm:a.fm+ 14062 
+002090C0|fm:DpdEffectCommand.Offset2
+002090C4|fm:a.fm+ 14076 
+00217E40|fm:EffectsTab4.OffPoints
+00217E54|fm:EffectsTab4.OffNorms
+00217F28|fm:EffectsTab4.NumPoints
+0021816C|fm:EffectsTab4.Unk14
+002181EC|fm:EffectsTab4.Unk10
+0021821C|fm:a.fm+ 44481 , fm:a.fm+ 41169 , fm:a.fm+ 43457 
+00218834|fm:EffectsTab4VertSet.NumVerts
+00218848|fm:a.fm+ 44481 , fm:a.fm+ 41169 
+002188F4|fm:EffectsTab4Vtx0.Vert0
+002188F8|fm:EffectsTab4Vtx0.Vert1
+002188FC|fm:EffectsTab4Vtx0.Vert2
+002189E4|fm:EffectRgba.Red
+002189E8|fm:EffectRgba.Red
+002189EC|fm:EffectRgba.Red
+00218B74|fm:a.fm+ 45137 , fm:a.fm+ 41825 
+0021985C|fm:EffectsTab4VertSet.NumVerts
+0021986C|fm:a.fm+ 45137 , fm:a.fm+ 41825 
+00219918|fm:EffectsTab4Vtx4.Vert0
+0021991C|fm:EffectsTab4Vtx4.Vert1
+00219920|fm:EffectsTab4Vtx4.Vert2
+00219924|fm:EffectsTab4Vtx4.Vert3
+00219A20|fm:EffectRgba.Red
+00219A24|fm:EffectRgba.Red
+00219A28|fm:EffectRgba.Red
+00219A2C|fm:EffectRgba.Red
+00219BF8|fm:a.fm+ 45921 , fm:a.fm+ 42609 
+00219FF0|fm:EffectsTab4VertSet.Unk38
+0021A000|fm:EffectsTab4VertSet.Unk3c
+0021A164|fm:EffectsTab4VertSet.NumVerts
+0021A174|fm:a.fm+ 43457 
+0021A220|fm:EffectsTab4Vtx6.Vert0
+0021A224|fm:EffectsTab4Vtx6.Vert1
+0021A228|fm:EffectsTab4Vtx6.Vert2
+0021A22C|fm:EffectsTab4Vtx6.Vert3
+0021A328|fm:EffectRgba.Red
+0021A32C|fm:EffectRgba.Red
+0021A330|fm:EffectRgba.Red
+0021A334|fm:EffectRgba.Red
+0021A3E4|fm:EffectUv.U
+0021A3E8|fm:EffectUv.U
+0021A3EC|fm:EffectUv.U
+0021A3F0|fm:EffectUv.U
+0021A594|fm:a.fm+ 44113 
+0021AAC4|fm:EffectsTab4.NumPoints
+0021AAE4|fm:EffectsTab4.Norms, fm:EffectsTab4.Points
+0021AAEC|fm:EffectsTab4.Norms, fm:EffectsTab4.Points
+0021AAF0|fm:EffectsTab4.Norms, fm:EffectsTab4.Points
+0021AC18|fm:EffectsTab4.Unk24
+0021D150|fm:EffectsTab3B.Size
+0021D158|fm:EffectsTab3B.Unk0
+0021D188|fm:EffectsTab3B.Unk2
+0021D1B4|fm:EffectsTab3B.Unk0
+0021DB94|fm:EffectsTab3B.Unk2
+0021DC04|fm:EffectsTab3C.Unk0
+0021DC4C|fm:EffectsTab3C.Unk0
+0021DC50|fm:EffectsTab3C.Unk2
+0021DCCC|fm:EffectsTab3C.Unk4
+0021DCD0|fm:EffectsTab3C.Unk6
+0021DD8C|fm:a.fm+ 38391 
+002F3CE8|fm:EffectsGroup.Matrix1, fm:EffectsGroup.Matrix2

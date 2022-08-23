@@ -1,0 +1,1 @@
+kh2_file_dumper.exe D:/KH2 -dN

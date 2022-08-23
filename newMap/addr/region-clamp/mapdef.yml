@@ -1,0 +1,12 @@
+imageDirs:
+  - '..'
+
+textureOptions:
+  # addressU
+  # addressV are one of: 'Repeat', 'Clamp', 'RegionClamp', 'RegionRepeat'
+  addressU: 'RegionClamp'
+  addressV: 'RegionClamp'
+
+materials:
+  - name: void
+    ignore: true

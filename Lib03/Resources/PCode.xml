@@ -1,0 +1,960 @@
+<PCode>
+  <Instr opcode="0" sub="0" ssub="-1" name="pushImm" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm32" type="imm32" aiPos="0" />
+  </Instr>
+  <Instr opcode="0" sub="1" ssub="-1" name="pushImm" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm32" type="imm32" aiPos="0" />
+  </Instr>
+  <Instr opcode="0" sub="2" ssub="0" name="pushFromPSp" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="0" sub="2" ssub="1" name="pushFromPWp" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="0" sub="2" ssub="2" name="pushFromPSpVal" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="0" sub="2" ssub="3" name="pushFromPAi" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="1" />
+  </Instr>
+  <Instr opcode="0" sub="3" ssub="0" name="pushFromFSp" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="0" sub="3" ssub="1" name="pushFromFWp" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="0" sub="3" ssub="2" name="pushFromFSpVal" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="0" sub="3" ssub="3" name="pushFromFAi" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="1" />
+  </Instr>
+  <Instr opcode="1" sub="-1" ssub="0" name="popToSp" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="1" sub="-1" ssub="1" name="popToWp" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="1" sub="-1" ssub="2" name="popToSpVal" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="1" sub="-1" ssub="3" name="popToAi" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="1" />
+  </Instr>
+  <Instr opcode="2" sub="-1" ssub="0" name="memcpyToSp" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+    <Arg name="imm16_2" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="2" sub="-1" ssub="1" name="memcpyToWp" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+    <Arg name="imm16_2" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="2" sub="-1" ssub="2" name="memcpyToSpVal" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+    <Arg name="imm16_2" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="2" sub="-1" ssub="3" name="memcpyToSpAi" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+    <Arg name="imm16_2" type="imm16" aiPos="1" />
+  </Instr>
+  <Instr opcode="3" sub="-1" ssub="-1" name="fetchValue" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="4" sub="-1" ssub="-1" name="memcpy" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="ssub" type="ssub" aiPos="0" />
+  </Instr>
+  <Instr opcode="5" sub="0" ssub="0" name="cfti" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="2" name="neg" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="3" name="inv" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="4" name="eqz" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="5" name="abs" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="6" name="msb" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="7" name="info" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="8" name="eqz" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="9" name="neqz" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="10" name="msbi" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="0" ssub="11" name="ipos" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="1" ssub="1" name="citf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="1" ssub="2" name="negf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="1" ssub="5" name="absf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="1" ssub="6" name="infzf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="1" ssub="7" name="infoezf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="1" ssub="8" name="eqzf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="1" ssub="9" name="neqzf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="1" ssub="10" name="supoezf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="5" sub="1" ssub="11" name="supzf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="0" name="add" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="1" name="sub" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="2" name="mul" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="3" name="div" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="4" name="mod" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="5" name="and" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="6" name="or" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="7" name="xor" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="8" name="sll" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="9" name="sra" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="10" name="eqzv" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="0" ssub="11" name="neqzv" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="1" ssub="0" name="addf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="1" ssub="1" name="subf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="1" ssub="2" name="mulf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="1" ssub="3" name="divf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="6" sub="1" ssub="4" name="modf" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="7" sub="-1" ssub="0" name="jmp" syscall="0" gosub="0" jump="1" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="1" />
+  </Instr>
+  <Instr opcode="7" sub="-1" ssub="1" name="jnz" syscall="0" gosub="0" jump="1" conditional="1" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="1" />
+  </Instr>
+  <Instr opcode="7" sub="-1" ssub="2" name="jz" syscall="0" gosub="0" jump="1" conditional="1" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="1" />
+  </Instr>
+  <Instr opcode="8" sub="-1" ssub="-1" name="gosub" syscall="0" gosub="1" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="ssub" type="ssub" aiPos="0" />
+    <Arg name="imm16" type="imm16" aiPos="1" />
+  </Instr>
+  <Instr opcode="9" sub="-1" ssub="0" name="halt" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="9" sub="-1" ssub="1" name="exit" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="1" gosubRet="0" />
+  <Instr opcode="9" sub="-1" ssub="2" name="ret" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="1" />
+  <Instr opcode="9" sub="-1" ssub="3" name="drop" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="9" sub="-1" ssub="5" name="dup" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="9" sub="-1" ssub="6" name="sin" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="9" sub="-1" ssub="7" name="cos" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="9" sub="-1" ssub="8" name="degr" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="9" sub="-1" ssub="9" name="radd" syscall="0" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0" />
+  <Instr opcode="10" sub="-1" ssub="-1" name="syscall" syscall="1" gosub="0" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="imm16" type="imm16" aiPos="0" />
+  </Instr>
+  <Instr opcode="11" sub="-1" ssub="-1" name="gosub32" syscall="0" gosub="1" jump="0" conditional="0" neverReturn="0" gosubRet="0">
+    <Arg name="ssub" type="ssub" aiPos="0" />
+    <Arg name="imm32" type="imm32" aiPos="1" />
+  </Instr>
+  <Syscall tableIdx="0" funcIdx="0" name="trap_puti" />
+  <Syscall tableIdx="0" funcIdx="1" name="trap_putf" />
+  <Syscall tableIdx="0" funcIdx="2" name="trap_puts" />
+  <Syscall tableIdx="0" funcIdx="3" name="trap_frametime" />
+  <Syscall tableIdx="0" funcIdx="4" name="trap_vector_add" />
+  <Syscall tableIdx="0" funcIdx="5" name="trap_vector_sub" />
+  <Syscall tableIdx="0" funcIdx="6" name="trap_vector_len" />
+  <Syscall tableIdx="0" funcIdx="7" name="trap_vector_normalize" />
+  <Syscall tableIdx="0" funcIdx="8" name="trap_vector_dump" />
+  <Syscall tableIdx="0" funcIdx="9" name="trap_thread_start" />
+  <Syscall tableIdx="0" funcIdx="11" name="trap_file_is_reading" />
+  <Syscall tableIdx="0" funcIdx="12" name="trap_file_flush" />
+  <Syscall tableIdx="0" funcIdx="13" name="trap_vector_roty" />
+  <Syscall tableIdx="0" funcIdx="14" name="trap_progress_set_flag" />
+  <Syscall tableIdx="0" funcIdx="15" name="trap_progress_check_flag" />
+  <Syscall tableIdx="0" funcIdx="16" name="trap_random_get" />
+  <Syscall tableIdx="0" funcIdx="17" name="trap_random_getf" />
+  <Syscall tableIdx="0" funcIdx="18" name="trap_random_range" />
+  <Syscall tableIdx="0" funcIdx="19" name="trap_worldflag_set" />
+  <Syscall tableIdx="0" funcIdx="20" name="trap_worldflag_check" />
+  <Syscall tableIdx="0" funcIdx="21" name="trap_vector_get_rot_xz" />
+  <Syscall tableIdx="0" funcIdx="22" name="trap_abs" />
+  <Syscall tableIdx="0" funcIdx="23" name="trap_absf" />
+  <Syscall tableIdx="0" funcIdx="24" name="trap_stputi" />
+  <Syscall tableIdx="0" funcIdx="25" name="trap_stputf" />
+  <Syscall tableIdx="0" funcIdx="26" name="trap_stputs" />
+  <Syscall tableIdx="0" funcIdx="27" name="func_system_set_game_speed" />
+  <Syscall tableIdx="0" funcIdx="28" name="method_blur_init" />
+  <Syscall tableIdx="0" funcIdx="29" name="method_blur_start" />
+  <Syscall tableIdx="0" funcIdx="30" name="method_blur_stop" />
+  <Syscall tableIdx="0" funcIdx="31" name="func_screen_whiteout" />
+  <Syscall tableIdx="0" funcIdx="32" name="func_screen_whitein" />
+  <Syscall tableIdx="0" funcIdx="35" name="method_vector_scale" />
+  <Syscall tableIdx="0" funcIdx="36" name="trap_vector_mul" />
+  <Syscall tableIdx="0" funcIdx="37" name="trap_vector_div" />
+  <Syscall tableIdx="0" funcIdx="38" name="trap_effect_set_pos" />
+  <Syscall tableIdx="0" funcIdx="39" name="trap_effect_set_scale" />
+  <Syscall tableIdx="0" funcIdx="40" name="trap_effect_set_rot" />
+  <Syscall tableIdx="0" funcIdx="41" name="trap_effect_set_dir" />
+  <Syscall tableIdx="0" funcIdx="42" name="trap_vector_atan_xz" />
+  <Syscall tableIdx="0" funcIdx="43" name="trap_fixrad" />
+  <Syscall tableIdx="0" funcIdx="44" name="trap_effect_loop_end" />
+  <Syscall tableIdx="0" funcIdx="45" name="trap_vector_addf" />
+  <Syscall tableIdx="0" funcIdx="46" name="trap_vector_homing" />
+  <Syscall tableIdx="0" funcIdx="47" name="trap_memory_alloc" />
+  <Syscall tableIdx="0" funcIdx="48" name="trap_memory_free" />
+  <Syscall tableIdx="0" funcIdx="49" name="trap_effect_is_alive" />
+  <Syscall tableIdx="0" funcIdx="50" name="trap_effect_is_active" />
+  <Syscall tableIdx="0" funcIdx="51" name="trap_effect_kill" />
+  <Syscall tableIdx="0" funcIdx="52" name="trap_effect_fadeout" />
+  <Syscall tableIdx="0" funcIdx="53" name="trap_effect_pos" />
+  <Syscall tableIdx="0" funcIdx="54" name="trap_effect_dir" />
+  <Syscall tableIdx="0" funcIdx="55" name="trap_timer_count_down" />
+  <Syscall tableIdx="0" funcIdx="56" name="trap_timer_count_up" />
+  <Syscall tableIdx="0" funcIdx="57" name="trap_saveflag_set" />
+  <Syscall tableIdx="0" funcIdx="58" name="trap_saveflag_reset" />
+  <Syscall tableIdx="0" funcIdx="59" name="trap_saveflag_check" />
+  <Syscall tableIdx="0" funcIdx="60" name="trap_assert" />
+  <Syscall tableIdx="0" funcIdx="61" name="trap_saveram_get_partram" />
+  <Syscall tableIdx="0" funcIdx="62" name="trap_partram_set_item_max" />
+  <Syscall tableIdx="0" funcIdx="63" name="trap_item_get" />
+  <Syscall tableIdx="0" funcIdx="64" name="trap_sound_disable" />
+  <Syscall tableIdx="0" funcIdx="65" name="trap_sound_play_system" />
+  <Syscall tableIdx="0" funcIdx="66" name="trap_effect_pause" />
+  <Syscall tableIdx="0" funcIdx="67" name="trap_effect_set_color" />
+  <Syscall tableIdx="0" funcIdx="68" name="trap_vector_rotx" />
+  <Syscall tableIdx="0" funcIdx="69" name="trap_menuflag_set" />
+  <Syscall tableIdx="0" funcIdx="70" name="trap_progress_is_second" />
+  <Syscall tableIdx="0" funcIdx="73" name="trap_menuflag_reset" />
+  <Syscall tableIdx="0" funcIdx="74" name="trap_screen_show_picture" />
+  <Syscall tableIdx="0" funcIdx="75" name="trap_saveram_set_weapon" />
+  <Syscall tableIdx="0" funcIdx="76" name="trap_saveram_set_form_weapon" />
+  <Syscall tableIdx="0" funcIdx="77" name="trap_screen_cross_fade" />
+  <Syscall tableIdx="0" funcIdx="78" name="trap_vector_inter" />
+  <Syscall tableIdx="0" funcIdx="79" name="trap_effect_add_dead_block" />
+  <Syscall tableIdx="0" funcIdx="80" name="trap_pad_is_button" />
+  <Syscall tableIdx="0" funcIdx="81" name="trap_pad_is_trigger" />
+  <Syscall tableIdx="0" funcIdx="82" name="trap_vector_outer_product" />
+  <Syscall tableIdx="0" funcIdx="83" name="trap_vector_rot" />
+  <Syscall tableIdx="0" funcIdx="84" name="trap_vector_angle" />
+  <Syscall tableIdx="0" funcIdx="85" name="trap_effect_loop_end_kill" />
+  <Syscall tableIdx="0" funcIdx="86" name="trap_effect_set_type" />
+  <Syscall tableIdx="0" funcIdx="87" name="trap_screen_fadeout" />
+  <Syscall tableIdx="0" funcIdx="88" name="trap_screen_fadein" />
+  <Syscall tableIdx="0" funcIdx="89" name="trap_menuflag_check" />
+  <Syscall tableIdx="0" funcIdx="90" name="trap_vector_draw" />
+  <Syscall tableIdx="0" funcIdx="91" name="trap_vector_inner_prodcut" />
+  <Syscall tableIdx="0" funcIdx="92" name="trap_partram_add_attack" />
+  <Syscall tableIdx="0" funcIdx="93" name="trap_partram_add_wisdom" />
+  <Syscall tableIdx="0" funcIdx="94" name="trap_partram_add_defence" />
+  <Syscall tableIdx="0" funcIdx="95" name="trap_partram_set_levelup_type" />
+  <Syscall tableIdx="0" funcIdx="96" name="trap_partram_add_ap" />
+  <Syscall tableIdx="0" funcIdx="97" name="trap_item_reduce" />
+  <Syscall tableIdx="0" funcIdx="98" name="trap_saveram_set_form_ability" />
+  <Syscall tableIdx="0" funcIdx="99" name="trap_partram_add_ability" />
+  <Syscall tableIdx="0" funcIdx="100" name="trap_saveram_increment_friend_recov" />
+  <Syscall tableIdx="0" funcIdx="101" name="trap_progress_is_secret_movie" />
+  <Syscall tableIdx="0" funcIdx="102" name="trap_vector_to_angle" />
+  <Syscall tableIdx="0" funcIdx="103" name="trap_progress_is_fm_secret_movie" />
+  <Syscall tableIdx="0" funcIdx="104" name="trap_sound_set_bgse_volume" />
+  <Syscall tableIdx="1" funcIdx="0" name="trap_sysobj_appear" />
+  <Syscall tableIdx="1" funcIdx="1" name="trap_obj_set_rot" />
+  <Syscall tableIdx="1" funcIdx="2" name="trap_sysobj_moveto" />
+  <Syscall tableIdx="1" funcIdx="3" name="trap_sysobj_player" />
+  <Syscall tableIdx="1" funcIdx="4" name="trap_obj_wish_dir" />
+  <Syscall tableIdx="1" funcIdx="5" name="trap_act_table_init" />
+  <Syscall tableIdx="1" funcIdx="6" name="trap_act_table_add" />
+  <Syscall tableIdx="1" funcIdx="7" name="trap_obj_set_act_table" />
+  <Syscall tableIdx="1" funcIdx="8" name="trap_obj_act_start" />
+  <Syscall tableIdx="1" funcIdx="9" name="trap_obj_act_push" />
+  <Syscall tableIdx="1" funcIdx="10" name="trap_obj_is_act_exec" />
+  <Syscall tableIdx="1" funcIdx="11" name="trap_sysobj_motion_start" />
+  <Syscall tableIdx="1" funcIdx="12" name="trap_sysobj_motion_change" />
+  <Syscall tableIdx="1" funcIdx="13" name="trap_sysobj_motion_push" />
+  <Syscall tableIdx="1" funcIdx="14" name="trap_sysobj_motion_is_end" />
+  <Syscall tableIdx="1" funcIdx="15" name="trap_sysobj_motion_id" />
+  <Syscall tableIdx="1" funcIdx="17" name="trap_obj_leave_force" />
+  <Syscall tableIdx="1" funcIdx="18" name="trap_obj_attach" />
+  <Syscall tableIdx="1" funcIdx="19" name="trap_sysobj_fadeout" />
+  <Syscall tableIdx="1" funcIdx="20" name="trap_sysobj_fadein" />
+  <Syscall tableIdx="1" funcIdx="21" name="trap_obj_effect_start" />
+  <Syscall tableIdx="1" funcIdx="22" name="trap_obj_effect_start_pos" />
+  <Syscall tableIdx="1" funcIdx="23" name="trap_area_world" />
+  <Syscall tableIdx="1" funcIdx="24" name="trap_area_area" />
+  <Syscall tableIdx="1" funcIdx="25" name="trap_area_map_set" />
+  <Syscall tableIdx="1" funcIdx="26" name="trap_area_battle_set" />
+  <Syscall tableIdx="1" funcIdx="27" name="trap_area_event_set" />
+  <Syscall tableIdx="1" funcIdx="28" name="trap_obj_leave" />
+  <Syscall tableIdx="1" funcIdx="29" name="trap_obj_motion_capture" />
+  <Syscall tableIdx="1" funcIdx="30" name="trap_area_jump" />
+  <Syscall tableIdx="1" funcIdx="31" name="trap_area_setjump" />
+  <Syscall tableIdx="1" funcIdx="32" name="trap_message_open" />
+  <Syscall tableIdx="1" funcIdx="33" name="trap_message_close" />
+  <Syscall tableIdx="1" funcIdx="34" name="trap_event_is_exec" />
+  <Syscall tableIdx="1" funcIdx="35" name="trap_area_init" />
+  <Syscall tableIdx="1" funcIdx="36" name="trap_bg_hide" />
+  <Syscall tableIdx="1" funcIdx="37" name="trap_bg_show" />
+  <Syscall tableIdx="1" funcIdx="38" name="trap_obj_set_team" />
+  <Syscall tableIdx="1" funcIdx="39" name="trap_obj_unit_arg" />
+  <Syscall tableIdx="1" funcIdx="40" name="trap_obj_is_pirate_shade" />
+  <Syscall tableIdx="1" funcIdx="41" name="trap_signal_call" />
+  <Syscall tableIdx="1" funcIdx="42" name="func_obj_control_off" />
+  <Syscall tableIdx="1" funcIdx="43" name="func_obj_control_on" />
+  <Syscall tableIdx="1" funcIdx="44" name="func_history_clear_enemy" />
+  <Syscall tableIdx="1" funcIdx="45" name="func_area_activate_unit" />
+  <Syscall tableIdx="1" funcIdx="46" name="func_bg_barrier_on" />
+  <Syscall tableIdx="1" funcIdx="47" name="func_bg_barrier_off" />
+  <Syscall tableIdx="1" funcIdx="48" name="method_message_is_end" />
+  <Syscall tableIdx="1" funcIdx="49" name="method_obj_enable_reaction_command" />
+  <Syscall tableIdx="1" funcIdx="50" name="method_obj_disable_reaction_command" />
+  <Syscall tableIdx="1" funcIdx="51" name="method_obj_reset_reaction_command" />
+  <Syscall tableIdx="1" funcIdx="52" name="method_obj_enable_collision" />
+  <Syscall tableIdx="1" funcIdx="53" name="method_obj_disable_collision" />
+  <Syscall tableIdx="1" funcIdx="54" name="method_obj_reset_collision" />
+  <Syscall tableIdx="1" funcIdx="55" name="method_obj_jump" />
+  <Syscall tableIdx="1" funcIdx="56" name="method_obj_is_culling" />
+  <Syscall tableIdx="1" funcIdx="57" name="trap_obj_is_jump" />
+  <Syscall tableIdx="1" funcIdx="58" name="trap_obj_fly" />
+  <Syscall tableIdx="1" funcIdx="59" name="trap_obj_is_fly" />
+  <Syscall tableIdx="1" funcIdx="60" name="trap_obj_is_air" />
+  <Syscall tableIdx="1" funcIdx="61" name="trap_sysobj_motion_frame_start" />
+  <Syscall tableIdx="1" funcIdx="62" name="trap_obj_get_moved" />
+  <Syscall tableIdx="1" funcIdx="63" name="trap_obj_is_motion_in_loop" />
+  <Syscall tableIdx="1" funcIdx="64" name="trap_obj_get_wish_movement" />
+  <Syscall tableIdx="1" funcIdx="65" name="trap_obj_exec_fall" />
+  <Syscall tableIdx="1" funcIdx="66" name="trap_obj_exec_land" />
+  <Syscall tableIdx="1" funcIdx="67" name="trap_obj_motion_get_length" />
+  <Syscall tableIdx="1" funcIdx="68" name="trap_obj_motion_get_loop_top" />
+  <Syscall tableIdx="1" funcIdx="69" name="trap_obj_motion_get_time" />
+  <Syscall tableIdx="1" funcIdx="70" name="trap_obj_set_flag" />
+  <Syscall tableIdx="1" funcIdx="71" name="trap_obj_reset_flag" />
+  <Syscall tableIdx="1" funcIdx="72" name="trap_obj_check_flag" />
+  <Syscall tableIdx="1" funcIdx="73" name="trap_obj_hover" />
+  <Syscall tableIdx="1" funcIdx="74" name="trap_obj_idle" />
+  <Syscall tableIdx="1" funcIdx="75" name="trap_obj_motion_hook" />
+  <Syscall tableIdx="1" funcIdx="76" name="trap_obj_motion_unhook" />
+  <Syscall tableIdx="1" funcIdx="77" name="trap_obj_motion_is_hook" />
+  <Syscall tableIdx="1" funcIdx="78" name="trap_obj_motion_is_no_control" />
+  <Syscall tableIdx="1" funcIdx="79" name="trap_obj_set_dir" />
+  <Syscall tableIdx="1" funcIdx="80" name="trap_obj_turn_dir" />
+  <Syscall tableIdx="1" funcIdx="81" name="trap_obj_act_wedge" />
+  <Syscall tableIdx="1" funcIdx="82" name="trap_obj_thread_start" />
+  <Syscall tableIdx="1" funcIdx="83" name="trap_obj_apply_bone_matrix" />
+  <Syscall tableIdx="1" funcIdx="84" name="trap_obj_sheet" />
+  <Syscall tableIdx="1" funcIdx="85" name="trap_obj_texanm_start" />
+  <Syscall tableIdx="1" funcIdx="86" name="trap_obj_texanm_stop" />
+  <Syscall tableIdx="1" funcIdx="87" name="trap_obj_effect_start_bind" />
+  <Syscall tableIdx="1" funcIdx="88" name="trap_obj_target_pos" />
+  <Syscall tableIdx="1" funcIdx="89" name="trap_obj_move_request" />
+  <Syscall tableIdx="1" funcIdx="90" name="trap_obj_act_shout" />
+  <Syscall tableIdx="1" funcIdx="91" name="trap_obj_star" />
+  <Syscall tableIdx="1" funcIdx="92" name="trap_obj_scatter_prize" />
+  <Syscall tableIdx="1" funcIdx="93" name="trap_sysobj_party" />
+  <Syscall tableIdx="1" funcIdx="94" name="trap_sysobj_is_exist" />
+  <Syscall tableIdx="1" funcIdx="95" name="trap_obj_fly_to_jump" />
+  <Syscall tableIdx="1" funcIdx="96" name="trap_obj_get_action" />
+  <Syscall tableIdx="1" funcIdx="97" name="trap_obj_spec" />
+  <Syscall tableIdx="1" funcIdx="98" name="trap_obj_step_pos" />
+  <Syscall tableIdx="1" funcIdx="99" name="trap_obj_float_height" />
+  <Syscall tableIdx="1" funcIdx="100" name="trap_obj_jump_height_to_uptime" />
+  <Syscall tableIdx="1" funcIdx="101" name="trap_obj_motion_is_capture" />
+  <Syscall tableIdx="1" funcIdx="102" name="trap_obj_detach" />
+  <Syscall tableIdx="1" funcIdx="103" name="trap_obj_set_detach_callback" />
+  <Syscall tableIdx="1" funcIdx="104" name="trap_obj_shadow_move_start" />
+  <Syscall tableIdx="1" funcIdx="105" name="trap_obj_shadow_move_end" />
+  <Syscall tableIdx="1" funcIdx="106" name="trap_signal_reserve_hp" />
+  <Syscall tableIdx="1" funcIdx="107" name="trap_obj_motion_speed" />
+  <Syscall tableIdx="1" funcIdx="108" name="trap_obj_show_part" />
+  <Syscall tableIdx="1" funcIdx="109" name="trap_obj_hide_part" />
+  <Syscall tableIdx="1" funcIdx="110" name="trap_obj_get_appear_way" />
+  <Syscall tableIdx="1" funcIdx="111" name="trap_obj_set_movement" />
+  <Syscall tableIdx="1" funcIdx="112" name="trap_obj_hook" />
+  <Syscall tableIdx="1" funcIdx="113" name="trap_player_get_movement" />
+  <Syscall tableIdx="1" funcIdx="114" name="trap_obj_search_by_entry" />
+  <Syscall tableIdx="1" funcIdx="115" name="trap_obj_set_jump_motion" />
+  <Syscall tableIdx="1" funcIdx="117" name="trap_command_cage_on" />
+  <Syscall tableIdx="1" funcIdx="118" name="trap_command_cage_off" />
+  <Syscall tableIdx="1" funcIdx="119" name="trap_obj_check_step" />
+  <Syscall tableIdx="1" funcIdx="120" name="trap_target_pos" />
+  <Syscall tableIdx="1" funcIdx="121" name="trap_target_search" />
+  <Syscall tableIdx="1" funcIdx="122" name="trap_obj_dump" />
+  <Syscall tableIdx="1" funcIdx="123" name="trap_obj_tex_fade_set" />
+  <Syscall tableIdx="1" funcIdx="124" name="trap_obj_is_entry_fly" />
+  <Syscall tableIdx="1" funcIdx="125" name="trap_obj_tex_fade_start" />
+  <Syscall tableIdx="1" funcIdx="126" name="trap_obj_motion_sync" />
+  <Syscall tableIdx="1" funcIdx="127" name="trap_obj_act_clear" />
+  <Syscall tableIdx="1" funcIdx="128" name="trap_obj_sysjump" />
+  <Syscall tableIdx="1" funcIdx="129" name="trap_obj_blow" />
+  <Syscall tableIdx="1" funcIdx="130" name="trap_obj_cmp" />
+  <Syscall tableIdx="1" funcIdx="131" name="trap_target_dup" />
+  <Syscall tableIdx="1" funcIdx="132" name="trap_target_free" />
+  <Syscall tableIdx="1" funcIdx="133" name="trap_obj_hide" />
+  <Syscall tableIdx="1" funcIdx="134" name="trap_obj_show" />
+  <Syscall tableIdx="1" funcIdx="135" name="trap_bg_cross_pos" />
+  <Syscall tableIdx="1" funcIdx="136" name="trap_bg_is_floor" />
+  <Syscall tableIdx="1" funcIdx="137" name="trap_bg_get_normal" />
+  <Syscall tableIdx="1" funcIdx="138" name="trap_pax_start" />
+  <Syscall tableIdx="1" funcIdx="139" name="trap_pax_start_bind" />
+  <Syscall tableIdx="1" funcIdx="140" name="trap_target_is_exist" />
+  <Syscall tableIdx="1" funcIdx="141" name="trap_bg_ground_pos" />
+  <Syscall tableIdx="1" funcIdx="142" name="trap_signal_reserve_min_hp" />
+  <Syscall tableIdx="1" funcIdx="143" name="trap_obj_search_by_serial" />
+  <Syscall tableIdx="1" funcIdx="144" name="trap_obj_serial" />
+  <Syscall tableIdx="1" funcIdx="145" name="trap_obj_touch_zone" />
+  <Syscall tableIdx="1" funcIdx="146" name="trap_obj_hitback" />
+  <Syscall tableIdx="1" funcIdx="147" name="trap_obj_pos" />
+  <Syscall tableIdx="1" funcIdx="148" name="trap_obj_set_pos" />
+  <Syscall tableIdx="1" funcIdx="149" name="trap_obj_effect_start_bind_other" />
+  <Syscall tableIdx="1" funcIdx="150" name="trap_obj_motion_check_range" />
+  <Syscall tableIdx="1" funcIdx="151" name="trap_obj_motion_check_trigger" />
+  <Syscall tableIdx="1" funcIdx="152" name="trap_status_is_mission" />
+  <Syscall tableIdx="1" funcIdx="153" name="trap_obj_reset_pos" />
+  <Syscall tableIdx="1" funcIdx="154" name="trap_status_secure_mode_start" />
+  <Syscall tableIdx="1" funcIdx="155" name="trap_obj_add_hp" />
+  <Syscall tableIdx="1" funcIdx="156" name="trap_obj_hop" />
+  <Syscall tableIdx="1" funcIdx="157" name="trap_obj_camera_start" />
+  <Syscall tableIdx="1" funcIdx="158" name="trap_bg_set_belt_conveyor" />
+  <Syscall tableIdx="1" funcIdx="159" name="trap_bg_set_uvscroll_speed" />
+  <Syscall tableIdx="1" funcIdx="160" name="trap_target_set_obj" />
+  <Syscall tableIdx="1" funcIdx="161" name="trap_obj_is_attach" />
+  <Syscall tableIdx="1" funcIdx="162" name="trap_target_set_before_player" />
+  <Syscall tableIdx="1" funcIdx="163" name="trap_target_set_after_player" />
+  <Syscall tableIdx="1" funcIdx="164" name="trap_obj_camera_start_global" />
+  <Syscall tableIdx="1" funcIdx="165" name="trap_command_override" />
+  <Syscall tableIdx="1" funcIdx="166" name="trap_target_attack" />
+  <Syscall tableIdx="1" funcIdx="167" name="trap_obj_act_start_pri" />
+  <Syscall tableIdx="1" funcIdx="168" name="trap_obj_flyjump" />
+  <Syscall tableIdx="1" funcIdx="169" name="trap_obj_effect_unbind" />
+  <Syscall tableIdx="1" funcIdx="170" name="trap_obj_unit_group" />
+  <Syscall tableIdx="1" funcIdx="171" name="trap_status_no_leave" />
+  <Syscall tableIdx="1" funcIdx="172" name="trap_obj_can_look" />
+  <Syscall tableIdx="1" funcIdx="173" name="trap_obj_can_look_pos" />
+  <Syscall tableIdx="1" funcIdx="174" name="trap_obj_look_start" />
+  <Syscall tableIdx="1" funcIdx="175" name="trap_obj_look_start_pos" />
+  <Syscall tableIdx="1" funcIdx="176" name="trap_obj_look_end" />
+  <Syscall tableIdx="1" funcIdx="177" name="trap_obj_set_path" />
+  <Syscall tableIdx="1" funcIdx="178" name="trap_obj_get_path_movement" />
+  <Syscall tableIdx="1" funcIdx="179" name="trap_obj_set_fall_motion" />
+  <Syscall tableIdx="1" funcIdx="180" name="trap_obj_set_land_motion" />
+  <Syscall tableIdx="1" funcIdx="181" name="trap_light_create" />
+  <Syscall tableIdx="1" funcIdx="182" name="trap_light_set_flag" />
+  <Syscall tableIdx="1" funcIdx="183" name="trap_light_set_color" />
+  <Syscall tableIdx="1" funcIdx="184" name="trap_light_fadeout" />
+  <Syscall tableIdx="1" funcIdx="185" name="trap_obj_set_parts_color" />
+  <Syscall tableIdx="1" funcIdx="186" name="trap_obj_reset_parts_color" />
+  <Syscall tableIdx="1" funcIdx="187" name="trap_status_prize_drain_start" />
+  <Syscall tableIdx="1" funcIdx="188" name="trap_status_prize_drain_end" />
+  <Syscall tableIdx="1" funcIdx="189" name="trap_obj_history_mark" />
+  <Syscall tableIdx="1" funcIdx="190" name="trap_obj_is_history_mark" />
+  <Syscall tableIdx="1" funcIdx="191" name="trap_obj_lockon_target" />
+  <Syscall tableIdx="1" funcIdx="192" name="trap_obj_is_motion_cancel" />
+  <Syscall tableIdx="1" funcIdx="193" name="trap_camera_warp" />
+  <Syscall tableIdx="1" funcIdx="194" name="trap_obj_set_stealth" />
+  <Syscall tableIdx="1" funcIdx="195" name="trap_obj_reset_stealth" />
+  <Syscall tableIdx="1" funcIdx="196" name="trap_area_entrance" />
+  <Syscall tableIdx="1" funcIdx="197" name="trap_area_cost_rest" />
+  <Syscall tableIdx="1" funcIdx="198" name="trap_obj_set_player_random_pos" />
+  <Syscall tableIdx="1" funcIdx="199" name="trap_obj_set_random_pos" />
+  <Syscall tableIdx="1" funcIdx="200" name="trap_obj_set_bg_collision_type" />
+  <Syscall tableIdx="1" funcIdx="201" name="trap_obj_dir" />
+  <Syscall tableIdx="1" funcIdx="202" name="trap_unit_disable" />
+  <Syscall tableIdx="1" funcIdx="203" name="trap_unit_enable" />
+  <Syscall tableIdx="1" funcIdx="204" name="trap_status_force_leave_start" />
+  <Syscall tableIdx="1" funcIdx="205" name="trap_status_force_leave_end" />
+  <Syscall tableIdx="1" funcIdx="206" name="trap_status_is_force_leave" />
+  <Syscall tableIdx="1" funcIdx="207" name="trap_camera_watch" />
+  <Syscall tableIdx="1" funcIdx="208" name="trap_obj_is_hover" />
+  <Syscall tableIdx="1" funcIdx="209" name="trap_obj_dead" />
+  <Syscall tableIdx="1" funcIdx="210" name="trap_obj_search_by_part" />
+  <Syscall tableIdx="1" funcIdx="211" name="trap_obj_pattern_enable" />
+  <Syscall tableIdx="1" funcIdx="212" name="trap_obj_pattern_disable" />
+  <Syscall tableIdx="1" funcIdx="213" name="trap_obj_part" />
+  <Syscall tableIdx="1" funcIdx="214" name="trap_obj_hook_stop" />
+  <Syscall tableIdx="1" funcIdx="217" name="trap_obj_set_pos_trans" />
+  <Syscall tableIdx="1" funcIdx="218" name="trap_obj_set_unit_arg" />
+  <Syscall tableIdx="1" funcIdx="219" name="trap_obj_camera_start" />
+  <Syscall tableIdx="1" funcIdx="220" name="trap_obj_move_to_space" />
+  <Syscall tableIdx="1" funcIdx="221" name="trap_obj_can_decide_command" />
+  <Syscall tableIdx="1" funcIdx="222" name="trap_obj_get_entry_id" />
+  <Syscall tableIdx="1" funcIdx="223" name="trap_camera_cancel" />
+  <Syscall tableIdx="1" funcIdx="224" name="trap_obj_is_action_air" />
+  <Syscall tableIdx="1" funcIdx="225" name="trap_obj_is_star" />
+  <Syscall tableIdx="1" funcIdx="226" name="trap_obj_scatter_prize_mu" />
+  <Syscall tableIdx="1" funcIdx="227" name="trap_obj_jump_direct" />
+  <Syscall tableIdx="1" funcIdx="228" name="trap_sheet_hp" />
+  <Syscall tableIdx="1" funcIdx="229" name="trap_sheet_max_hp" />
+  <Syscall tableIdx="1" funcIdx="230" name="trap_sheet_hp_rate" />
+  <Syscall tableIdx="1" funcIdx="231" name="trap_sheet_set_min_hp" />
+  <Syscall tableIdx="1" funcIdx="232" name="trap_sheet_min_hp" />
+  <Syscall tableIdx="1" funcIdx="233" name="trap_sheet_set_hp" />
+  <Syscall tableIdx="1" funcIdx="234" name="trap_party_get_weapon" />
+  <Syscall tableIdx="1" funcIdx="235" name="trap_party_hand_to_bone" />
+  <Syscall tableIdx="1" funcIdx="236" name="trap_obj_motion_unsync" />
+  <Syscall tableIdx="1" funcIdx="237" name="trap_command_override_top" />
+  <Syscall tableIdx="1" funcIdx="238" name="trap_obj_motion_capture_id" />
+  <Syscall tableIdx="1" funcIdx="239" name="trap_obj_is_unit_active" />
+  <Syscall tableIdx="1" funcIdx="240" name="trap_obj_scatter_prize_tt" />
+  <Syscall tableIdx="1" funcIdx="241" name="trap_act_shout" />
+  <Syscall tableIdx="1" funcIdx="242" name="trap_player_capture_form" />
+  <Syscall tableIdx="1" funcIdx="243" name="trap_player_capture_form_end" />
+  <Syscall tableIdx="1" funcIdx="244" name="trap_status_is_battle" />
+  <Syscall tableIdx="1" funcIdx="245" name="trap_target_clear_before_player" />
+  <Syscall tableIdx="1" funcIdx="246" name="trap_target_clear_after_player" />
+  <Syscall tableIdx="1" funcIdx="247" name="trap_bg_get_random_pos" />
+  <Syscall tableIdx="1" funcIdx="248" name="trap_bg_get_random_pos_air" />
+  <Syscall tableIdx="1" funcIdx="249" name="trap_status_set_prize_ratio" />
+  <Syscall tableIdx="1" funcIdx="250" name="trap_status_set_lockon_ratio" />
+  <Syscall tableIdx="1" funcIdx="251" name="trap_light_fadein" />
+  <Syscall tableIdx="1" funcIdx="252" name="trap_camera_apply_pos" />
+  <Syscall tableIdx="1" funcIdx="253" name="trap_obj_can_capture_control" />
+  <Syscall tableIdx="1" funcIdx="254" name="trap_obj_is_ride" />
+  <Syscall tableIdx="1" funcIdx="255" name="trap_obj_disable_occ" />
+  <Syscall tableIdx="1" funcIdx="256" name="trap_obj_enable_occ" />
+  <Syscall tableIdx="1" funcIdx="257" name="trap_light_set_fog_near" />
+  <Syscall tableIdx="1" funcIdx="258" name="trap_light_set_fog_far" />
+  <Syscall tableIdx="1" funcIdx="259" name="trap_light_set_fog_min" />
+  <Syscall tableIdx="1" funcIdx="260" name="trap_light_set_fog_max" />
+  <Syscall tableIdx="1" funcIdx="261" name="trap_sheet_munny" />
+  <Syscall tableIdx="1" funcIdx="262" name="trap_obj_voice" />
+  <Syscall tableIdx="1" funcIdx="263" name="trap_player_set_exec_rc" />
+  <Syscall tableIdx="1" funcIdx="264" name="trap_status_secure_mode_end" />
+  <Syscall tableIdx="1" funcIdx="265" name="trap_obj_set_medal" />
+  <Syscall tableIdx="1" funcIdx="266" name="trap_obj_get_medal" />
+  <Syscall tableIdx="1" funcIdx="267" name="trap_obj_scatter_medal" />
+  <Syscall tableIdx="1" funcIdx="268" name="trap_obj_action_lightcycle" />
+  <Syscall tableIdx="1" funcIdx="269" name="trap_obj_get_lightcycle_movement" />
+  <Syscall tableIdx="1" funcIdx="270" name="trap_obj_motion_disable_anmatr_effect" />
+  <Syscall tableIdx="1" funcIdx="271" name="trap_obj_motion_enable_anmatr_effect" />
+  <Syscall tableIdx="1" funcIdx="272" name="trap_obj_is_dead" />
+  <Syscall tableIdx="1" funcIdx="273" name="trap_signal_hook" />
+  <Syscall tableIdx="1" funcIdx="274" name="trap_event_get_rest_time" />
+  <Syscall tableIdx="1" funcIdx="275" name="trap_obj_recov_holylight" />
+  <Syscall tableIdx="1" funcIdx="276" name="trap_obj_use_mp" />
+  <Syscall tableIdx="1" funcIdx="277" name="trap_obj_reraise" />
+  <Syscall tableIdx="1" funcIdx="278" name="trap_obj_scatter_prize_tr" />
+  <Syscall tableIdx="1" funcIdx="279" name="trap_prize_appear_tr" />
+  <Syscall tableIdx="1" funcIdx="280" name="trap_sheet_add_munny" />
+  <Syscall tableIdx="1" funcIdx="281" name="trap_camera_begin_scope" />
+  <Syscall tableIdx="1" funcIdx="283" name="trap_camera_end_scope" />
+  <Syscall tableIdx="1" funcIdx="284" name="trap_tutorial_pause" />
+  <Syscall tableIdx="1" funcIdx="285" name="trap_obj_show_picture" />
+  <Syscall tableIdx="1" funcIdx="286" name="trap_status_hide_shadow" />
+  <Syscall tableIdx="1" funcIdx="287" name="trap_status_show_shadow" />
+  <Syscall tableIdx="1" funcIdx="288" name="trap_status_begin_free_ability" />
+  <Syscall tableIdx="1" funcIdx="289" name="trap_status_end_free_ability" />
+  <Syscall tableIdx="1" funcIdx="290" name="trap_picture_change" />
+  <Syscall tableIdx="1" funcIdx="291" name="trap_obj_levelup_unit" />
+  <Syscall tableIdx="1" funcIdx="292" name="trap_obj_search_by_unit_arg" />
+  <Syscall tableIdx="1" funcIdx="293" name="trap_event_control_off" />
+  <Syscall tableIdx="1" funcIdx="294" name="trap_event_control_on" />
+  <Syscall tableIdx="1" funcIdx="295" name="trap_camera_reset" />
+  <Syscall tableIdx="1" funcIdx="296" name="trap_tutorial_open" />
+  <Syscall tableIdx="1" funcIdx="297" name="trap_player_get_rc" />
+  <Syscall tableIdx="1" funcIdx="298" name="trap_worldwork_get" />
+  <Syscall tableIdx="1" funcIdx="299" name="trap_area_set_next_entrance" />
+  <Syscall tableIdx="1" funcIdx="300" name="trap_prize_num" />
+  <Syscall tableIdx="1" funcIdx="301" name="trap_tutorial_is_open" />
+  <Syscall tableIdx="1" funcIdx="302" name="trap_obj_set_skateboard_mode" />
+  <Syscall tableIdx="1" funcIdx="303" name="trap_area_cost_ratio" />
+  <Syscall tableIdx="1" funcIdx="304" name="trap_obj_search_by_glance" />
+  <Syscall tableIdx="1" funcIdx="305" name="trap_camera_eye" />
+  <Syscall tableIdx="1" funcIdx="306" name="trap_camera_at" />
+  <Syscall tableIdx="1" funcIdx="307" name="trap_obj_search_by_camera" />
+  <Syscall tableIdx="1" funcIdx="308" name="trap_obj_capture_command" />
+  <Syscall tableIdx="1" funcIdx="309" name="trap_sysobj_is_player" />
+  <Syscall tableIdx="1" funcIdx="310" name="trap_obj_get_weight" />
+  <Syscall tableIdx="1" funcIdx="311" name="trap_sheet_set_element_rate" />
+  <Syscall tableIdx="1" funcIdx="312" name="trap_camera_set_scope_zoom" />
+  <Syscall tableIdx="1" funcIdx="313" name="trap_camera_set_scope_closeup_distance" />
+  <Syscall tableIdx="1" funcIdx="314" name="trap_camera_set_scope_target_pos" />
+  <Syscall tableIdx="1" funcIdx="315" name="trap_picture_set_pos" />
+  <Syscall tableIdx="1" funcIdx="316" name="trap_camera_get_projection_pos" />
+  <Syscall tableIdx="1" funcIdx="317" name="trap_status_no_gameover" />
+  <Syscall tableIdx="1" funcIdx="318" name="trap_obj_play_se" />
+  <Syscall tableIdx="1" funcIdx="319" name="trap_sysobj_is_sora" />
+  <Syscall tableIdx="1" funcIdx="320" name="trap_unit_get_enemy_num" />
+  <Syscall tableIdx="1" funcIdx="321" name="trap_player_lockon" />
+  <Syscall tableIdx="1" funcIdx="322" name="trap_command_enable_item" />
+  <Syscall tableIdx="1" funcIdx="323" name="trap_obj_count_entry" />
+  <Syscall tableIdx="1" funcIdx="324" name="trap_obj_pattern_reset" />
+  <Syscall tableIdx="1" funcIdx="325" name="trap_obj_reaction_callback" />
+  <Syscall tableIdx="1" funcIdx="326" name="trap_bg_set_animation_speed" />
+  <Syscall tableIdx="1" funcIdx="327" name="trap_prize_get_all_tr" />
+  <Syscall tableIdx="1" funcIdx="328" name="trap_obj_dead_mark" />
+  <Syscall tableIdx="1" funcIdx="329" name="trap_sheet_set_prize_range" />
+  <Syscall tableIdx="1" funcIdx="330" name="trap_obj_set_cannon_camera_offset" />
+  <Syscall tableIdx="1" funcIdx="331" name="trap_obj_each_all" />
+  <Syscall tableIdx="1" funcIdx="332" name="trap_sysobj_is_btlnpc" />
+  <Syscall tableIdx="1" funcIdx="333" name="trap_obj_set_cannon_param" />
+  <Syscall tableIdx="1" funcIdx="334" name="trap_command_enable" />
+  <Syscall tableIdx="1" funcIdx="335" name="trap_obj_disable_occ_bone" />
+  <Syscall tableIdx="1" funcIdx="336" name="trap_obj_enable_occ_bone" />
+  <Syscall tableIdx="1" funcIdx="337" name="trap_command_set_side_b" />
+  <Syscall tableIdx="1" funcIdx="338" name="trap_prize_return_ca" />
+  <Syscall tableIdx="1" funcIdx="339" name="trap_prize_vacuum_ca" />
+  <Syscall tableIdx="1" funcIdx="340" name="trap_prize_vacuum_range_ca" />
+  <Syscall tableIdx="1" funcIdx="341" name="trap_prize_num_ca" />
+  <Syscall tableIdx="1" funcIdx="342" name="trap_prize_appear_num" />
+  <Syscall tableIdx="1" funcIdx="343" name="trap_obj_is_equip_ability" />
+  <Syscall tableIdx="1" funcIdx="344" name="trap_obj_clear_occ" />
+  <Syscall tableIdx="1" funcIdx="345" name="trap_command_override_slot" />
+  <Syscall tableIdx="1" funcIdx="346" name="trap_command_slot_set_status" />
+  <Syscall tableIdx="1" funcIdx="347" name="trap_obj_can_see" />
+  <Syscall tableIdx="1" funcIdx="348" name="trap_sheet_set_hitback_addition" />
+  <Syscall tableIdx="1" funcIdx="349" name="trap_obj_effect_kill_all" />
+  <Syscall tableIdx="1" funcIdx="350" name="trap_status_close_pete_curtain" />
+  <Syscall tableIdx="1" funcIdx="351" name="trap_status_open_pete_curtain" />
+  <Syscall tableIdx="1" funcIdx="352" name="trap_area_set_return_tr" />
+  <Syscall tableIdx="1" funcIdx="353" name="trap_obj_start_mpdrive" />
+  <Syscall tableIdx="1" funcIdx="354" name="trap_event_layer_off" />
+  <Syscall tableIdx="1" funcIdx="355" name="trap_player_can_capture_form" />
+  <Syscall tableIdx="1" funcIdx="356" name="trap_event_layer_on" />
+  <Syscall tableIdx="1" funcIdx="357" name="trap_sheet_attack_level" />
+  <Syscall tableIdx="1" funcIdx="358" name="trap_sheet_set_attack_level" />
+  <Syscall tableIdx="1" funcIdx="359" name="trap_obj_hook_command_image" />
+  <Syscall tableIdx="1" funcIdx="360" name="trap_obj_reset_command_image" />
+  <Syscall tableIdx="1" funcIdx="361" name="trap_sheet_level" />
+  <Syscall tableIdx="1" funcIdx="362" name="trap_treasure_get" />
+  <Syscall tableIdx="1" funcIdx="363" name="trap_prize_appear_xaldin" />
+  <Syscall tableIdx="1" funcIdx="364" name="trap_jigsaw_get" />
+  <Syscall tableIdx="1" funcIdx="365" name="trap_command_disable_group" />
+  <Syscall tableIdx="1" funcIdx="366" name="trap_command_enable_group" />
+  <Syscall tableIdx="1" funcIdx="367" name="trap_obj_get_move_to_space_pos" />
+  <Syscall tableIdx="2" funcIdx="0" name="trap_enemy_exec_damage" />
+  <Syscall tableIdx="2" funcIdx="1" name="trap_enemy_exec_damage_blow" />
+  <Syscall tableIdx="2" funcIdx="2" name="trap_enemy_exec_damage_small" />
+  <Syscall tableIdx="2" funcIdx="3" name="trap_enemy_exec_damage_hitback" />
+  <Syscall tableIdx="2" funcIdx="4" name="trap_enemy_each" />
+  <Syscall tableIdx="2" funcIdx="5" name="trap_enemy_is_no_control" />
+  <Syscall tableIdx="2" funcIdx="6" name="trap_enemy_is_damage_motion" />
+  <Syscall tableIdx="2" funcIdx="7" name="trap_damage_reaction" />
+  <Syscall tableIdx="2" funcIdx="8" name="trap_damage_is_reaction" />
+  <Syscall tableIdx="2" funcIdx="9" name="trap_btlobj_set_sheet" />
+  <Syscall tableIdx="2" funcIdx="10" name="trap_attack_new" />
+  <Syscall tableIdx="2" funcIdx="11" name="trap_attack_set_radius" />
+  <Syscall tableIdx="2" funcIdx="12" name="trap_attack_set_pos" />
+  <Syscall tableIdx="2" funcIdx="13" name="trap_attack_free" />
+  <Syscall tableIdx="2" funcIdx="14" name="trap_attack_is_hit" />
+  <Syscall tableIdx="2" funcIdx="15" name="trap_damage_exec_reaction" />
+  <Syscall tableIdx="2" funcIdx="16" name="trap_damage_is_exec_reaction" />
+  <Syscall tableIdx="2" funcIdx="17" name="trap_attack_strike" />
+  <Syscall tableIdx="2" funcIdx="18" name="trap_attack_is_strike" />
+  <Syscall tableIdx="2" funcIdx="19" name="trap_attack_set_line" />
+  <Syscall tableIdx="2" funcIdx="20" name="trap_magic_start_thread" />
+  <Syscall tableIdx="2" funcIdx="21" name="trap_teamwork_alloc" />
+  <Syscall tableIdx="2" funcIdx="22" name="trap_attack_set_obj_pax" />
+  <Syscall tableIdx="2" funcIdx="23" name="trap_btlobj_target" />
+  <Syscall tableIdx="2" funcIdx="24" name="trap_attack_get_owner" />
+  <Syscall tableIdx="2" funcIdx="25" name="trap_attack_get_param_id" />
+  <Syscall tableIdx="2" funcIdx="26" name="trap_attack_exec_reflect" />
+  <Syscall tableIdx="2" funcIdx="27" name="trap_enemy_exec_reflect" />
+  <Syscall tableIdx="2" funcIdx="28" name="trap_attack_refresh" />
+  <Syscall tableIdx="2" funcIdx="29" name="trap_attack_is_hit_bg" />
+  <Syscall tableIdx="2" funcIdx="30" name="trap_attack_set_pax" />
+  <Syscall tableIdx="2" funcIdx="31" name="trap_attack_dup" />
+  <Syscall tableIdx="2" funcIdx="32" name="trap_damage_blow_up" />
+  <Syscall tableIdx="2" funcIdx="33" name="trap_damage_blow_speed" />
+  <Syscall tableIdx="2" funcIdx="34" name="trap_attack_get_type" />
+  <Syscall tableIdx="2" funcIdx="35" name="trap_damage_attack_type" />
+  <Syscall tableIdx="2" funcIdx="36" name="trap_enemy_add_damage" />
+  <Syscall tableIdx="2" funcIdx="37" name="trap_attack_set_team" />
+  <Syscall tableIdx="2" funcIdx="38" name="trap_attack_set_hit_callback" />
+  <Syscall tableIdx="2" funcIdx="39" name="trap_attack_is_reflect" />
+  <Syscall tableIdx="2" funcIdx="40" name="trap_attack_is_hit_wall" />
+  <Syscall tableIdx="2" funcIdx="41" name="trap_attack_is_hit_floor" />
+  <Syscall tableIdx="2" funcIdx="42" name="trap_attack_hit_bg_pos" />
+  <Syscall tableIdx="2" funcIdx="43" name="trap_attack_get_reflect_vector" />
+  <Syscall tableIdx="2" funcIdx="44" name="trap_attack_reflecter" />
+  <Syscall tableIdx="2" funcIdx="45" name="trap_damage_attack_param_id" />
+  <Syscall tableIdx="2" funcIdx="46" name="trap_damage_damage" />
+  <Syscall tableIdx="2" funcIdx="47" name="trap_limit_motion_start" />
+  <Syscall tableIdx="2" funcIdx="48" name="trap_limit_player" />
+  <Syscall tableIdx="2" funcIdx="49" name="trap_limit_friend" />
+  <Syscall tableIdx="2" funcIdx="50" name="trap_limit_camera_start" />
+  <Syscall tableIdx="2" funcIdx="51" name="trap_attack_set_rc" />
+  <Syscall tableIdx="2" funcIdx="52" name="trap_attack_rc_receiver" />
+  <Syscall tableIdx="2" funcIdx="53" name="trap_enemy_last_dead" />
+  <Syscall tableIdx="2" funcIdx="54" name="trap_limit_start_thread" />
+  <Syscall tableIdx="2" funcIdx="55" name="trap_limit_light" />
+  <Syscall tableIdx="2" funcIdx="56" name="trap_btlobj_lockon_target" />
+  <Syscall tableIdx="2" funcIdx="57" name="trap_limit_effect_start" />
+  <Syscall tableIdx="2" funcIdx="58" name="trap_limit_effect_start_pos" />
+  <Syscall tableIdx="2" funcIdx="59" name="trap_limit_effect_start_bind" />
+  <Syscall tableIdx="2" funcIdx="60" name="trap_limit_time" />
+  <Syscall tableIdx="2" funcIdx="61" name="trap_attack_set_effect" />
+  <Syscall tableIdx="2" funcIdx="62" name="trap_attack_set_time" />
+  <Syscall tableIdx="2" funcIdx="63" name="trap_limit_reference" />
+  <Syscall tableIdx="2" funcIdx="64" name="trap_damage_orig_reaction" />
+  <Syscall tableIdx="2" funcIdx="65" name="trap_enemy_count_damager" />
+  <Syscall tableIdx="2" funcIdx="66" name="trap_attack_get_reflect_count" />
+  <Syscall tableIdx="2" funcIdx="67" name="trap_attack_new_combo_group" />
+  <Syscall tableIdx="2" funcIdx="68" name="trap_magic_set_cost" />
+  <Syscall tableIdx="2" funcIdx="69" name="trap_magic_can_add_cost" />
+  <Syscall tableIdx="2" funcIdx="70" name="trap_damage_parts" />
+  <Syscall tableIdx="2" funcIdx="71" name="trap_attack_set_hitmark_pos" />
+  <Syscall tableIdx="2" funcIdx="72" name="trap_damage_is_cure" />
+  <Syscall tableIdx="2" funcIdx="73" name="trap_bonuslevel_up" />
+  <Syscall tableIdx="2" funcIdx="74" name="trap_attack_set_reflect_callback" />
+  <Syscall tableIdx="2" funcIdx="75" name="trap_summon_is_tink_exist" />
+  <Syscall tableIdx="2" funcIdx="76" name="trap_enemy_set_karma_limit" />
+  <Syscall tableIdx="2" funcIdx="77" name="trap_vacuum_create" />
+  <Syscall tableIdx="2" funcIdx="78" name="trap_vacuum_destroy" />
+  <Syscall tableIdx="2" funcIdx="79" name="trap_vacuum_set_ignore_type" />
+  <Syscall tableIdx="2" funcIdx="80" name="trap_vacuum_set_pos" />
+  <Syscall tableIdx="2" funcIdx="81" name="trap_vacuum_set_speed" />
+  <Syscall tableIdx="2" funcIdx="82" name="trap_vacuum_set_rot_speed" />
+  <Syscall tableIdx="2" funcIdx="83" name="trap_vacuum_set_near_range" />
+  <Syscall tableIdx="2" funcIdx="84" name="trap_vacuum_set_dist_rate" />
+  <Syscall tableIdx="2" funcIdx="85" name="trap_damage_element" />
+  <Syscall tableIdx="2" funcIdx="86" name="trap_damage_get_hitback" />
+  <Syscall tableIdx="2" funcIdx="87" name="trap_enemy_exec_damage_large" />
+  <Syscall tableIdx="2" funcIdx="88" name="trap_enemy_get_attacker" />
+  <Syscall tableIdx="2" funcIdx="89" name="trap_limit_reset_special_command" />
+  <Syscall tableIdx="2" funcIdx="90" name="trap_limit_close_gauge" />
+  <Syscall tableIdx="2" funcIdx="91" name="trap_damage_get_reaction_type" />
+  <Syscall tableIdx="2" funcIdx="92" name="trap_damage_is_finish" />
+  <Syscall tableIdx="2" funcIdx="93" name="trap_damage_is_normal" />
+  <Syscall tableIdx="2" funcIdx="94" name="trap_attack_set_system_pax" />
+  <Syscall tableIdx="2" funcIdx="95" name="trap_btlobj_dup_sheet" />
+  <Syscall tableIdx="2" funcIdx="96" name="trap_attack_is_valid" />
+  <Syscall tableIdx="2" funcIdx="97" name="trap_enemy_set_attacker" />
+  <Syscall tableIdx="4" funcIdx="2" name="trap_event_is_exec" />
+  <Syscall tableIdx="4" funcIdx="3" name="trap_mission_complete" />
+  <Syscall tableIdx="4" funcIdx="4" name="trap_mission_information" />
+  <Syscall tableIdx="4" funcIdx="5" name="trap_mission_set_count" />
+  <Syscall tableIdx="4" funcIdx="6" name="trap_mission_increment_count" />
+  <Syscall tableIdx="4" funcIdx="7" name="trap_mission_restart_timer" />
+  <Syscall tableIdx="4" funcIdx="8" name="trap_mission_set_gauge" />
+  <Syscall tableIdx="4" funcIdx="9" name="trap_mission_add_gauge" />
+  <Syscall tableIdx="4" funcIdx="10" name="trap_mission_set_gauge_ratio" />
+  <Syscall tableIdx="4" funcIdx="11" name="trap_mission_failed" />
+  <Syscall tableIdx="4" funcIdx="12" name="trap_mission_get_gauge_ratio" />
+  <Syscall tableIdx="4" funcIdx="13" name="trap_mission_pause_timer" />
+  <Syscall tableIdx="4" funcIdx="14" name="trap_mission_activate2d" />
+  <Syscall tableIdx="4" funcIdx="15" name="trap_mission_deactivate2d" />
+  <Syscall tableIdx="4" funcIdx="16" name="trap_mission_dead_boss" />
+  <Syscall tableIdx="4" funcIdx="17" name="trap_mission_set_timer_param" />
+  <Syscall tableIdx="4" funcIdx="18" name="trap_mission_set_count_param" />
+  <Syscall tableIdx="4" funcIdx="19" name="trap_mission_set_gauge_param" />
+  <Syscall tableIdx="4" funcIdx="20" name="trap_mission_decrement_count" />
+  <Syscall tableIdx="4" funcIdx="21" name="trap_mission_is_activate2d" />
+  <Syscall tableIdx="4" funcIdx="22" name="trap_mission_exit" />
+  <Syscall tableIdx="4" funcIdx="23" name="trap_mission_reset_pause_mode" />
+  <Syscall tableIdx="4" funcIdx="24" name="trap_mission_cancel_pause_timer" />
+  <Syscall tableIdx="4" funcIdx="25" name="trap_mission_start_combo_counter" />
+  <Syscall tableIdx="4" funcIdx="26" name="trap_mission_get_timer" />
+  <Syscall tableIdx="4" funcIdx="27" name="trap_mission_stop_combo_counter" />
+  <Syscall tableIdx="4" funcIdx="28" name="trap_mission_get_gauge_warning_ratio" />
+  <Syscall tableIdx="4" funcIdx="29" name="trap_mission_get_count" />
+  <Syscall tableIdx="4" funcIdx="30" name="trap_mission_get_max_combo_counter" />
+  <Syscall tableIdx="4" funcIdx="31" name="trap_mission_get_combo_counter" />
+  <Syscall tableIdx="4" funcIdx="32" name="trap_mission_return" />
+  <Syscall tableIdx="4" funcIdx="33" name="trap_mission_add_combo_counter" />
+  <Syscall tableIdx="4" funcIdx="34" name="trap_mission_is_gauge_warning" />
+  <Syscall tableIdx="4" funcIdx="35" name="trap_score_type" />
+  <Syscall tableIdx="4" funcIdx="36" name="trap_score_score" />
+  <Syscall tableIdx="4" funcIdx="37" name="trap_score_update" />
+  <Syscall tableIdx="4" funcIdx="38" name="trap_score_get" />
+  <Syscall tableIdx="4" funcIdx="39" name="trap_mission_set_watch" />
+  <Syscall tableIdx="4" funcIdx="40" name="trap_mission_get_timer_second" />
+  <Syscall tableIdx="4" funcIdx="41" name="trap_mission_add_count" />
+  <Syscall tableIdx="4" funcIdx="42" name="trap_struggle_increment" />
+  <Syscall tableIdx="4" funcIdx="43" name="trap_mission_set_max_combo_counter" />
+  <Syscall tableIdx="4" funcIdx="44" name="trap_mission_disable_count" />
+  <Syscall tableIdx="4" funcIdx="45" name="trap_mission_disable_watch" />
+  <Syscall tableIdx="4" funcIdx="46" name="trap_mission_set_warning_se" />
+  <Syscall tableIdx="4" funcIdx="47" name="trap_mission_warning_timer" />
+  <Syscall tableIdx="4" funcIdx="48" name="trap_mission_set_count_figure_num" />
+  <Syscall tableIdx="4" funcIdx="49" name="trap_mission_disable_timer" />
+  <Syscall tableIdx="4" funcIdx="50" name="trap_mission_warning_count" />
+  <Syscall tableIdx="4" funcIdx="51" name="trap_mission_set_combo_counter_param" />
+  <Syscall tableIdx="4" funcIdx="52" name="trap_mission_warning_combo_counter" />
+  <Syscall tableIdx="4" funcIdx="53" name="trap_mission_set_combo_counter_warning_se" />
+  <Syscall tableIdx="4" funcIdx="54" name="trap_mission_lock" />
+  <Syscall tableIdx="4" funcIdx="55" name="trap_mission_is_lock" />
+  <Syscall tableIdx="4" funcIdx="56" name="trap_event_continue_control_off" />
+  <Syscall tableIdx="4" funcIdx="57" name="trap_mission_warning_gauge" />
+  <Syscall tableIdx="4" funcIdx="58" name="trap_mission_reset_warning_count" />
+  <Syscall tableIdx="5" funcIdx="0" name="trap_get_start_rtn_action" />
+  <Syscall tableIdx="5" funcIdx="1" name="trap_set_path_way" />
+  <Syscall tableIdx="5" funcIdx="2" name="trap_reverse_path_way" />
+  <Syscall tableIdx="5" funcIdx="3" name="trap_get_path_dir" />
+  <Syscall tableIdx="5" funcIdx="4" name="trap_end_rtn_action" />
+  <Syscall tableIdx="5" funcIdx="5" name="trap_get_rtn_action" />
+  <Syscall tableIdx="5" funcIdx="6" name="trap_get_rtn_action_dir" />
+  <Syscall tableIdx="5" funcIdx="7" name="trap_is_rtn_change_dir" />
+  <Syscall tableIdx="5" funcIdx="8" name="trap_create_active_path" />
+  <Syscall tableIdx="5" funcIdx="9" name="trap_get_path_dir_from_obj" />
+  <Syscall tableIdx="5" funcIdx="10" name="trap_forward_path_current_pointer" />
+  <Syscall tableIdx="5" funcIdx="11" name="trap_is_end_rtn_action" />
+  <Syscall tableIdx="5" funcIdx="12" name="trap_reset_active_path" />
+  <Syscall tableIdx="5" funcIdx="13" name="trap_set_path_target_point" />
+  <Syscall tableIdx="5" funcIdx="14" name="trap_get_path_point_pos" />
+  <Syscall tableIdx="5" funcIdx="15" name="trap_clear_active_path" />
+  <Syscall tableIdx="5" funcIdx="16" name="trap_reset_leave_way" />
+  <Syscall tableIdx="5" funcIdx="17" name="trap_check_rtn_option_flag" />
+  <Syscall tableIdx="5" funcIdx="18" name="trap_reset_path_current_pointer" />
+  <Syscall tableIdx="5" funcIdx="19" name="trap_get_path_current_pos" />
+  <Syscall tableIdx="5" funcIdx="20" name="trap_get_path_current_dir" />
+  <Syscall tableIdx="5" funcIdx="21" name="trap_get_path_first_point_pos" />
+  <Syscall tableIdx="5" funcIdx="22" name="trap_get_path_last_point_pos" />
+  <Syscall tableIdx="5" funcIdx="23" name="trap_set_path_by_id" />
+  <Syscall tableIdx="5" funcIdx="24" name="trap_set_path_by_group" />
+  <Syscall tableIdx="5" funcIdx="25" name="trap_get_path_dir_r" />
+  <Syscall tableIdx="5" funcIdx="26" name="trap_set_rtn_partner" />
+  <Syscall tableIdx="5" funcIdx="27" name="trap_set_rtn_option_flag" />
+  <Syscall tableIdx="5" funcIdx="28" name="trap_eh22_path_move_next" />
+  <Syscall tableIdx="5" funcIdx="29" name="trap_eh22_path_move_before" />
+  <Syscall tableIdx="5" funcIdx="30" name="trap_eh22_path_is_moving" />
+  <Syscall tableIdx="5" funcIdx="31" name="trap_eh22_path_get_point" />
+  <Syscall tableIdx="5" funcIdx="32" name="trap_eh22_path_play" />
+  <Syscall tableIdx="5" funcIdx="33" name="trap_set_rtn_time_param" />
+  <Syscall tableIdx="5" funcIdx="34" name="trap_get_obj_head_pos" />
+  <Syscall tableIdx="6" funcIdx="0" name="trap_camera_shake" />
+  <Syscall tableIdx="6" funcIdx="1" name="trap_prize_appear" />
+  <Syscall tableIdx="6" funcIdx="2" name="trap_player_get_form" />
+  <Syscall tableIdx="6" funcIdx="3" name="trap_target_searcher_init" />
+  <Syscall tableIdx="6" funcIdx="4" name="trap_target_searcher_reset" />
+  <Syscall tableIdx="6" funcIdx="5" name="trap_target_seracher_search" />
+  <Syscall tableIdx="6" funcIdx="6" name="trap_obj_stop" />
+  <Syscall tableIdx="6" funcIdx="7" name="trap_obj_restart" />
+  <Syscall tableIdx="6" funcIdx="8" name="trap_target_searcher_add" />
+  <Syscall tableIdx="6" funcIdx="9" name="trap_target_dist" />
+  <Syscall tableIdx="6" funcIdx="10" name="trap_obj_is_hit_attack" />
+  <Syscall tableIdx="6" funcIdx="11" name="trap_target_searcher_search_obj" />
+  <Syscall tableIdx="6" funcIdx="12" name="trap_target_searcher_get_old" />
+  <Syscall tableIdx="6" funcIdx="13" name="trap_friend_force_warp" />
+  <Syscall tableIdx="6" funcIdx="14" name="trap_friend_get" />
+  <Syscall tableIdx="6" funcIdx="15" name="trap_friend_set_warp_level" />
+  <Syscall tableIdx="6" funcIdx="16" name="trap_target_clear" />
+  <Syscall tableIdx="6" funcIdx="17" name="trap_lockon_show" />
+  <Syscall tableIdx="6" funcIdx="18" name="trap_lockon_hide" />
+  <Syscall tableIdx="6" funcIdx="19" name="trap_status_peterpan_prize_drain_start" />
+  <Syscall tableIdx="6" funcIdx="20" name="trap_status_peterpan_prize_drain_end" />
+  <Syscall tableIdx="6" funcIdx="21" name="trap_target_searcher_add_target" />
+  <Syscall tableIdx="6" funcIdx="22" name="trap_target_searcher_get_target_num" />
+  <Syscall tableIdx="6" funcIdx="23" name="trap_obj_near_parts" />
+  <Syscall tableIdx="6" funcIdx="24" name="trap_obj_get_bg_press" />
+  <Syscall tableIdx="6" funcIdx="25" name="trap_obj_tt_ball_blow" />
+  <Syscall tableIdx="6" funcIdx="26" name="trap_obj_limit_hover" />
+  <Syscall tableIdx="6" funcIdx="27" name="trap_player_dice" />
+  <Syscall tableIdx="6" funcIdx="28" name="trap_dice_set_spec" />
+  <Syscall tableIdx="6" funcIdx="29" name="trap_player_card" />
+  <Syscall tableIdx="6" funcIdx="30" name="trap_card_set_spec" />
+  <Syscall tableIdx="6" funcIdx="31" name="trap_limit_aladdin_prize_drain" />
+  <Syscall tableIdx="6" funcIdx="32" name="trap_skateboard_ride" />
+  <Syscall tableIdx="6" funcIdx="33" name="trap_skateboard_trick" />
+  <Syscall tableIdx="6" funcIdx="34" name="trap_skateboard_trick_motion_push" />
+  <Syscall tableIdx="6" funcIdx="35" name="trap_obj_attach_camera" />
+  <Syscall tableIdx="6" funcIdx="36" name="trap_obj_detach_camera" />
+  <Syscall tableIdx="6" funcIdx="37" name="trap_obj_is_attach_camera" />
+  <Syscall tableIdx="6" funcIdx="38" name="trap_obj_limit_mulan_idle" />
+  <Syscall tableIdx="6" funcIdx="39" name="trap_skateboard_ride_edge" />
+  <Syscall tableIdx="6" funcIdx="40" name="trap_obj_limit_peterpan_idle" />
+  <Syscall tableIdx="6" funcIdx="41" name="trap_skateboard_edge_jump" />
+  <Syscall tableIdx="6" funcIdx="42" name="trap_obj_hop_direct" />
+  <Syscall tableIdx="6" funcIdx="43" name="trap_command_limit_trinity_commbo_start" />
+  <Syscall tableIdx="6" funcIdx="44" name="trap_obj_limit_riku_idle" />
+  <Syscall tableIdx="6" funcIdx="45" name="trap_obj_hide_shadow" />
+  <Syscall tableIdx="6" funcIdx="46" name="trap_obj_rc_stop_all" />
+  <Syscall tableIdx="6" funcIdx="47" name="trap_obj_stop_end_all" />
+  <Syscall tableIdx="6" funcIdx="48" name="trap_skateboardscore_add_count" />
+  <Syscall tableIdx="6" funcIdx="49" name="trap_obj_is_stop" />
+  <Syscall tableIdx="6" funcIdx="50" name="trap_obj_stop_start" />
+  <Syscall tableIdx="6" funcIdx="51" name="trap_bghit_check_line" />
+  <Syscall tableIdx="6" funcIdx="52" name="trap_bghit_get_normal" />
+  <Syscall tableIdx="6" funcIdx="53" name="trap_bghit_is_hit" />
+  <Syscall tableIdx="6" funcIdx="54" name="trap_bghit_get_cross_pos" />
+  <Syscall tableIdx="6" funcIdx="55" name="trap_bghit_get_kind" />
+  <Syscall tableIdx="6" funcIdx="56" name="trap_target_set_group" />
+  <Syscall tableIdx="6" funcIdx="57" name="trap_target_get_group" />
+  <Syscall tableIdx="6" funcIdx="58" name="trap_obj_act_child_push" />
+  <Syscall tableIdx="6" funcIdx="59" name="trap_xemnas_get_obj" />
+  <Syscall tableIdx="6" funcIdx="60" name="trap_obj_set_stealth_color" />
+  <Syscall tableIdx="6" funcIdx="61" name="trap_obj_is_hook" />
+  <Syscall tableIdx="6" funcIdx="62" name="trap_obj_carpet_obj_idle" />
+  <Syscall tableIdx="6" funcIdx="63" name="trap_obj_is_damage_motion" />
+  <Syscall tableIdx="6" funcIdx="64" name="trap_obj_show_shadow" />
+  <Syscall tableIdx="6" funcIdx="65" name="trap_obj_set_scissoring" />
+  <Syscall tableIdx="6" funcIdx="66" name="trap_obj_clear_hitback" />
+  <Syscall tableIdx="6" funcIdx="67" name="trap_obj_party_attack" />
+  <Syscall tableIdx="6" funcIdx="68" name="trap_strike_raid_calc_xyzrot" />
+  <Syscall tableIdx="6" funcIdx="69" name="trap_larxene_dead" />
+  <Syscall tableIdx="6" funcIdx="70" name="trap_obj_play_se_loop" />
+  <Syscall tableIdx="6" funcIdx="71" name="trap_obj_fadeout_se" />
+  <Syscall tableIdx="7" funcIdx="0" name="trap_enemy_stop_all_start" />
+  <Syscall tableIdx="7" funcIdx="1" name="trap_enemy_stop_all_end" />
+  <Syscall tableIdx="7" funcIdx="2" name="trap_attack_hit_mark_pos" />
+  <Syscall tableIdx="7" funcIdx="3" name="trap_flare_init" />
+  <Syscall tableIdx="7" funcIdx="4" name="trap_flare_new" />
+  <Syscall tableIdx="7" funcIdx="5" name="trap_flare_free" />
+  <Syscall tableIdx="7" funcIdx="6" name="trap_flare_set_pos" />
+  <Syscall tableIdx="7" funcIdx="7" name="trap_flare_set_radius" />
+  <Syscall tableIdx="7" funcIdx="8" name="trap_flare_set_effect" />
+  <Syscall tableIdx="7" funcIdx="9" name="trap_flare_set_target" />
+  <Syscall tableIdx="7" funcIdx="10" name="trap_flare_get_pos" />
+  <Syscall tableIdx="7" funcIdx="11" name="trap_flare_is_empty" />
+  <Syscall tableIdx="7" funcIdx="12" name="trap_limit_aladdin_exclamation_mark_pos" />
+  <Syscall tableIdx="7" funcIdx="13" name="trap_magic_calc_speed" />
+  <Syscall tableIdx="7" funcIdx="14" name="trap_attack_set_reaction_offset" />
+  <Syscall tableIdx="7" funcIdx="15" name="trap_friend_get_target_size" />
+  <Syscall tableIdx="7" funcIdx="16" name="trap_friend_get_current_action" />
+  <Syscall tableIdx="7" funcIdx="17" name="trap_friend_set_script_status" />
+  <Syscall tableIdx="7" funcIdx="18" name="trap_friend_get_main_status" />
+  <Syscall tableIdx="7" funcIdx="19" name="trap_friend_update_target" />
+  <Syscall tableIdx="7" funcIdx="21" name="trap_obj_limit_hover_set_spec" />
+  <Syscall tableIdx="7" funcIdx="24" name="trap_friend_enable_system_wishdir" />
+  <Syscall tableIdx="7" funcIdx="25" name="trap_friend_disable_system_wishdir" />
+  <Syscall tableIdx="7" funcIdx="26" name="trap_friend_call" />
+  <Syscall tableIdx="7" funcIdx="27" name="trap_limit_start_command" />
+  <Syscall tableIdx="7" funcIdx="28" name="trap_trinity_shot_init" />
+  <Syscall tableIdx="7" funcIdx="29" name="trap_trinity_shot_start" />
+  <Syscall tableIdx="7" funcIdx="30" name="trap_trinity_shot_ensure" />
+  <Syscall tableIdx="7" funcIdx="31" name="trap_trinity_shot_set_effect_id" />
+  <Syscall tableIdx="7" funcIdx="32" name="trap_vacuum_set_effective_range" />
+  <Syscall tableIdx="7" funcIdx="33" name="trap_enemy_summon_entry" />
+  <Syscall tableIdx="7" funcIdx="34" name="trap_attack_set_rc_owner" />
+  <Syscall tableIdx="7" funcIdx="35" name="trap_summon_is_exec" />
+  <Syscall tableIdx="7" funcIdx="36" name="trap_limit_reset_hit_counter" />
+  <Syscall tableIdx="8" funcIdx="0" name="trap_obj_target_radius" />
+  <Syscall tableIdx="8" funcIdx="1" name="trap_player_push_ability_button" />
+  <Syscall tableIdx="8" funcIdx="2" name="trap_obj_set_xyzrot" />
+  <Syscall tableIdx="8" funcIdx="3" name="trap_special_last_xemnus_laser_start" />
+  <Syscall tableIdx="8" funcIdx="4" name="trap_special_last_xemnus_laser_attack" />
+  <Syscall tableIdx="8" funcIdx="5" name="trap_special_last_xemnus_laser_end" />
+  <Syscall tableIdx="8" funcIdx="6" name="trap_special_last_xemnus_laser_optimize" />
+  <Syscall tableIdx="8" funcIdx="7" name="trap_special_last_xemnus_laser_optimize_end" />
+  <Syscall tableIdx="8" funcIdx="8" name="trap_camera_apply_inverse_pos" />
+  <Syscall tableIdx="10" funcIdx="0" name="trap_empty_func" />
+  <Syscall tableIdx="10" funcIdx="1" name="trap_stitch_set_screen_position" />
+  <Syscall tableIdx="10" funcIdx="2" name="trap_stitch_get_screen_position" />
+  <Syscall tableIdx="10" funcIdx="3" name="trap_friend_start_limit" />
+  <Syscall tableIdx="10" funcIdx="4" name="trap_friend_end_limit" />
+  <Syscall tableIdx="10" funcIdx="5" name="trap_chickenlittle_get_shoot_target" />
+  <Syscall tableIdx="10" funcIdx="6" name="trap_obj_set_special_command" />
+  <Syscall tableIdx="10" funcIdx="7" name="trap_obj_reset_special_command" />
+  <Syscall tableIdx="10" funcIdx="8" name="trap_friend_get_target_last_position" />
+  <Syscall tableIdx="10" funcIdx="9" name="trap_genie_change_form" />
+  <Syscall tableIdx="10" funcIdx="10" name="trap_genie_get_limit_command" />
+  <Syscall tableIdx="10" funcIdx="11" name="trap_obj_set_stop_timer" />
+  <Syscall tableIdx="10" funcIdx="12" name="trap_stitch_effect_start" />
+  <Syscall tableIdx="10" funcIdx="13" name="trap_stitch_shot_effect" />
+  <Syscall tableIdx="10" funcIdx="14" name="trap_friend_set_target" />
+  <Syscall tableIdx="10" funcIdx="15" name="trap_sysobj_motion_cont_push" />
+  <Syscall tableIdx="10" funcIdx="16" name="trap_stitch_effect_kill" />
+  <Syscall tableIdx="10" funcIdx="17" name="trap_sysobj_is_zako" />
+  <Syscall tableIdx="10" funcIdx="18" name="trap_sysobj_is_boss" />
+  <Syscall tableIdx="10" funcIdx="19" name="trap_sysobj_is_limit" />
+  <Syscall tableIdx="10" funcIdx="20" name="trap_friend_follow_player" />
+  <Syscall tableIdx="10" funcIdx="21" name="trap_friend_follow_enemy" />
+  <Syscall tableIdx="10" funcIdx="22" name="trap_sysobj_is_blow" />
+  <Syscall tableIdx="10" funcIdx="23" name="trap_enemy_is_attacked_from" />
+  <Syscall tableIdx="10" funcIdx="24" name="tarp_friend_is_equiped_ability" />
+  <Syscall tableIdx="10" funcIdx="25" name="trap_peterpan_receive_notify_player_target" />
+  <Syscall tableIdx="10" funcIdx="26" name="trap_peterpan_accept_notify_player_target" />
+  <Syscall tableIdx="10" funcIdx="27" name="trap_friend_enable_inertia" />
+  <Syscall tableIdx="10" funcIdx="28" name="trap_friend_disable_inertia" />
+  <Syscall tableIdx="10" funcIdx="29" name="trap_friend_use_item" />
+  <Syscall tableIdx="10" funcIdx="30" name="trap_sysobj_is_finish_blow" />
+  <Syscall tableIdx="10" funcIdx="31" name="trap_sysobj_is_summon" />
+  <Syscall tableIdx="10" funcIdx="32" name="trap_stitch_move_request" />
+  <Syscall tableIdx="10" funcIdx="33" name="trap_friend_get_player_attacker" />
+  <Syscall tableIdx="10" funcIdx="34" name="trap_friend_remove_player_attacker" />
+  <Syscall tableIdx="10" funcIdx="35" name="trap_friend_get_action_param" />
+  <Syscall tableIdx="10" funcIdx="36" name="trap_friend_is_control" />
+  <Syscall tableIdx="10" funcIdx="37" name="trap_friend_is_moveonly" />
+  <Syscall tableIdx="10" funcIdx="38" name="trap_attack_is_finish" />
+  <Syscall tableIdx="10" funcIdx="39" name="trap_friend_action_clear" />
+  <Syscall tableIdx="10" funcIdx="40" name="trap_obj_is_motion_sync" />
+  <Syscall tableIdx="10" funcIdx="41" name="trap_friend_start_leave" />
+  <Syscall tableIdx="10" funcIdx="42" name="trap_friend_is_start_leave" />
+  <Syscall tableIdx="10" funcIdx="43" name="trap_obj_set_use_mp" />
+  <Syscall tableIdx="10" funcIdx="44" name="trap_obj_is_tornado" />
+  <Syscall tableIdx="10" funcIdx="45" name="trap_sheet_get_drive_time" />
+  <Syscall tableIdx="10" funcIdx="46" name="trap_friend_disable_follow_enemy" />
+  <Syscall tableIdx="10" funcIdx="47" name="trap_friend_enable_follow_enemy" />
+  <Syscall tableIdx="10" funcIdx="48" name="trap_friend_disable_follow_player" />
+  <Syscall tableIdx="10" funcIdx="49" name="trap_friend_enable_follow_player" />
+  <Syscall tableIdx="10" funcIdx="50" name="trap_sheet_get_mp" />
+  <Syscall tableIdx="10" funcIdx="51" name="trap_chickenlittle_get_nearest_target" />
+  <Syscall tableIdx="10" funcIdx="52" name="trap_btlobj_is_reflect_motion" />
+  <Syscall tableIdx="10" funcIdx="53" name="trap_friend_add_watch_effect" />
+  <Syscall tableIdx="10" funcIdx="54" name="trap_friend_is_effect_exist" />
+  <Syscall tableIdx="10" funcIdx="55" name="trap_target_searcher_set_check_hide_from_friend" />
+  <Syscall tableIdx="10" funcIdx="56" name="trap_friend_invalidate_warp_point" />
+  <Syscall tableIdx="10" funcIdx="57" name="trap_friend_add_warp_point" />
+  <Syscall tableIdx="10" funcIdx="58" name="trap_friend_link_magic" />
+  <Syscall tableIdx="10" funcIdx="59" name="trap_chickenlittle_set_shoot_target" />
+</PCode>

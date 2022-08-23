@@ -1,0 +1,48 @@
+//------------------------------------------------
+//--- 010 Editor v11.0.1 Binary Template
+//
+//      File: trac1 (khkh_xldMii.ee1Dec)
+//   Authors: kenjiuno
+//   Version: 0
+//   Purpose: 
+//  Category: Software
+// File Mask: *.bin
+//  ID Bytes: 74 72 61 63 31 0A 1A
+//   History: 
+//------------------------------------------------
+
+char header[1024];
+
+struct CPURegs {
+    ubyte gpr[16 * 32];
+    uint pc <format=hex>;
+    float fpr[32];
+    uint32 fprc[32];
+    float fpracc;
+    float VF[4 * 32];
+    uint32 VI[32];
+    float Vacc[4];
+    float Vq;
+    float Vp;
+};
+
+struct Mem {
+    uint32 addr;
+    uint32 size;
+    char data[size];
+};
+
+void Read() {
+    uint32 seq;
+    CPURegs reg;
+    while (1) {
+        Mem mem;
+        if (mem.addr == 0 && mem.size == 0) {
+            break;
+        }
+    }
+}
+
+while (!FEof()) {
+    Read();
+}

@@ -1,0 +1,32 @@
+//------------------------------------------------
+//--- 010 Editor v10.0.2 Binary Template
+//
+//      File: dma-chain-map
+//   Authors: kenjiuno
+//   Version: 0
+//   Purpose: https://openkh.dev/kh2/file/model.html#dma-chain-map
+//  Category: OpenKH (Kingdom Hearts II)
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+FSeek(GetCursorPos());
+uint offset;
+uint textureIndex;
+ushort unk;
+ushort transparentFlag;
+
+byte flag1;
+byte flag2;
+
+uint flag3_low2 : 2;
+uint flag3_uvsc_index : 3 <comment=CommentUvsc>;
+uint flag3_high2 : 2;
+
+byte flag4 : 8;
+
+string CommentUvsc(uint index) {
+    string s;
+    SPrintf(s, "uvsc is %d", index + 1);
+    return s;
+}

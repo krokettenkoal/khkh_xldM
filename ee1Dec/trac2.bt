@@ -1,0 +1,98 @@
+//------------------------------------------------
+//--- 010 Editor v11.0.1 Binary Template
+//
+//      File: trac2 (khkh_xldMii.ee1Dec)
+//   Authors: kenjiuno
+//   Version: 0
+//   Purpose: 
+//  Category: Software
+// File Mask: *.bin
+//  ID Bytes: 74 72 61 63 32 0A
+//   History: 
+//------------------------------------------------
+
+char header[1024];
+
+struct Gpr {
+    ubyte gpr[16];
+};
+struct Fpr {
+    float fpr;
+};
+struct Fprc {
+    int fprc;
+};
+struct VF {
+    float VF[4];
+};
+struct VI {
+    int VI;
+};
+
+struct CPURegs {
+    char sig[4];
+    uint flags[8];
+
+    uint seq;
+    uint pc <format=hex>;
+
+    local int x;
+    for (x=0;x<32;x++) {
+        if (flags[0] & (1 << x)) {
+            Gpr gpr;
+        }
+    }
+    for (x=0;x<32;x++) {
+        if (flags[1] & (1 << x)) {
+            Fpr fpr;
+        }
+    }
+    for (x=0;x<32;x++) {
+        if (flags[2] & (1 << x)) {
+            Fprc fprc;
+        }
+    }
+    if (flags[3] & 1) {
+        float fpracc;
+    }
+    for (x=0;x<32;x++) {
+        if (flags[4] & (1 << x)) {
+            VF vf;
+        }
+    }
+    for (x=0;x<32;x++) {
+        if (flags[5] & (1 << x)) {
+            VI vi;
+        }
+    }
+    if (flags[6] & 1) {
+        float Vacc[4];
+    }
+    if (flags[6] & 2) {      
+        float Vq;
+    }
+    if (flags[6] & 4) {
+        float Vp;
+    }
+    uint extraDataSize;  
+};
+
+struct Mem {
+    uint32 addr;
+    uint32 size;
+    char data[size];
+};
+
+void Read() {
+    CPURegs reg;
+    while (1) {
+        Mem mem;
+        if (mem.addr == 0 && mem.size == 0) {
+            break;
+        }
+    }
+}
+
+while (!FEof()) {
+    Read();
+}

@@ -1,0 +1,12 @@
+Y up
+
+fov 90
+znearfar 50/3000
+
+normal eye y 200
+
+
+right +X
+left -X
+up +Y
+down -Y

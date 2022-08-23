@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="vu1Sim.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="fsetfp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">H:\Proj\khkh_xldM\MEMO\vu1Sim.fileset.txt</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

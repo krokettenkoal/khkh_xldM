@@ -1,0 +1,2 @@
+﻿kh2_file_dumper.exe %SRC%\KH2 -dT
+PAUSE

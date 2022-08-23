@@ -1,0 +1,5 @@
+﻿kh2fmarc extract %SRC% exports 000al.idx 000bb.idx 000ca.idx 000dc.idx 000di.idx 000eh.idx 000es.idx 000hb.idx 000he.idx 000lk.idx 000lm.idx 000mu.idx 000nm.idx 000po.idx 000tr.idx 000tt.idx 000wi.idx 000wm.idx 000gumi.idx
+
+kh2fmarc extract_w_idx_filelist %SRC% exports filelist.txt
+
+pause

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<preset
+  xmlns="http://tempuri.org/BindPreset.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://tempuri.org/BindPreset.xsd BindPreset.xsd"
+  >
+  <item>
+    <display-name>Sola</display-name>
+    <body-mdlx>P_EX100.mdlx</body-mdlx>
+    <body-mset>P_EX100.mset</body-mset>
+  </item>
+  <item>
+    <display-name>Sola with kb</display-name>
+    <body-mdlx>P_EX100.mdlx</body-mdlx>
+    <body-mset>P_EX100.mset</body-mset>
+    <right-hand-mdlx>W_EX010.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010.mset</right-hand-mset>
+    <right-hand-joint>178</right-hand-joint>
+  </item>
+  <item>
+    <display-name>Sola valor-form with kb</display-name>
+    <body-mdlx>P_EX100_BTLF.mdlx</body-mdlx>
+    <body-mset>P_EX100_BTLF.mset</body-mset>
+    <right-hand-mdlx>W_EX010_U0.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010_BTLF_R.mset</right-hand-mset>
+    <right-hand-joint>178</right-hand-joint>
+    <left-hand-mdlx>W_EX010_W0.mdlx</left-hand-mdlx>
+    <left-hand-mset>W_EX010_BTLF_L.mset</left-hand-mset>
+    <left-hand-joint>86</left-hand-joint>
+  </item>
+  <item>
+    <display-name>Sola wizdom-form with kb</display-name>
+    <body-mdlx>P_EX100_MAGF.mdlx</body-mdlx>
+    <body-mset>P_EX100_MAGF.mset</body-mset>
+    <right-hand-mdlx>W_EX010.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010_MAGF.mset</right-hand-mset>
+    <right-hand-joint>178</right-hand-joint>
+  </item>
+  <item>
+    <display-name>Sola trinity-form with kb</display-name>
+    <body-mdlx>P_EX100_TRIF.mdlx</body-mdlx>
+    <body-mset>P_EX100_TRIF.mset</body-mset>
+    <right-hand-mdlx>W_EX010_U0.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010_TRIF_R.mset</right-hand-mset>
+    <right-hand-joint>178</right-hand-joint>
+    <left-hand-mdlx>W_EX010_W0.mdlx</left-hand-mdlx>
+    <left-hand-mset>W_EX010_TRIF_L.mset</left-hand-mset>
+    <left-hand-joint>86</left-hand-joint>
+  </item>
+  <item>
+    <display-name>Sola ultimate-form with kb</display-name>
+    <body-mdlx>P_EX100_ULTF.mdlx</body-mdlx>
+    <body-mset>P_EX100_ULTF.mset</body-mset>
+    <right-hand-mdlx>W_EX010_U0.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010_ULTF_R.mset</right-hand-mset>
+    <right-hand-joint>178</right-hand-joint>
+    <left-hand-mdlx>W_EX010_W0.mdlx</left-hand-mdlx>
+    <left-hand-mset>W_EX010_ULTF_L.mset</left-hand-mset>
+    <left-hand-joint>86</left-hand-joint>
+  </item>
+  <item>
+    <display-name>Sola kh1drive with kb</display-name>
+    <body-mdlx>P_EX100_KH1F.mdlx</body-mdlx>
+    <body-mset>P_EX100_KH1F.mset</body-mset>
+    <right-hand-mdlx>W_EX010_U0.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010.mset</right-hand-mset>
+    <right-hand-joint>178</right-hand-joint>
+  </item>
+  <item>
+    <display-name>Sola knightmare ver with kb</display-name>
+    <body-mdlx>P_EX100_NM.mdlx</body-mdlx>
+    <body-mset>P_EX100.mset</body-mset>
+    <right-hand-mdlx>W_EX010_E0.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010.mset</right-hand-mset>
+    <right-hand-joint>178</right-hand-joint>
+  </item>
+  <item>
+    <display-name>Sola tron ver with kb</display-name>
+    <body-mdlx>P_EX100_TR.mdlx</body-mdlx>
+    <body-mset>P_EX100.mset</body-mset>
+    <right-hand-mdlx>W_EX010_90.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010.mset</right-hand-mset>
+    <right-hand-joint>178</right-hand-joint>
+  </item>
+  <item>
+    <display-name>Sola willie ver with kb</display-name>
+    <body-mdlx>P_EX100_WI.mdlx</body-mdlx>
+    <body-mset>P_EX100.mset</body-mset>
+    <right-hand-mdlx>W_EX010_60.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010.mset</right-hand-mset>
+    <right-hand-joint>178</right-hand-joint>
+  </item>
+  <item>
+    <display-name>DUMMY</display-name>
+    <body-mdlx>A.mdlx</body-mdlx>
+    <body-mset>A.mset</body-mset>
+  </item>
+  <item>
+    <display-name>---</display-name>
+  </item>
+  <item>
+    <display-name>Roxas with kb</display-name>
+    <body-mdlx>P_EX110.mdlx</body-mdlx>
+    <body-mset>P_EX110.mset</body-mset>
+    <right-hand-mdlx>W_EX010_U0.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010_RX.mset</right-hand-mset>
+    <right-hand-joint>172</right-hand-joint>
+  </item>
+  <item>
+    <display-name>Roxas with 2 keyblades</display-name>
+    <body-mdlx>P_EX110_BTLF.mdlx</body-mdlx>
+    <body-mset>P_EX110_BTLF.mset</body-mset>
+    <right-hand-mdlx>W_EX010_U0.mdlx</right-hand-mdlx>
+    <right-hand-mset>W_EX010_RX_BTLF_R.mset</right-hand-mset>
+    <right-hand-joint>172</right-hand-joint>
+    <left-hand-mdlx>W_EX010_W0.mdlx</left-hand-mdlx>
+    <left-hand-mset>W_EX010_RX_BTLF_L.mset</left-hand-mset>
+    <left-hand-joint>63</left-hand-joint>
+  </item>
+  <item>
+    <display-name>---</display-name>
+  </item>
+  <item>
+    <display-name>Cephiroth</display-name>
+    <body-mdlx>N_HB590_BTL.mdlx</body-mdlx>
+    <body-mset>N_HB590_BTL.mset</body-mset>
+  </item>
+  <item>
+    <display-name>Dusk</display-name>
+    <body-mdlx>M_EX990.mdlx</body-mdlx>
+    <body-mset>M_EX990.mset</body-mset>
+  </item>
+</preset>

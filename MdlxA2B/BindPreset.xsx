@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--このファイルは XML スキーマ デザイナで自動生成されています。コンポーネントのレイアウト情報はデザイナ画面に保持されます。-->
+<XSDDesignerLayout Style="LeftRight" layoutVersion="2" viewPortLeft="3115" viewPortTop="-1573" zoom="100">
+    <preset_XmlElement left="10425" top="4921" width="5291" height="2514" selected="0" zOrder="1" index="0" expanded="1">
+        <item_XmlElement left="16351" top="3201" width="7673" height="5847" selected="0" zOrder="2" index="0" expanded="1" />
+    </preset_XmlElement>
+</XSDDesignerLayout>

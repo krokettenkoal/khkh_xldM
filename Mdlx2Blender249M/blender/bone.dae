@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.3.1" xmlns="http://www.collada.org/2005/COLLADASchema">
+	<asset>
+		<author>Mikael Lagre</author>
+		<authoring_tool>Blender 249 COLLADA Exporter</authoring_tool>
+		<up_axis>Z_UP</up_axis>
+		<unit meter="0.01" name="centimeter"/>
+	</asset>
+	<library type="IMAGE"/>
+	<library type="TEXTURE"/>
+	<library type="MATERIAL">
+		<material id="Material-Lib" name="Material">
+			<shader id="Material-Phong">
+				<technique profile="COMMON">
+					<pass>
+						<program url="PHONG">
+							<param flow="IN" name="COLOR" sid="color" type="float3">0.800000 0.800000 0.800000</param>
+							<param flow="IN" name="DIFFUSE" sid="diffuse" type="float3">0.800000 0.800000 0.800000</param>
+							<param flow="IN" name="AMBIENT" sid="ambient" type="float3">0.400000 0.400000 0.400000</param>
+							<param flow="IN" name="SPECULAR" sid="specular" type="float3">0.250000 0.250000 0.250000</param>
+							<param flow="IN" name="EMISSION" sid="emission" type="float3">0.000000 0.000000 0.000000</param>
+							<param flow="IN" name="SHININESS" sid="shininess" type="float">12.500000</param>
+							<param flow="IN" name="TRANSPARENT" sid="transparent" type="float">0.800000 0.800000 0.800000</param>
+							<param flow="IN" name="TRANSPARENCY" sid="transparency" type="float">0.000000</param>
+							<param flow="IN" name="REFLECTIVE" sid="reflective" type="float3">1.000000 1.000000 1.000000</param>
+							<param flow="IN" name="REFLECTIVITY" sid="reflectivity" type="float">0.800000</param>
+						</program>
+					</pass>
+				</technique>
+			</shader>
+		</material>
+	</library>
+	<library type="GEOMETRY">
+		<geometry id="Cube.001-Lib" name="Cube.001">
+			<mesh>
+				<source id="Cube.001-Pos" name="Cube.001-Pos">
+					<float_array count="24" id="Cube.001-Pos-Array" name="Cube.001-Pos-Array">1.000000 1.000000 -1.000000 1.000000 -5.231094 -1.000000 -1.000000 -5.231094 -1.000000 -1.000000 1.000000 -1.000000 1.000000 0.999999 1.000000 0.999999 -5.231095 1.000000 -1.000000 -5.231094 1.000000 -1.000000 1.000000 1.000000</float_array>
+					<technique profile="COMMON">
+						<accessor count="24" id="Cube.001-Pos-Array-Accessor" offset="0" source="#Cube.001-Pos-Array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique>
+				</source>
+				<source id="Cube.001-Normal" name="Cube.001-Normal">
+					<float_array count="72" id="Cube.001-Normal-Array" name="Cube.001-Normal-Array">0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 1.000000 1.000000 -0.000000 0.000000 1.000000 -0.000000 0.000000 1.000000 -0.000000 0.000000 1.000000 -0.000000 0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -1.000000 0.000000 -0.000000 -1.000000 0.000000 -0.000000 -1.000000 0.000000 -0.000000 -1.000000 0.000000 -0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000</float_array>
+					<technique profile="COMMON">
+						<accessor count="24" id="Cube.001-Normal-Array-Accessor" offset="0" source="#Cube.001-Normal-Array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique>
+				</source>
+				<vertices count="24" id="Cube.001-Vertices" name="Cube.001-Vertices">
+					<input semantic="POSITION" source="#Cube.001-Pos"/>
+				</vertices>
+				<polygons count="6" material="#Material-Lib">
+					<input idx="0" semantic="VERTEX" source="#Cube.001-Vertices"/>
+					<input idx="1" semantic="NORMAL" source="#Cube.001-Normal"/>
+					<p>0 0 1 1 2 2 3 3</p>
+					<p>4 4 7 5 6 6 5 7</p>
+					<p>0 8 4 9 5 10 1 11</p>
+					<p>1 12 5 13 6 14 2 15</p>
+					<p>2 16 6 17 7 18 3 19</p>
+					<p>4 20 0 21 3 22 7 23</p>
+				</polygons>
+			</mesh>
+		</geometry>
+		<geometry id="Cube-Lib" name="Cube">
+			<mesh>
+				<source id="Cube-Pos" name="Cube-Pos">
+					<float_array count="24" id="Cube-Pos-Array" name="Cube-Pos-Array">1.000000 4.729100 -1.000000 1.000000 -1.000000 -1.000000 -1.000000 -1.000000 -1.000000 -1.000000 4.729100 -1.000000 1.000000 4.729099 1.000000 0.999999 -1.000001 1.000000 -1.000000 -1.000000 1.000000 -1.000000 4.729100 1.000000</float_array>
+					<technique profile="COMMON">
+						<accessor count="24" id="Cube-Pos-Array-Accessor" offset="0" source="#Cube-Pos-Array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique>
+				</source>
+				<source id="Cube-Normal" name="Cube-Normal">
+					<float_array count="72" id="Cube-Normal-Array" name="Cube-Normal-Array">0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 1.000000 1.000000 -0.000000 0.000000 1.000000 -0.000000 0.000000 1.000000 -0.000000 0.000000 1.000000 -0.000000 0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -1.000000 0.000000 -0.000000 -1.000000 0.000000 -0.000000 -1.000000 0.000000 -0.000000 -1.000000 0.000000 -0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000</float_array>
+					<technique profile="COMMON">
+						<accessor count="24" id="Cube-Normal-Array-Accessor" offset="0" source="#Cube-Normal-Array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique>
+				</source>
+				<vertices count="24" id="Cube-Vertices" name="Cube-Vertices">
+					<input semantic="POSITION" source="#Cube-Pos"/>
+				</vertices>
+				<polygons count="6" material="#Material-Lib">
+					<input idx="0" semantic="VERTEX" source="#Cube-Vertices"/>
+					<input idx="1" semantic="NORMAL" source="#Cube-Normal"/>
+					<p>0 0 1 1 2 2 3 3</p>
+					<p>4 4 7 5 6 6 5 7</p>
+					<p>0 8 4 9 5 10 1 11</p>
+					<p>1 12 5 13 6 14 2 15</p>
+					<p>2 16 6 17 7 18 3 19</p>
+					<p>4 20 0 21 3 22 7 23</p>
+				</polygons>
+			</mesh>
+		</geometry>
+		<geometry id="Cube.002-Lib" name="Cube.002">
+			<mesh>
+				<source id="Cube.002-Pos" name="Cube.002-Pos">
+					<float_array count="24" id="Cube.002-Pos-Array" name="Cube.002-Pos-Array">1.000000 1.000000 -1.000000 1.000000 -5.231094 -1.000000 -1.000000 -5.231094 -1.000000 -1.000000 1.000000 -1.000000 1.000000 0.999999 1.000000 0.999999 -5.231095 1.000000 -1.000000 -5.231094 1.000000 -1.000000 1.000000 1.000000</float_array>
+					<technique profile="COMMON">
+						<accessor count="24" id="Cube.002-Pos-Array-Accessor" offset="0" source="#Cube.002-Pos-Array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique>
+				</source>
+				<source id="Cube.002-Normal" name="Cube.002-Normal">
+					<float_array count="72" id="Cube.002-Normal-Array" name="Cube.002-Normal-Array">0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 -1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 1.000000 0.000000 -0.000000 1.000000 1.000000 -0.000000 0.000000 1.000000 -0.000000 0.000000 1.000000 -0.000000 0.000000 1.000000 -0.000000 0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -0.000000 -1.000000 -0.000000 -1.000000 0.000000 -0.000000 -1.000000 0.000000 -0.000000 -1.000000 0.000000 -0.000000 -1.000000 0.000000 -0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000 0.000000 1.000000 0.000000</float_array>
+					<technique profile="COMMON">
+						<accessor count="24" id="Cube.002-Normal-Array-Accessor" offset="0" source="#Cube.002-Normal-Array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique>
+				</source>
+				<vertices count="24" id="Cube.002-Vertices" name="Cube.002-Vertices">
+					<input semantic="POSITION" source="#Cube.002-Pos"/>
+				</vertices>
+				<polygons count="6" material="#Material-Lib">
+					<input idx="0" semantic="VERTEX" source="#Cube.002-Vertices"/>
+					<input idx="1" semantic="NORMAL" source="#Cube.002-Normal"/>
+					<p>0 0 1 1 2 2 3 3</p>
+					<p>4 4 7 5 6 6 5 7</p>
+					<p>0 8 4 9 5 10 1 11</p>
+					<p>1 12 5 13 6 14 2 15</p>
+					<p>2 16 6 17 7 18 3 19</p>
+					<p>4 20 0 21 3 22 7 23</p>
+				</polygons>
+			</mesh>
+		</geometry>
+	</library>
+	<library type="LIGHT">
+		<light id="Spot-Lib" name="Spot" type="POINT">
+			<param flow="IN" name="COLOR" type="float3">1.000000 1.000000 1.000000</param>
+			<param flow="IN" name="ATTENUATION" type="token">LINEAR</param>
+			<param flow="IN" name="ATTENUATION_SCALE" type="float">0.066667</param>
+		</light>
+	</library>
+	<library type="CAMERA">
+		<camera id="Camera-Lib" name="Camera">
+			<technique profile="COMMON">
+				<optics>
+					<program url="PERSPECTIVE">
+						<param flow="IN" name="YFOV" type="float">49.134343</param>
+						<param flow="IN" name="ZNEAR" type="float">0.100000</param>
+						<param flow="IN" name="ZFAR" type="float">100.000000</param>
+					</program>
+				</optics>
+			</technique>
+		</camera>
+	</library>
+	<library type="ANIMATION"/>
+	<scene id="Scene" name="Scene">
+		<node id="Armature" name="Armature" type="NODE">
+			<instance url="#Armature-Lib"/>
+			<translate sid="translate">0.000000 1.075702 0.000000</translate>
+			<rotate sid="rotateX">1 0 0 0.000000</rotate>
+			<rotate sid="rotateY">0 1 0 0.000000</rotate>
+			<rotate sid="rotateZ">0 0 1 0.000000</rotate>
+			<scale sid="scale">1.000000 1.000000 1.000000</scale>
+			<node id="Cube" name="Cube" type="NODE">
+				<instance url="#Cube-Lib"/>
+				<translate sid="translate">0.000000 0.000000 0.000000</translate>
+				<rotate sid="rotateX">1 0 0 0.000000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.000000</rotate>
+				<rotate sid="rotateZ">0 0 1 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+			</node>
+			<node id="Cube.001" name="Cube.001" type="NODE">
+				<instance url="#Cube.001-Lib"/>
+				<translate sid="translate">-2.043834 -1.075702 0.000000</translate>
+				<rotate sid="rotateX">1 0 0 0.000000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.000000</rotate>
+				<rotate sid="rotateZ">0 0 1 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+			</node>
+			<node id="Cube.002" name="Cube.002" type="NODE">
+				<instance url="#Cube.002-Lib"/>
+				<translate sid="translate">1.972120 -1.039845 0.000000</translate>
+				<rotate sid="rotateX">1 0 0 0.000000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.000000</rotate>
+				<rotate sid="rotateZ">0 0 1 0.000000</rotate>
+				<scale sid="scale">1.000000 1.000000 1.000000</scale>
+			</node>
+		</node>
+		<node id="Camera" name="Camera" type="NODE">
+			<instance url="#Camera-Lib"/>
+			<translate sid="translate">7.481132 -6.507640 5.343665</translate>
+			<rotate sid="rotateX">1 0 0 63.559295</rotate>
+			<rotate sid="rotateY">0 1 0 0.619768</rotate>
+			<rotate sid="rotateZ">0 0 1 46.691945</rotate>
+			<scale sid="scale">1.000000 1.000000 1.000000</scale>
+		</node>
+		<node id="Lamp" name="Lamp" type="NODE">
+			<instance url="#Spot-Lib"/>
+			<translate sid="translate">4.076245 1.005454 5.903862</translate>
+			<rotate sid="rotateX">1 0 0 37.261049</rotate>
+			<rotate sid="rotateY">0 1 0 3.163708</rotate>
+			<rotate sid="rotateZ">0 0 1 106.936317</rotate>
+			<scale sid="scale">1.000000 1.000000 1.000000</scale>
+		</node>
+	</scene>
+</COLLADA>

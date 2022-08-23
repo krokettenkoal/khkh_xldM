@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="labelRegs.Text" xml:space="preserve">
+    <value>vi0      0  0000
+vi1    544  0220
+vi2    784  0310
+vi3    544  0220
+vi4    544  0220
+vi5      0  0000
+vi6      1  0001
+vi7     32  0020
+vi8   4080  0ff0
+vi9     32  0020
+vi10    32  0020
+vi11 32768  8000
+vi12 32767  7fff
+vi13     0  0000
+vi14   112  0070
+vi15     0  0000
+vf0                0|              0|              0|              1
+vf1                0|              0|   3.402823E+38|              0
+vf2                0|              0|              0|   5.163505E-41
+vf3                0|              0|              0|              0
+vf4            -2048|          -2048|              1|       -4000000
+vf5                0|              0|              0|              0
+vf6                0|              0|              0|   3.402823E+38
+vf7     3.402823E+38|   3.402823E+38|   3.402823E+38|   5.717298E-42
+vf8                0|              0|              0|              0
+vf9     3.402823E+38|   3.402823E+38|   3.402823E+38|   3.402823E+38
+vf10     0.004648797|      0.1836134|              1|              0
+vf11        37.99934|       25.99934|       43.00066|            128
+vf12      0.09314267|       2397.753|       12020.14|       1.490879
+vf13    4.806173E-41|   4.659598E-41|   2.954498E-41|        955.738
+vf14    4.803931E-41|   4.657636E-41|   2.954498E-41|       745.7195
+vf15       0.3828125|      0.1894531|       0.109375|       1701.458
+vf16               1|      0.7866587|              1|              0
+vf17              50|             40|             55|            128
+vf18       -387796.7|       76640.56|      1.677E+07|              1
+vf19    1.050974E-43|   4.582246E-43|   1.177091E-43|              0
+vf20    2.256091E-43|              0|  -3.355311E+07|              0
+vf21         -0.0085|            255|            190|            255
+vf22               0|              0|              0|              0
+vf23               0|              0|              0|              0
+vf24        -274.797|   0.0001220703|  -3.576279E-07|   5.960464E-08
+vf25       -388.7481|      -681.0326|      0.6059954|     -0.1898184
+vf26        2010.766|       1954.257|      -3.134459|      0.9818192
+vf27        942175.4|       991863.4|   1.676853E+07|       460.0464
+vf28               1|              1|              1|           2048
+vf29            2048|           2048|        4000000|              0
+vf30               1|              1|              1|              1
+vf31    6.939445E-10|   6.921255E-10|   1.460153E-42|              0
+acc                0               0               0   -3.402823E+38
+I    0.0002441406
+Q    3.402823E+38
+R    0
+P    0</value>
+  </data>
+</root>

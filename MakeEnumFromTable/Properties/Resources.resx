@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Frame" xml:space="preserve">
+    <value>0	Jump State
+1	Play PAX effect from a.fm
+2	Play footstep sound
+3	Dusk Jump State (animation in slot 628)
+4	Texture animation start
+5	Texture animation stop (UNUSED?)
+6	Use Item effect
+7	&lt;unknown&gt; (LIMIT: AnmatrCallback; Limit RC?)
+8	Play SE sound from a.fm
+9	&lt;unknown&gt; (VariousTrigger 1)
+10	&lt;unknown&gt; (VariousTrigger 2)
+11	&lt;unknown&gt; (VariousTrigger 4)
+12	&lt;unknown&gt; (VariousTrigger 8)
+13	Plays an enemy vsb voice
+14	Plays an ally vsb voice
+15	Turn to Target
+16	&lt;unknown&gt; (DisableCommandTime; Eg: When hit on air)
+17	Magic cast
+18	&lt;UNDEFINED&gt;
+19	Apply footstep effect (Footprint, water splashes…)
+20	&lt;UNDEFINED&gt;
+21	Turn to lock on
+22	Makes the keyblade appear
+23	Fade start (Opacity decrease)
+24	Fade start (Opacity increase)
+25	&lt;unknown&gt; (Related to the party)
+26	Set mesh color
+27	Reset mesh color
+28	Revenge check
+29	Plays a Keyblade appearance sprite
+30	&lt;unknown&gt; (LIMIT: PlayVoice) (UNUSED?)
+31	Trigger vibration
+32	&lt;UNDEFINED&gt;
+33	&lt;UNDEFINED&gt;
+34	Check for Dodge Roll to Airslide (Quick Run)
+35	&lt;unknown&gt; (MOTION: start; Eg: dodge roll)</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>0	STATE: Grounded
+1	STATE: Falling
+2	STATE: Grounded 2
+3	STATE: No gravity
+4	Enable collision flag
+5	Disable collision flag
+6	Enable RECOM flag
+7	Disable RECOM flag (UNUSED?)
+8	&lt;unknown&gt; (Prints “using NO_DAMAGE_REACTION attribute”?) (UNUSED?)
+9	STATE: &lt;unknown&gt;
+10	Motion attack on
+11	STATE: Allows combo attack
+12	STATE: &lt;unknown&gt;
+13	STATE: &lt;unknown&gt;
+14	STATE: Allows Battle RCs
+15	STATE: &lt;unknown&gt; (UNUSED?)
+16	&lt;unknown&gt; (“Mobility enhancement”, eg: LW’s dash)
+17	&lt;unknown&gt; (AI combo 1)
+18	&lt;unknown&gt; (AI combo 2)
+19	&lt;unknown&gt; (“Disable forced i-frames”, eg: LW’s idle, ground and air)
+20	Reaction Command (Self)
+21	STATE: &lt;unknown&gt;
+22	Turn to target
+23	Texture animation
+24	PROPERTY: &lt;unknown&gt; (Disable gravity but keeps kinetics)
+25	PROPERTY: &lt;unknown&gt; (AnmatrCommand; Reaction command on other object)
+26	PROPERTY: &lt;unknown&gt; (AnmatrCommand)
+27	STATE: Hitbox off (Can’t be hit)
+28	Turn to lock on
+29	STATE: &lt;unknown&gt; (Can’t fall off edges easily)
+30	STATE: &lt;unknown&gt; (Freeze animation? Immovable?)
+31	STATE: &lt;unknown&gt;
+32	STATE: &lt;unknown&gt;
+33	motion attack on (Enemy)
+34	STATE: &lt;unknown&gt; (UNUSED?)
+35	STATE: &lt;unknown&gt; (Eg: Fire. Makes fire count as combo)
+36	Pattern enable (LW attacks. Teleport to player?)
+37	Pattern disable
+38	STATE: &lt;unknown&gt;
+39	STATE: &lt;unknown&gt; (UNUSED?)
+40	STATE: &lt;unknown&gt;
+41	STATE: &lt;unknown&gt;
+42	STATE: &lt;unknown&gt; (Eg: landing, using items)
+43	STATE: &lt;unknown&gt; (UNUSED?)
+44	STATE: &lt;unknown&gt; (Eg: Explosion finisher, LW bow. Not movable by other objects?)
+45	STATE: &lt;unknown&gt; (UNUSED?)
+46	STATE: &lt;unknown&gt; (UNUSED?)
+47	STATE: &lt;unknown&gt;
+48	STATE: &lt;unknown&gt; (UNUSED?)
+49	STATE: &lt;unknown&gt; (Eg: Dodge roll)
+50	STATE: &lt;unknown&gt; (Allows combo finisher next)
+51	Play singleton SE
+52	STATE: &lt;unknown&gt;
+53	STATE: &lt;unknown&gt;</value>
+  </data>
+</root>

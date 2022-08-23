@@ -1,0 +1,47 @@
+r13 2012.12.28
+Fixed: Recfn not found: rc1 0012D3E0
+Fixed: Recfn not found: rc1 0012D264
+
+r12 2011.11.24
+Super smoggy effect removed. (no more gamma correction)
+Fixed: Recfn not found: rc1 00129514
+
+r11 2011.08.16
+Fix for 4 or more skin weights.
+
+r10 2011.08.16
+Sw for perspective/ortho view.
+
+r9 2010.01.09
+Special version.
+
+r8 2010.01.04
+Fixed system.nullreferenceexception problem.
+
+r7 2010.01.03
+Special version.
+
+r6 2009.11.03
+Will work on 64 enabled env, by sticking to x86 target.
+Import SlimDX, MDX eliminated.
+Less viewport leaping.
+Screenshot supports png.
+Can keep playing motion.
+
+r5
+Support for bigger mset such as 15MB.
+
+r4
+---
+Release4
+2008.03.22
+
+* Alpha channel support implemented (experimental)
+* Raw martices in mset support implemented
+* fps control implemented. no frame skip.
+* Loadling multiple skinned model.
+
+r3
+r2
+r1
+r0

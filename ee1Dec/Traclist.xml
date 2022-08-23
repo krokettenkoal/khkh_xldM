@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Traclist>
+  <Open key="1220"
+        trac="H:\Proj\pcsx2\bin\oneround - コピー.bin"
+        />
+  <Open key="1220"
+        trac="H:\Proj\pcsx2\bin\oneround.bin"
+        />
+
+  <Open key="rc1"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_x001.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_x001.help.txt"
+        />
+
+  <Open key="rc2"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_x002.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_x002.help.txt"
+        />
+
+  <Open key="rc3"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_t_002.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_t_002.help.txt"
+        />
+
+  <Open key="calcy"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_calcy_000.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_calcy_000.help.txt"
+        />
+
+  <Open key="calcvifma"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifma_004.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifma.help.txt"
+        />
+
+  <Open key="calcvifm2"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifm2_007.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifm2.help.txt"
+        />
+
+  <Open key="calcvifm3"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifm3_008.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifm3.help.txt"
+        />
+
+  <Open key="calcvifm4"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifm4_008.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifm4.help.txt"
+        />
+
+  <Open key="ldpr2"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_ldpr2_000.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_ldpr2.help.txt"
+        />
+
+  <Open key="ldpr1"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_ldpr1_000.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_ldpr2.help.txt"
+        />
+
+  <Open key="calcvifma105"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifma_105.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_calcvifma.help.txt"
+        />
+  
+  <Open key="faces1"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\trac_faces1_072.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\trac_faces1_help.txt"
+        />
+
+  <Open key="pax_"
+        trac="H:\Proj\khkh_xldM\MEMO\trac\pax_.bin"
+        desc="H:\Proj\khkh_xldM\MEMO\trac\pax_.txt"
+        />
+</Traclist>

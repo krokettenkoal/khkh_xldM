@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ee1Dec.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="enterprisedir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">H:\Proj\khkh_xldM\MEMO\trac\</Value>
+    </Setting>
+    <Setting Name="expsimdir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">H:\Proj\khkh_xldM\MEMO\expSim</Value>
+    </Setting>
+    <Setting Name="prefix" Type="System.String" Scope="User">
+      <Value Profile="(Default)">rc1</Value>
+    </Setting>
+    <Setting Name="TraclistXml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">H:\Proj\khkh_xldM\ee1Dec\Traclist.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

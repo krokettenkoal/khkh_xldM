@@ -1,0 +1,123 @@
+0011C310|ard:ard/eh18.ard+ 31024 
+00168B38|ard:Kh2Bar.NumFiles
+00168B88|ard:Kh2Bar.NumFiles
+00168BA4|ard:FileEntry.Type
+00168BB4|ard:FileEntry.Name, ard:Kh2Bar.Files
+00168BFC|ard:Kh2Bar.Padding
+00168C0C|ard:Kh2Bar.NumFiles
+00168C20|ard:FileEntry.Size
+00168C28|ard:Kh2Bar.Padding
+00168C30|ard:Kh2Bar.NumFiles
+00168C5C|ard:FileEntry.Offset
+00168C60|ard:FileEntry.Duplicate
+00168C74|ard:FileEntry.Type
+0016BF4C|ard:Entity.TalkMessage
+0016BF6C|ard:Entity.Unk20, ard:Entity.AiParameter
+0016BF80|8 usages. |ard:ard/eh18.ard+ 2309 |ard:ard/eh18.ard+ 2077 |ard:ard/eh18.ard+ 2193 |ard:ard/eh18.ard+ 4313 |ard:ard/eh18.ard+ 4965 |ard:ard/eh18.ard+ 5945 |ard:ard/eh18.ard+ 6653 |ard:ard/eh18.ard+ 7257 
+0016C938|ard:ard/eh18.ard+ 53976 
+0016C960|ard:ard/eh18.ard+ 53980 
+0016C98C|ard:ard/eh18.ard+ 53972 
+00181BD0|ard:FileEntry.Offset
+00181CC0|ard:SpawnProgram.Id
+00181CE8|ard:SpawnProgram.Length
+00181D10|ard:SpawnProgram.Id, ard:Kh2Bar.Files
+00181D6C|ard:SpawnProgram.ByteCode
+00181DB4|ard:SpawnProgram.ByteCode
+00181DE0|ard:SpawnProgram.ByteCode
+00181DF0|ard:Kh2Bar.Files, ard:SpawnProgram.ByteCode
+00181E00|ard:SpawnProgram.ByteCode
+00181E2C|ard:SpawnProgram.ByteCode
+00181E34|ard:SpawnProgram.ByteCode
+00181F84|ard:Kh2Bar.Files
+00181F90|ard:SpawnProgram.ByteCode
+00181FAC|ard:FileEntry.Offset
+00181FF4|ard:SpawnProgram.ByteCode
+0018200C|ard:SpawnProgram.ByteCode
+00182220|ard:SpawnProgram.ByteCode
+00182230|ard:SpawnProgram.ByteCode
+0018223C|ard:SpawnProgram.ByteCode
+00182298|ard:SpawnProgram.ByteCode
+0018229C|ard:SpawnProgram.ByteCode
+001822A8|ard:SpawnProgram.ByteCode
+001822C4|ard:SpawnProgram.ByteCode
+001822EC|ard:SpawnProgram.ByteCode
+001822F4|ard:SpawnProgram.ByteCode
+00182308|ard:SpawnProgram.ByteCode
+00182338|ard:SpawnProgram.ByteCode
+001823A8|ard:SpawnProgram.ByteCode
+001824EC|ard:FileEntry.Offset
+00182594|ard:FileEntry.Offset
+001829E4|ard:Kh2SpawnPoint.ItemCount
+00182A38|ard:SpawnPoint.Unk0cCount
+00182A3C|ard:Kh2SpawnPoint.ItemCount
+0018AD70|ard:SpawnPoint.Unk0aCount
+0018AD90|ard:Unknown0a.Unk00
+0018ADA4|ard:Unknown0a.Unk01
+0018ADD8|ard:Entity.AiParameter
+0018AE74|ard:Entity.Unk1c
+001997CC|ard:Entity.ObjectId
+00199824|ard:Entity.ObjectId
+0019983C|ard:Entity.Unk1c
+00199868|8 usages. |ard:ard/eh18.ard+ 2289 |ard:ard/eh18.ard+ 2397 |ard:ard/eh18.ard+ 2505 |ard:ard/eh18.ard+ 2613 |ard:ard/eh18.ard+ 3821 |ard:ard/eh18.ard+ 3885 |ard:ard/eh18.ard+ 3949 |ard:ard/eh18.ard+ 4013 
+001998B8|ard:Entity.RotationY
+001998CC|ard:Entity.ObjectId
+00199948|ard:Entity.PositionZ
+0019994C|ard:Entity.PositionX
+00199950|ard:Entity.PositionY
+00199978|ard:SpawnProgram.ByteCode, ard:Unknown0a.Unk04
+00199AD0|ard:SpawnPoint.EntityCount
+00199AE0|ard:SpawnPoint.EventActivatorCount
+00199AF0|ard:SpawnPoint.Unk08Count
+00199B04|ard:WalkPathDesc.Count
+00199B24|ard:SpawnPoint.Unk0aCount
+00199B34|ard:SpawnPoint.Unk00
+00199B48|14 usages. |ard:ard/eh18.ard+ 2217 |ard:ard/eh18.ard+ 2325 |ard:ard/eh18.ard+ 2433 |ard:ard/eh18.ard+ 2541 |ard:ard/eh18.ard+ 1805 |ard:ard/eh18.ard+ 1985 |ard:ard/eh18.ard+ 2657 |ard:ard/eh18.ard+ 2101 |ard:ard/eh18.ard+ 3749 |ard:ard/eh18.ard+ 4221 |ard:ard/eh18.ard+ 4873 |ard:ard/eh18.ard+ 5853 |ard:ard/eh18.ard+ 6561 |ard:ard/eh18.ard+ 7165 
+00199BB4|ard:SpawnPoint.Unk0cCount
+00199D54|ard:SpawnPoint.EntityCount
+00199D8C|ard:Entity.ObjectId
+00199D94|ard:SpawnPoint.EntityCount
+00199DF8|ard:SpawnPoint.EventActivatorCount
+00199E08|ard:SpawnPoint.Unk00
+00199E1C|ard:ard/eh18.ard+ 1850 , ard:ard/eh18.ard+ 1914 
+00199E58|ard:SpawnPoint.EventActivatorCount
+00199E78|ard:SpawnPoint.Unk00
+00199E84|ard:SpawnPoint.EntityCount
+00199EA4|ard:Entity.ObjectId
+00199EC8|ard:Entity.Unk1c
+00199EF8|ard:SpawnPoint.EntityCount
+00199FC0|ard:Entity.ObjectId
+0019A09C|ard:SpawnPoint.Unk00
+0019A140|ard:SpawnPoint.Unk00
+0019A150|ard:EventActivator.Unk2c
+0019B310|ard:SpawnPoint.Unk00
+0019E2A8|ard:Entity.ReactionCommand
+0019EFA4|ard:SpawnProgram.ByteCode
+0019EFAC|ard:SpawnProgram.ByteCode
+0019EFB4|ard:SpawnProgram.ByteCode
+0019F028|ard:SpawnProgram.ByteCode
+0019F034|ard:SpawnProgram.ByteCode
+0019F050|ard:SpawnProgram.ByteCode
+001A8BDC|ard:ard/eh18.ard+ 59040 
+001B8EA8|15 usages. |ard:ard/eh18.ard+ 45992 |ard:ard/eh18.ard+ 45180 |ard:ard/eh18.ard+ 44832 |ard:ard/eh18.ard+ 45064 |ard:ard/eh18.ard+ 45528 |ard:ard/eh18.ard+ 44716 |ard:ard/eh18.ard+ 45412 |ard:ard/eh18.ard+ 45296 |ard:ard/eh18.ard+ 45760 |ard:ard/eh18.ard+ 44740 |ard:ard/eh18.ard+ 44752 |ard:ard/eh18.ard+ 47232 |ard:ard/eh18.ard+ 47268 |ard:ard/eh18.ard+ 44680 |ard:ard/eh18.ard+ 44684 
+001C1108|ard:ard/eh18.ard+ 49192 
+001D3434|ard:Entity.ObjectId
+001DA3DC|6 usages. |ard:ard/eh18.ard+ 54005 |ard:ard/eh18.ard+ 54019 |ard:ard/eh18.ard+ 54025 |ard:ard/eh18.ard+ 54053 |ard:ard/eh18.ard+ 54067 |ard:ard/eh18.ard+ 54073 
+001DA3E0|6 usages. |ard:ard/eh18.ard+ 54002 |ard:ard/eh18.ard+ 54016 |ard:ard/eh18.ard+ 54022 |ard:ard/eh18.ard+ 54050 |ard:ard/eh18.ard+ 54064 |ard:ard/eh18.ard+ 54070 
+001DA428|ard:ard/eh18.ard+ 53988 
+001DA434|ard:ard/eh18.ard+ 53984 
+001DA440|ard:ard/eh18.ard+ 53996 
+001DA4F4|ard:ard/eh18.ard+ 54086 , ard:ard/eh18.ard+ 54090 , ard:ard/eh18.ard+ 54094 
+001DA5B0|24 usages. |ard:ard/eh18.ard+ 54000 |ard:ard/eh18.ard+ 54006 |ard:ard/eh18.ard+ 54010 |ard:ard/eh18.ard+ 54014 |ard:ard/eh18.ard+ 54020 |ard:ard/eh18.ard+ 54026 |ard:ard/eh18.ard+ 54084 |ard:ard/eh18.ard+ 54088 |ard:ard/eh18.ard+ 54092 |ard:ard/eh18.ard+ 54096 |ard:ard/eh18.ard+ 54100 |ard:ard/eh18.ard+ 54102 |ard:ard/eh18.ard+ 54126 |ard:ard/eh18.ard+ 54030 |ard:ard/eh18.ard+ 54034 |ard:ard/eh18.ard+ 54044 |ard:ard/eh18.ard+ 54048 |ard:ard/eh18.ard+ 54054 |ard:ard/eh18.ard+ 54058 |ard:ard/eh18.ard+ 54062 |ard:ard/eh18.ard+ 54068 |ard:ard/eh18.ard+ 54074 |ard:ard/eh18.ard+ 54078 |ard:ard/eh18.ard+ 54082 
+001DAB9C|6 usages. |ard:ard/eh18.ard+ 54012 |ard:ard/eh18.ard+ 54104 |ard:ard/eh18.ard+ 54036 |ard:ard/eh18.ard+ 54046 |ard:ard/eh18.ard+ 54060 |ard:ard/eh18.ard+ 54080 
+001DAC38|ard:ard/eh18.ard+ 54028 , ard:ard/eh18.ard+ 54076 
+001DAE3C|4 usages. |ard:ard/eh18.ard+ 54008 |ard:ard/eh18.ard+ 54098 |ard:ard/eh18.ard+ 54032 |ard:ard/eh18.ard+ 54056 
+001DAF2C|ard:EventActivator.ScaleY
+001DAF34|ard:EventActivator.ScaleZ
+001DAF38|ard:EventActivator.ScaleX
+001DAF58|ard:EventActivator.PositionX
+001DAF5C|ard:EventActivator.PositionY
+001DAF60|ard:EventActivator.PositionZ
+001DAF74|ard:EventActivator.RotationY
+001DB454|ard:EventActivator.Unk00
+001DC2B4|ard:Kh2Bar.NumFiles
+002283B4|ard:ard/eh18.ard+ 56064 

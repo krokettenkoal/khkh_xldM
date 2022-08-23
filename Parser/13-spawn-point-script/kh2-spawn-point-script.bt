@@ -1,0 +1,59 @@
+//------------------------------------------------
+//--- 010 Editor v10.0.2 Binary Template
+//
+//      File: kh2-spawn-point-script.bt
+//   Authors: kenjiuno
+//   Version: 0.1-SNAPSHOT
+//   Purpose: 
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+typedef struct {
+    ushort a;
+    ushort b;
+}   SubChunk;
+
+typedef struct {
+    ushort id;
+    ushort len;
+
+    local int offset = FTell();
+
+    if (len != 0) {
+        byte data[len -4];
+
+        FSeek(offset);
+        while (FTell() < offset +len -4) {
+            SubChunk sub;
+            switch (sub.a) {
+                case 0:
+                    {
+                        char spawn[4];
+                        break;
+                    }
+                case 1:
+                    {
+                        uint64 collision;
+                        break;
+                    }
+                default:
+                    FSeek(offset +len -4);
+            }
+        }
+    }
+}   Chunk <read=DisplayChunk>;
+
+string DisplayChunk(Chunk &it) {
+    string s;
+    SPrintf(s, "id=%04X", it.id);
+    return s;
+}
+
+while (true) {
+    Chunk chunk;
+    if (chunk.id == 0xffff) {
+        break;
+    }
+}

@@ -1,0 +1,2 @@
+﻿KH2Dump.exe %SRC%\KH2
+PAUSE
