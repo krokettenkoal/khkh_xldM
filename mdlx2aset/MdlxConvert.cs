@@ -28,7 +28,8 @@ namespace mdlx2aset {
         private int _currentTick = 0;
         private int enterLock = 0;
 
-        [Flags] private enum UpdateFlags : uint {
+        [Flags]
+        private enum UpdateFlags : uint {
             None = 0x00,
             Body = 0x01,
             Transforms = 0x02,
@@ -45,20 +46,20 @@ namespace mdlx2aset {
         /// Mesh array of the currently loaded model
         /// </summary>
         private Mesh[] Model { get; } = new Mesh[] { new Mesh(), new Mesh(), new Mesh(), };
-        
+
         //  SlimDX/DirectX device/objects
         //  TODO: Remove if possible
         private Device SlimDevice { get; }
         private Direct3D D3D { get; } = new();
         private static PresentParameters PP {
             get => new() {
-                    Windowed = true,
-                    SwapEffect = SwapEffect.Discard,
-                    EnableAutoDepthStencil = true,
-                    AutoDepthStencilFormat = Format.D24X8,
-                    BackBufferWidth = 1920,
-                    BackBufferHeight = 1080
-                };
+                Windowed = true,
+                SwapEffect = SwapEffect.Discard,
+                EnableAutoDepthStencil = true,
+                AutoDepthStencilFormat = Format.D24X8,
+                BackBufferWidth = 1920,
+                BackBufferHeight = 1080
+            };
         }
 
         private MdlxConvert(IntPtr handle) {
@@ -99,7 +100,7 @@ namespace mdlx2aset {
                     switch (ent.k) {
                         case 7:
                             M.timc = TIMCollection.Load(new MemoryStream(ent.bin, false));
-                            if(M.timc is not null)
+                            if (M.timc is not null)
                                 M.timf = (M.timc.Length >= 1) ? M.timc[0] : null;
                             break;
                         case 4:
@@ -138,7 +139,7 @@ namespace mdlx2aset {
                             mi.maxtick = blk.cntFrames;
                             mi.mintick = 0;
                         }
-                        else if(mt1.bin is not null) {
+                        else if (mt1.bin is not null) {
                             var blk = new Msetblk(new MemoryStream(mt1.bin, false));
                             mi.maxtick = (blk.to.al11 is not null && blk.to.al11.Length != 0) ? blk.to.al11[^1] : 0;
                             mi.mintick = (blk.to.al11 is not null && blk.to.al11.Length != 0) ? blk.to.al11[0] : 0;
@@ -170,7 +171,7 @@ namespace mdlx2aset {
                         if (Model[1].Present)
                             CalcBody(Model[1].ctb, Model[1], weap, _currentTick, UpdateFlags.Animate);
                     }
-                    
+
                 }
 
                 if (Model[2] is not null && Model[2].Present && Model[2].mset is not null) {
@@ -184,7 +185,7 @@ namespace mdlx2aset {
 
                 //  TODO: Remove if possible
                 CalcPatchTextures(Model[0], _currentTick);
-                
+
                 break;
             }
         }
@@ -200,8 +201,7 @@ namespace mdlx2aset {
                 break;
             }
         }
-        private void CalcBody(CaseTris ct, Mesh? M, Mt1? mt1, float _tick, UpdateFlags flags)
-        {
+        private void CalcBody(CaseTris ct, Mesh? M, Mt1? mt1, float _tick, UpdateFlags flags) {
             if (M is null || mt1 is null || M.mdlx is null || M.mset is null)
                 return;
 
@@ -227,14 +227,12 @@ namespace mdlx2aset {
                         var blk = new MsetRawblk(new MemoryStream(mt1.bin, false));
                         int t0 = Math.Max(0, Math.Min(blk.cntFrames - 1, (int)Math.Floor(_tick)));
                         int t1 = Math.Max(0, Math.Min(blk.cntFrames - 1, (int)Math.Ceiling(_tick)));
-                        
-                        if (t0 == t1)
-                        {
+
+                        if (t0 == t1) {
                             MsetRM rm = blk.alrm[t0];
                             Ma = M.Ma = rm.al.ToArray();
                         }
-                        else 
-                        {
+                        else {
                             MsetRM rm0 = blk.alrm[t0]; float f1 = _tick % 1.0f;
                             MsetRM rm1 = blk.alrm[t1]; float f0 = 1.0f - f1;
                             Ma = M.Ma = new Matrix[blk.cntJoints];
@@ -262,13 +260,12 @@ namespace mdlx2aset {
                             }
                         }
                     }
-                    else 
-                    {
+                    else {
                         var blk = new Msetblk(new MemoryStream(mt1.bin, false));
                         var os = new MemoryStream();
                         ol ??= M.ol = new Mlink();
 
-                        if(M.binMdlx is not null && M.binMset is not null)
+                        if (M.binMdlx is not null && M.binMset is not null)
                             ol.Permit(new MemoryStream(M.binMdlx, false), blk.cntb1, new MemoryStream(M.binMset, false), blk.cntb2, mt1.off, _tick, os);
 
                         var br = new BinaryReader(os);
@@ -299,8 +296,7 @@ namespace mdlx2aset {
                     }
                 }
 
-                if (Ma is not null && Minv is not null && (flags & UpdateFlags.Transforms) != UpdateFlags.None) 
-                {
+                if (Ma is not null && Minv is not null && (flags & UpdateFlags.Transforms) != UpdateFlags.None) {
                     int cnt = Ma.Length;
                     for (var mn = 0; mn < cnt; ++mn) {
                         Minv[mn] = Matrix.Invert(Ma[mn]);
@@ -308,13 +304,11 @@ namespace mdlx2aset {
                 }
 
                 var Mv = Matrix.Identity;
-                if (M.parent != null && M.iMa != -1 && M.parent.Ma is not null) 
-                {
+                if (M.parent != null && M.iMa != -1 && M.parent.Ma is not null) {
                     Mv = M.parent.Ma[M.iMa];
                 }
 
-                if (Ma is not null && (flags & UpdateFlags.Body) != UpdateFlags.None) 
-                {
+                if (Ma is not null && (flags & UpdateFlags.Body) != UpdateFlags.None) {
                     foreach (T13vif t13 in t31.al13) {
                         int tops = 0x220;
                         int top2 = 0;
@@ -325,8 +319,7 @@ namespace mdlx2aset {
                     }
                 }
 
-                if ((flags & UpdateFlags.Indices) != UpdateFlags.None) 
-                {
+                if ((flags & UpdateFlags.Indices) != UpdateFlags.None) {
                     //if (ct.alsepa == null || ct.altri3 == null)
                     {
                         var altri3 = new List<uint>();
@@ -383,8 +376,7 @@ namespace mdlx2aset {
                     }
                 }
 
-                if ((flags & UpdateFlags.Vertices) != UpdateFlags.None) 
-                {
+                if ((flags & UpdateFlags.Vertices) != UpdateFlags.None) {
                     ct.cntVert = (ct.altri3 != null) ? (ct.altri3.Length) : (0);
                     ct.cntPrimitives = 0;
 
@@ -531,7 +523,7 @@ namespace mdlx2aset {
                     ol.Permit_DEB(fsMdlx, blk.cntb1, fsMset, blk.cntb2, mt1.off, t, out _, out var Rvec, out _);
                     Debug.WriteLine(string.Format("{0},{1}", t, Rvec[169 * 4 + 0]));
                 }
-                
+
                 break;
             }
         }
@@ -818,17 +810,16 @@ namespace mdlx2aset {
 
         #region Static methods
         /// <summary>
-        /// Convert an MDLX/MSET file pair to an ASET file suitable for Noesis w/ installed KH plugins
+        /// Converts the MDLX file at the specifies path to an ASET file. The method requires a corresponding MSET file in the same directory as the MDLX file.
         /// </summary>
-        /// <param name="mdlxPath">Path to the MDLX file being converted</param>
-        /// <param name="handle">Reference to a control handle (Windows Forms) for SlimDX processing</param>
-        /// <param name="onProgress">Callback function for handling export progress updates</param>
+        /// <param name="mdlxPath">The path of the MDLX file to convert</param>
+        /// <param name="handle">A reference to ControlHandle calling the method (required by SlimDX). This will be removed in future versions for better cross-platform support.</param>
+        /// <param name="onProgress">Callback function for the export progress. The function is called at several states of the export process containing the current state/status information.</param>
         /// <returns>True if the conversion has been successful</returns>
         public static bool ToAset(string mdlxPath, IntPtr handle, Action<ExportState, ExportStatus> onProgress) {
             if (!Path.GetExtension(mdlxPath).ToLower().Equals(".mdlx") ||
                 !File.Exists(mdlxPath) ||
-                !MdlxMatch.HasMset(mdlxPath)) 
-            {
+                !MdlxMatch.HasMset(mdlxPath)) {
                 return false;
             }
 
