@@ -25,8 +25,6 @@ namespace mdlx2aset {
 
         private IntPtr _handle;
         private bool disposed;
-        private int _currentTick = 0;
-        private int enterLock = 0;
 
         [Flags]
         private enum UpdateFlags : uint {
