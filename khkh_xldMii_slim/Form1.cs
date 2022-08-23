@@ -10,6 +10,12 @@ namespace khkh_xldMii_slim {
             InitializeComponent();
         }
 
+        #region Event handlers
+        /// <summary>
+        /// Method being called when the 'Open MDLX' button is clicked
+        /// </summary>
+        /// <param name="sender">Reference to the sender object</param>
+        /// <param name="e">Click event arguments</param>
         private void btnOpenMdlx_Click(object sender, EventArgs e) {
             //  Show an 'Open file' dialog to the user for them to select an MDLX file
             using OpenFileDialog openFileDialog = new();
@@ -25,7 +31,11 @@ namespace khkh_xldMii_slim {
                 Log($"{mdlxPath} opened.");
             }
         }
-
+        /// <summary>
+        /// Method being called when the 'Export ASET' button is clicked
+        /// </summary>
+        /// <param name="sender">Reference to the sender object</param>
+        /// <param name="e">Click event arguments</param>
         private void btnExportAset_Click(object sender, EventArgs e) {
             if (string.IsNullOrEmpty(mdlxPath)) {
                 Log("Open a valid MDLX file first.");
@@ -36,11 +46,14 @@ namespace khkh_xldMii_slim {
 
             //  Export an ASET animation file from the specified MDLX file.
             //  A corresponding MSET file is required in the same directory as the MDLX file.
+            //  The resulting ASET file is saved to the MDLX/MSET source directory.
             var success = MdlxConvert.ToAset(mdlxPath, Log);
 
             Log($"Export done. Success: {success}");
         }
+        #endregion
 
+        #region Helper methods
         /// <summary>
         /// Print a text line to the log panel
         /// </summary>
@@ -48,7 +61,6 @@ namespace khkh_xldMii_slim {
         private void Log(string msg) {
             txtLog.AppendText(msg + "\r\n");
         }
-
         /// <summary>
         /// Print the export progress consisting of an ExportState and an ExportStatus to the log panel.
         /// </summary>
@@ -57,5 +69,6 @@ namespace khkh_xldMii_slim {
         private void Log(ExportState state, ExportStatus status) {
             Log($"[{state}] {status.animName}");
         }
+        #endregion
     }
 }
