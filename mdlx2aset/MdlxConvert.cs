@@ -224,58 +224,7 @@ namespace mdlx2aset {
             }
             M.ol = null;
         }
-
         
-        //  TODO: Remove if possible
-        private void ReCalc() {
-            //foreach (Mesh M in _Sora) M.ctb.Close();
-
-            foreach (var motion in Motions) {
-                if (motion.mt1 is null)
-                    continue;
-
-                //  TODO: Remove if possible
-                CalcBody(Model[0].ctb, Model[0], motion.mt1, _currentTick, UpdateFlags.Animate);
-
-                if (Model[1] is not null && Model[1].Present && Model[1].mset is not null) {
-                    var weap = UtwexMotionSel.Sel(motion.mt1.k1, Model[1].mset.al1);
-
-                    if (weap != null && Model[1].iMa != -1) {
-                        if (Model[1].Present) {
-                            CalcBody(Model[1].ctb, Model[1], weap, _currentTick, UpdateFlags.Animate);
-                        }
-                    }
-
-                }
-
-                if (Model[2] is not null && Model[2].Present && Model[2].mset is not null) {
-                    var weap = UtwexMotionSel.Sel(motion.mt1.k1, Model[2].mset.al1);
-
-                    if (weap != null && Model[2].iMa != -1) {
-                        if (Model[2].Present) {
-                            CalcBody(Model[2].ctb, Model[2], weap, _currentTick, UpdateFlags.Animate);
-                        }
-                    }
-                }
-
-                //  TODO: Remove if possible
-                CalcPatchTextures(Model[0], _currentTick);
-
-                break;
-            }
-        }
-        private void CalcPatchTextures(Mesh M, float tick) {
-            if (M.timf == null)
-                return;
-
-            foreach (var motion in Motions) {
-                if (motion.mt1 is null || motion.mt1.fm is null)
-                    continue;
-
-                M.pts = SelTexfacUt.Sel(M.timf.facePatchList, tick, motion.mt1.fm);
-                break;
-            }
-        }
         private void CalcBody(CaseTris ct, Mesh? M, Mt1? mt1, float _tick, UpdateFlags flags) {
             if (M is null || mt1 is null || M.mdlx is null || M.mset is null)
                 return;
@@ -561,22 +510,7 @@ namespace mdlx2aset {
                 }
             }
         }
-        private void Tick(object sender, EventArgs e) {
-            try {
-                if (enterLock++ == 0) {
-                    try {
-                        _currentTick++;
-                    }
-                    catch (Exception) {
-                        throw;
-                    }
-                }
-            }
-            finally {
-                enterLock--;
-            }
-        }
-
+        
         /// <summary>
         /// Export an ASET file of the currently loaded MDLX/MSET combo
         /// </summary>
