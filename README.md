@@ -1,2 +1,2 @@
-# khkh_xldMii
-Fork of kenjiuno's KH2 MDLX tools including various fixes and features
+# khkh_xldM
+Fork of kenjiuno's [KH2 MDLX tools](https://gitlab.com/kenjiuno/khkh_xldM) including various fixes and features.
