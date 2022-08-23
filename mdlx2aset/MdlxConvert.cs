@@ -135,20 +135,12 @@ namespace mdlx2aset {
             disposed = true;
         }
 
-        // Use interop to call the method necessary
-        // to clean up the unmanaged resource.
+        // Clean up the unmanaged resource by using interop services.
         [System.Runtime.InteropServices.DllImport("Kernel32")]
         private extern static Boolean CloseHandle(IntPtr handle);
 
-        // Use C# finalizer syntax for finalization code.
-        // This finalizer will run only if the Dispose method
-        // does not get called.
-        // It gives your base class the opportunity to finalize.
-        // Do not provide finalizer in types derived from this class.
+        //  Finalizer
         ~MdlxConvert() {
-            // Do not re-create Dispose clean-up code here.
-            // Calling Dispose(disposing: false) is optimal in terms of
-            // readability and maintainability.
             Dispose(disposing: false);
         }
 
@@ -233,6 +225,7 @@ namespace mdlx2aset {
             M.ol = null;
         }
 
+        
         //  TODO: Remove if possible
         private void ReCalc() {
             //foreach (Mesh M in _Sora) M.ctb.Close();
@@ -248,8 +241,9 @@ namespace mdlx2aset {
                     var weap = UtwexMotionSel.Sel(motion.mt1.k1, Model[1].mset.al1);
 
                     if (weap != null && Model[1].iMa != -1) {
-                        if (Model[1].Present)
+                        if (Model[1].Present) {
                             CalcBody(Model[1].ctb, Model[1], weap, _currentTick, UpdateFlags.Animate);
+                        }
                     }
 
                 }
@@ -258,8 +252,9 @@ namespace mdlx2aset {
                     var weap = UtwexMotionSel.Sel(motion.mt1.k1, Model[2].mset.al1);
 
                     if (weap != null && Model[2].iMa != -1) {
-                        if (Model[2].Present)
+                        if (Model[2].Present) {
                             CalcBody(Model[2].ctb, Model[2], weap, _currentTick, UpdateFlags.Animate);
+                        }
                     }
                 }
 
@@ -510,6 +505,7 @@ namespace mdlx2aset {
                 }
             }
         }
+        
 
         private void ResetDevice() {
             if (SlimDevice is null)
@@ -581,32 +577,6 @@ namespace mdlx2aset {
             }
         }
 
-        //  TODO: Remove if possible
-        private void BtnDEB_Click(object sender, EventArgs e) {
-            foreach (var motion in Motions) {
-                if (Model[0] is null || Model[0].mdlx is null || Model[0].binMdlx is null || Model[0].binMset is null)
-                    break;
-
-                var mt1 = motion.mt1;
-
-                if (mt1 is null || mt1.bin is null)
-                    continue;
-
-                var blk = new Msetblk(new MemoryStream(mt1.bin, false));
-                _ = Model[0].mdlx.alt31[0];
-
-                var ol = Model[0].ol = new Mlink();
-                var fsMdlx = new MemoryStream(Model[0].binMdlx, false);
-                var fsMset = new MemoryStream(Model[0].binMset, false);
-
-                for (float t = 0; t <= 300; t++) {
-                    ol.Permit_DEB(fsMdlx, blk.cntb1, fsMset, blk.cntb2, mt1.off, t, out _, out var Rvec, out _);
-                    Debug.WriteLine(string.Format("{0},{1}", t, Rvec[169 * 4 + 0]));
-                }
-
-                break;
-            }
-        }
         /// <summary>
         /// Export an ASET file of the currently loaded MDLX/MSET combo
         /// </summary>
@@ -812,10 +782,10 @@ namespace mdlx2aset {
         /// Converts the MDLX file at the specifies path to an ASET file. The method requires a corresponding MSET file in the same directory as the MDLX file.
         /// </summary>
         /// <param name="mdlxPath">The path of the MDLX file to convert</param>
-        /// <param name="handle">A reference to ControlHandle calling the method (required by SlimDX). This will be removed in future versions for better cross-platform support.</param>
+        /// <param name="handle">A reference to the handle (hWnd) of the calling window/process (required by SlimDX).</param>
         /// <param name="onProgress">Callback function for the export progress. The function is called at several states of the export process containing the current state/status information.</param>
         /// <returns>True if the conversion has been successful</returns>
-        public static bool ToAset(string mdlxPath, IntPtr handle, Action<ExportState, ExportStatus> onProgress) {
+        public static bool ToAset(string mdlxPath, Action<ExportState, ExportStatus> onProgress, IntPtr handle) {
             if (!Path.GetExtension(mdlxPath).ToLower().Equals(".mdlx") ||
                 !File.Exists(mdlxPath) ||
                 !MdlxMatch.HasMset(mdlxPath)) {
@@ -832,6 +802,17 @@ namespace mdlx2aset {
             progress.OnProgress += onProgress;
 
             return converter.ExportASET(progress);
+        }
+
+        /// <summary>
+        /// Converts the MDLX file at the specifies path to an ASET file using the current process' handle. The method requires a corresponding MSET file in the same directory as the MDLX file.
+        /// </summary>
+        /// <param name="mdlxPath">The path of the MDLX file to convert</param>
+        /// <param name="onProgress">Callback function for the export progress. The function is called at several states of the export process containing the current state/status information.</param>
+        /// <returns>True if the conversion has been successful</returns>
+        public static bool ToAset(string mdlxPath, Action<ExportState, ExportStatus> onProgress) {
+            var handle = Process.GetCurrentProcess().Handle;
+            return ToAset(mdlxPath, onProgress, handle);
         }
 
         #endregion
