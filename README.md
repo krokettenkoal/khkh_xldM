@@ -29,4 +29,4 @@ Converts the MDLX file at the specified path to an ASET file. The method require
 </details>
 
 ## Examples
-Check out the included project **[khkh_xldMii_slim](khkh_xldMii_slim)** for reference and usage.
+Check out the included (WinForms) project **[khkh_xldMii_slim](khkh_xldMii_slim)** for reference and example usage.
