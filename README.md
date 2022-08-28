@@ -12,7 +12,7 @@ The main functionality of this library is provided by the [`MdlxConvert`](mdlx2a
 
 <details>
 	<summary>
-		MdlxConvert.ToAset
+		MdlxConvert.ToAset(string, Action, IntPtr)
 	</summary>
 
 ### bool MdlxConvert.ToAset(string mdlxPath, Action<ExportState, ExportStatus> onProgress, IntPtr handle)
