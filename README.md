@@ -10,16 +10,19 @@ Currently, there are no pre-built releases for download as further testing needs
 ## API usage
 The main functionality of this library is provided by the [`MdlxConvert`](mdlx2aset/MdlxConvert.cs) class. The following list describes the most important methods in a brief manner:
 
-### bool MdlxConvert.ToAset(string mdlxPath, Action<ExportState, ExportStatus> onProgress, IntPtr handle)
-Converts the MDLX file at the specified path to an ASET file. The method requires a corresponding MSET file in the same directory as the MDLX file.
+<details>
+	<summary>
+	### bool MdlxConvert.ToAset(string mdlxPath, Action<ExportState, ExportStatus> onProgress, IntPtr handle)</summary>
+	Converts the MDLX file at the specified path to an ASET file. The method requires a corresponding MSET file in the same directory as the MDLX file.
 
-#### Parameters
-- **string mdlxPath**: The path of the MDLX file to convert
-- **Action<ExportState, ExportStatus> onProgress**: Callback function for the export progress. The function is called at several states of the export process containing the current state/status information.
-- **IntPtr handle** (*optional*): A reference to the handle (hWnd) of the calling window/process (required by SlimDX). Default: the current (invoking) process handle.
+	#### Parameters
+	- **string mdlxPath**: The path of the MDLX file to convert
+	- **Action<ExportState, ExportStatus> onProgress**: Callback function for the export progress. The function is called at several states of the export process containing the current state/status information.
+	- **IntPtr handle** (*optional*): A reference to the handle (hWnd) of the calling window/process (required by SlimDX). Default: the current (invoking) process handle.
 
-#### Returns
-`True` if the conversion has been successful.
+	#### Returns
+	`True` if the conversion has been successful.
+</details>
 
 ## Examples
 Check out the included project **[khkh_xldMii_slim](khkh_xldMii_slim)** for reference and usage.
