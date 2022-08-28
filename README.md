@@ -7,14 +7,16 @@ The main purpose of this fork is to provide a working library for exporting `ASE
 ## Installing/building
 Currently, there are no pre-built releases for download as further testing needs to be done. The library ships with all dependencies, including SlimDX, so you should be able to build (working) projects yourself.
 
-## API usage
+## API
 The main functionality of this library is provided by the [`MdlxConvert`](mdlx2aset/MdlxConvert.cs) class. The following list describes the most important methods in a brief manner:
 
 <details>
 	<summary>
-	bool MdlxConvert.ToAset(string mdlxPath, Action<ExportState, ExportStatus> onProgress, IntPtr handle)
+		MdlxConvert.ToAset
 	</summary>
-	
+
+### bool MdlxConvert.ToAset(string mdlxPath, Action<ExportState, ExportStatus> onProgress, IntPtr handle)
+
 Converts the MDLX file at the specified path to an ASET file. The method requires a corresponding MSET file in the same directory as the MDLX file.
 
 #### Parameters
