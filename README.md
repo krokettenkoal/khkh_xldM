@@ -2,10 +2,10 @@
 Fork of [kenjiuno](https://gitlab.com/kenjiuno)'s [KH2 MDLX tools](https://gitlab.com/kenjiuno/khkh_xldM) including various fixes and features.
 
 ## Introduction
-The main purpose of this fork is to provide a working library for exporting `ASET` animation files from *MDLX*/*MSET* file pairs. This is done by porting the original (fixed) **[khkh_xldMii_revel8n](khkh_xldMii_revel8n)** tool into a .NET 6 library, removing all Windows Forms dependencies. ~~However, at the moment, this dependency is not fully removed, but simply outsourced. A Windows Forms App is still needed to call methods from this library, as [SlimDX](https://github.com/mrvux/SlimDX) requires a `ControlHandle` reference to work. This restriction is planned to be eliminated as soon as possible.~~
+The main purpose of this fork is to provide a working library for exporting `ASET` animation files from *MDLX*/*MSET* file pairs. This is done by porting the original (fixed) **[khkh_xldMii_revel8n](khkh_xldMii_revel8n)** tool into a .NET 6 library, removing all Windows Forms dependencies.
 
 ## Installing/building
-Currently, there are no pre-built releases for download as further testing needs to be done. The library ships with all dependencies, including SlimDX, so you should be able to build (working) projects yourself.
+Currently, there are no pre-built releases for download as further testing needs to be done. The library ships with all legacy dependencies, including SlimDX, so you should be able to build (working) projects yourself. Package dependencies, such as *SharpDX* or *System.Drawing.Common*, need to be installed via NuGet.
 
 ## API
 The main functionality of this library is provided by the [`MdlxConvert`](mdlx2aset/MdlxConvert.cs) class. The following list describes the most important methods in a brief manner:
